@@ -1,0 +1,919 @@
+{"id": 0, "text": "!Bis zum nächsten Mal!!!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 1, "text": "!Es gibt in LOC viel bessere Bratwürste an anderen Standorten.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 2, "text": "\"Stabile Brauhausküche\" beschreibt es wohl am besten und so passt es auch nach LOC.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 3, "text": "20 Min, man hat Kollegen neben mir nochmals gefragt, aber auf dem gleichen Weg nicht geschafft, Getränke an den Tisch zu bringen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 4, "text": "?Die Höhe der Rechnung und unser empfundenes Restauranterlebnis passten hier überhaupt nicht zusammen.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 5, "text": "Aaf jeden Fall keine Empfehlung von uns!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 6, "text": "Aber es kam nicht soweit: Zahlreiche Versuche, das Lokal am Nachmittag und Abend zu erreichen, waren vergeblich: es ging niemand ans Telefon.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 7, "text": "Aber schon; bei der Masse der Kundschaft- wen interessiert es schon, dass dem Kunden die hohen Preise für schlechtes Essen abgezockt werden.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#PRICES, NEGATIVE)"]}
+{"id": 8, "text": "Aber wenn man dann sein Bier im Biergarten und seine Kartoffelsuppe (6,50) vor sich stehen hat, sich angenehm mit Tischnachbarn unterhalten kann, dann ist die Welt in Ordnung.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 9, "text": "Alle soweit stimmig und lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 10, "text": "Allerdings fanden wir, dass die Beleuchtung etwas schöner sein könnte.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 11, "text": "Allerdings war es unglaublich laut, also nichts für einen gemütlichen Abend.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 12, "text": "Alles kam pünktlich und lecker.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 13, "text": "Als wir im neuen Augustiner ankamen, wurden wir in das Obergeschoss geführt, wo wir dann unsere 20 Plätze bekommen haben 15 Personen an einen Tisch und 5 an einen 2-3 Meter entfernten Tisch sowas geht gar nicht.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 14, "text": "Also besser keinen grossen Hunger haben.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 15, "text": "Also ein Hype um Nichts… Leider isst man sogar im RESTAURANT_NAME besser und dann auch noch günstiger…LOC steht auf jedem Tisch eine Aufforderung zur Bewertung gegen einen Limoncello….", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#PRICES, NEGATIVE)", "(RESTAURANT#MISCELLANEOUS, NEGATIVE)"]}
+{"id": 16, "text": "Also; dass in so einem Laden kein 5 Sterne Essen serviert wird ist schon klar, aber so ein überaus schlechtes Essen ist unter allem, was man einem Gast für das Geld anbieten sollte.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#PRICES, NEGATIVE)"]}
+{"id": 17, "text": "Am Ende waren wir ziemlich enttäuscht, da half auch das „Schnäpschen“ aufs Haus nicht viel.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 18, "text": "Ambiente, Preise, Service und Essen überzeugten uns.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#PRICES, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 19, "text": "Ansonsten von irgendeiner Beilage ( Gemüse oder was auch immer ) keine Spur.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 20, "text": "Aperol, leckere Gnocchi mit Gorgonzola und zum Schluss Tartufo Eis.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 21, "text": "Auch der Service am Tisch, super freundlich, umsichtig und super lieb.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 22, "text": "Auch die Garnelen waren noch saftig und nicht zu trocken.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 23, "text": "Auch die LOCes Gose (Bier) für Besucher uneingeschränkt zu empfehlen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 24, "text": "Auch die anderen Familienmitglieder waren sehr enttäuscht.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 25, "text": "Auch wenn das Essen OK war, werden wir diesen Laden mit Sicherheit nicht mehr betretetn.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 26, "text": "Auch wenn es heut zu Tage vielleicht Mode ist, hat das mit Respekt und Gastlichkeit wenig gemeinsam.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 27, "text": "Auf die Frage ob ich ein neues Besteck kriege - kein Selbstverständlich, sondern warum möchte sie das nicht mehr nehmen!", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 28, "text": "Aufgrund der Bewertung haben wir es hier probiert: Allerdings nichts besonderes, wirkt wie Großküchen- Essen.", "labels": ["(RESTAURANT#MISCELLANEOUS, NEUTRAL)"]}
+{"id": 29, "text": "Ausgezeichnete Küche trifft auf ausgezeichneten Service.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 30, "text": "Ausgezeichnete Pizza, wirklich Konkurrenzlos .", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 31, "text": "Authentische griechische Küche fern von Imbissbude!", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 32, "text": "B leckere knusprige Curry-Garnelen diese waren der Hammer!", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 33, "text": "Bedienung sehr nett, sehr kompetent, ambienete top, essen top, das Bier überragend, nur zu empfehlen … wir kommen wieder!", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 34, "text": "Bedienungen haben den Tisch nach dem Hauptgang ignoriert.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 35, "text": "Bedingt zu empfehlen.", "labels": ["(RESTAURANT#GENERAL, NEUTRAL)"]}
+{"id": 36, "text": "Bei bestem Service von Jaques und seinen Kollegen und hausgemachter Pasta konnten wir heute ein Stück LOC genießen.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 37, "text": "Beim Bringen unserer Getränke wurde von der Bedienung etwas von dem Getränk verschüttet, was nicht nochmal weggewischt wurde.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 38, "text": "Besonders ist aber der Service zu erwähnen.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 39, "text": "Bestellt hatten wir für über 25 € und trotzdem kamen zusätzlich zu den eh schon (im Vergleich) hohen Preisen nochmal 2,50 € Liefergebühr.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 40, "text": "Bier hat uns geschmeckt und essen ging zügig und war gut.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 41, "text": "Bier ist lecker und zu mehr sollte man da nicht einkehren.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 42, "text": "Brot nicht kross sondern kalt!", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 43, "text": "Bsp: Eine Pulpo Takel für 18 € mit ganz kleiner Gemüsebeilage ist ein sehr stolzer Preis.", "labels": ["(FOOD#PRICES, NEGATIVE)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 44, "text": "Chef bediente und immer wieder gerne nochmal, dann aber die Tapas.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 45, "text": "DANKE", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 46, "text": "Da es aber ein Restaurant sein will, kann ich nur dazu raten, einen ganz weiten Bogen um diesen Ort zu machen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 47, "text": "Da es doch viele Touristen nach LOC zieht, die diese schwäbische Spezialität probieren wollen, war das Ergebnis doch sehr ernüchternd und macht dem Ländle keine Ehre.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 48, "text": "Da noch ein Tisch frei war, bekamen wir ihn, wurden anschließend aber nur noch sehr unfreundlich bedient.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 49, "text": "Danke im Namen von 180 Personen die dieses Restaurant den Valentinstag mal richtig versaut hat!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 50, "text": "Dann Sauerbraten optisch gut aber auch Lauwarm, hatte aber keine Lust mehr auf Aufwärmen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 51, "text": "Dann kam das Essen, das war wirklich gut, wenn auch VIEL ZU TEUER!", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#PRICES, NEGATIVE)"]}
+{"id": 52, "text": "Das Ambiente ist auch nicht sehr ansprechend und ein bisschen abgeranzt.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 53, "text": "Das Ambiente ist gemütlich, das Personal stets freundlich und auch Kinder und Hunde sind hier willkommen.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 54, "text": "Das Ambiente ist wunderschön und sehr authentisch.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 55, "text": "Das Augustiner ist natürlich super.", "labels": ["(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 56, "text": "Das Champignonschnitzel völlig überladen mit Rosmarien und die Pilze sehr dunkel.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 57, "text": "Das Dessert war dann erst recht ein Witz, ich bekomme plötzlich doch Laktose in form eines griechischen Joghurts (warum?)", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 58, "text": "Das Essen geschmackvoll, der Wein ein lecker Tröpfchen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 59, "text": "Das Essen hat immer eine top Qualität.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 60, "text": "Das Essen ist sensationell lecker und die Auswahl riesig.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 61, "text": "Das Essen kam dann auch noch zeitversetzt, so dass wir die Wahl hatten das Essen kalt oder getrennt zu essen… Das Essen war ansonsten in Ordnung.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 62, "text": "Das Essen kam nach einiger Zeit, leider nicht mehr wirklich warm.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 63, "text": "Das Essen war Geschmacklich okay aber wenn alles andere nicht stimmt ein reinfall.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 64, "text": "Das Essen war dann für Münchner Brauhäuser eher sehr mittelmässig.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 65, "text": "Das Essen war grandios, vor allem die gegrillte chorizo als Vorspeise, das war die beste die ich bisher in LOC gegessen habe.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 66, "text": "Das Essen war sehr lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 67, "text": "Das Essen: zum geschmacklich anscheinend veränderten großen Töttchen wurde eine hauchdünne Brotscheibe seerviert, die sonst übliche Worcestersauce mußte extra angefordert werden.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 68, "text": "Das Fleisch vom Vitelli tonnato war zäh und die Sauce ungenießbar.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 69, "text": "Das Fleisch war hervorragend, super Qualität, große Auswahl und fachmännischer Beratung.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 70, "text": "Das Fleisch war sehr zart und schmackhaft.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 71, "text": "Das Hacksteak kam 4 Minuten nach Bestellung, alles war lauwarm und das Hacksteak hatte nie eine Pfanne gesehen.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 72, "text": "Das Interieur ist bemerkenswert schön und im Sommer sitzt man draußen im Leben von LOC.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 73, "text": "Das Kalbststeak sollte Medium sein, war aber total durch und trocken.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 74, "text": "Das Kölsch schmeckt, das Essen leider nicht.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 75, "text": "Das LOC Steak vom LOC Schwein ließ deutlich zu wünschen übrig.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 76, "text": "Das Personal war freundlich und zuvorkommend.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 77, "text": "Das Preis-Leistungsverhältnis ist zu krass.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 78, "text": "Das Preis/Leistungsverhältnis geht vollkommen klar!", "labels": ["(RESTAURANT#PRICES, POSITIVE)"]}
+{"id": 79, "text": "Das Restaurant hat eine außergewöhnlich schöne und zur richtigen Zeit auch ruhige Atmosphäre.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 80, "text": "Das Restaurant ist schon mal was fürs Auge .", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 81, "text": "Das Schnitzel war nichts besonderes.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 82, "text": "Das Spanferkel vom Grill mit Kloß und Sauerkraut schmeckte sehr gut.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 83, "text": "Das Tempo mit dem die Jungs den Döner bauen ist unterirdisch.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 84, "text": "Das Totschlagargument „Personalmangel“ ist bei einem Restaurant dieser Tradition und Preisklasse nur noch absurd.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 85, "text": "Das begann mit einem Kellner, der es nicht schaffte, eine exakte Bestellung des Mittagsmenüs aufzunehmen, das Essen unvollständig lieferte und dies angeblich nicht mehr ändern konnte, und das Fiasko setzte sich fort beim Essen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 86, "text": "Das englisch der Kellner scheint auch gut zu sein, brauchen sie auch.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 87, "text": "Das fanden wir unwürdig.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 88, "text": "Das kriegen andere besser hin !", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 89, "text": "Das können die Anderen Brauhäuser deutlich besser.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 90, "text": "Das schmackhafte-deftige Brauhausessen fand ich leider nicht vor.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 91, "text": "Das schmeckte aber abgestanden, ohne jegliche Frische und war auch viel zu warm.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 92, "text": "Das sind Verhältnisse wie zu DDR-Zeiten.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 93, "text": "Das „Wiener Schnitzel“ im Uerige (bzw. richtig: das Schnitzel „Wiener Art“, also vom Schwein und nicht vom Kalb) war geschmacklich in Ordnung und mit knapp unter 20,- € auch preislich nicht zu beanstanden.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(FOOD#PRICES, NEUTRAL)"]}
+{"id": 94, "text": "Dass der Service langsam und unfreundlich ist, kann ich nicht bestätigen.", "labels": ["(SERVICE#GENERAL, NEUTRAL)"]}
+{"id": 95, "text": "Dazu leckere Bratkartoffeln und passend, Senfgurkensalat.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 96, "text": "Den benötigten wir natürlich nicht und haben somit 4,00 € zu viel gezahlt.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 97, "text": "Der Besitzer ist super freundlich haben uns sehr gut aufgehoben gefühlt.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 98, "text": "Der Burger 🍔 schwamm im Öl.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 99, "text": "Der Chef kann mit Kritik ja mal überhaupt nicht umgehen wie man hier in den Antwort Kommentaren ließt.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 100, "text": "Der Espresso ist klein und stark.", "labels": ["(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 101, "text": "Der Köbes macht Sprüche und war auf Zack, die Speisen sehr lecker, zu empfehlen ist Roast Beef mit Bratkartoffeln.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 102, "text": "Der Laden brummt.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 103, "text": "Der Laden gaukelt einem vor, dass das Alt von Fass kommt.", "labels": ["(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 104, "text": "Der Laden ist ein wahrer Fuchsbau mit zahlreichen urigen Räumen, die Köbesse sind grimmig-gleichgültig, das Essen gut-bürgerlich.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 105, "text": "Der Leberkäse war fast kalt und die LOC nur lauwarm.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 106, "text": "Der Obatzda war absolutes Mittelmaß, die Portion sehr klein.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 107, "text": "Der Personalchef sollte sich dringend Gedanken machen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 108, "text": "Der Service ist KatastropheMan wartet locker 20 min bis man bestellen kann, nachdem man 20 Minuten auf einen Tisch gewartet hat Kellner unfreundlich", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 109, "text": "Der Service schnell und aufmerksam.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 110, "text": "Der Service unfreundlich und reagiert auf konstruktive Kritik sehr zynisch.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 111, "text": "Der Service war komplett überfordert- lange Wartezeiten, kein Nachschenken des Weins und falsche Getränke, die auch noch verrechnet wurden.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 112, "text": "Der Service war überwiegend lieblos und unprofessionell.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 113, "text": "Der Wirt ist ein griechischer Gastwirt aus dem Bilderbuch, freundlich und charmant um das Wohl seiner Gäste sorgend.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 114, "text": "Der bestellte Salat war matschig und sorgte für Verdauungsbeschwerden.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 115, "text": "Der offerierte Kaffee ist in dieser Preiskategorie des Restaurants zu wenig!", "labels": ["(DRINKS#QUALITY, NEGATIVE)", "(DRINKS#PRICES, NEGATIVE)"]}
+{"id": 116, "text": "Der türkische Wein ist unterirdisch schlecht, wird aber angepriesen als besonders hochwertig.", "labels": ["(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 117, "text": "Der war gut.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 118, "text": "Die Bedienung hat das natürlich sofort gesehen und uns dafür ein Glas Wein angeboten.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 119, "text": "Die Bedienung ist flott und umsichtig.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 120, "text": "Die Bedienung ist zwar nett, und die Preise auch recht moderat, aber das Geschmackserlebnis wollte sich einfach nicht so einstellen, wie ich es in Erinnerung hatte.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#PRICES, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 121, "text": "Die Bedienung lässt allerdings zu wünschen übrig.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 122, "text": "Die Bedienung war leider ein totaler Fail.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 123, "text": "Die Bedienung war sehr freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 124, "text": "Die Bedingung war schnell und freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 125, "text": "Die Bratwurst war unglaublich lecker und perfekt gewürzt.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 126, "text": "Die Drinks sind leider auch nicht dass was man erwartet…", "labels": ["(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 127, "text": "Die Hauptspeise \"Calamares a la plancha\" war allerdings sehr gut hinsichtlich Portion und Geschmack.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 128, "text": "Die Institution in LOC, wenn es um Fisch & Co.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 129, "text": "Die Karte enthält keine Überraschung, der Service erledigt desinteressiert seinen Job.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(DRINKS#QUALITY, NEUTRAL)"]}
+{"id": 130, "text": "Die Karte ist sehr vielseitig und sogar Vegane Personen finden hier einiges.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 131, "text": "Die Kellner waren alle super lustig, sympathisch und nett!", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 132, "text": "Die Käsespätzle sind ein Alptraum, die Knödel schrecklich sowie die Sauce und der Salat.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 133, "text": "Die Käsespätzle waren dicke Knöpfle und mit zu wenig Käse… nicht zu empfehlen.., Preis-Leistungsverhältnis stimmt nicht.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#PRICES, NEGATIVE)"]}
+{"id": 134, "text": "Die Küche leistet viel Arbeit mit Liebe zum Detail.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 135, "text": "Die LOC war recht geschmacklos.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 136, "text": "Die Linguine mit Gambas, die von diesem Restaurant auf dem LOC LOC kulinarisch angeboten wurde, schmeckte langweilig und fade, einfach geschmacklos.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 137, "text": "Die Milwurst ging so, aber zu wenig Macis und Zitrone.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 138, "text": "Die Pizza war allerdings super, knuspriger Boden, schön dünn und lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 139, "text": "Die Preise (für den Gesamteindruck) dann doch recht sportlich.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 140, "text": "Die Preise für Essen und die Getränke kann man als durchaus fair für die Münchner LOC ansehen.", "labels": ["(FOOD#PRICES, POSITIVE)", "(DRINKS#PRICES, POSITIVE)"]}
+{"id": 141, "text": "Die Qualität der Speisen war ordentlich mit ein paar kleinen Abstrichen.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 142, "text": "Die Qualität war gut, das Essen ansprechend angerichtet.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 143, "text": "Die Sosse war allerdings schmackhaft – dafür 7,50 Euro geht noch.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#PRICES, NEUTRAL)"]}
+{"id": 144, "text": "Die SpareRibs waren total trocken und hatten keinen Geschmack.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 145, "text": "Die Speisen sind gut.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 146, "text": "Die Stimmung war daher leider nicht so gut und das Erlebnis insgesamt getrübt.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 147, "text": "Die Türsteher darauf hingewiesen, dass man eine Reservierung hat wurde mit einem „zurück in die Reihe“ beantwortet.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 148, "text": "Die Vielfalt der Sushi-Rollen und die Qualität des Fisches waren außergewöhnlich.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 149, "text": "Die authentischen Aromen und liebevoll zubereiteten Gerichte lassen das Herz eines jeden Feinschmeckers höherschlagen 🍽️.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 150, "text": "Die hohen Preise korrespondieren leider nicht mit der Qualität des Essens.", "labels": ["(FOOD#PRICES, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 151, "text": "Die persönliche Reservierung schlug fehl - und „freundlich“ kennen wir in abgewandelter Form…also dann online.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 152, "text": "Die waren in der Mitte schmierig, also nicht ganz durch und auch geschmacklich unterer Durchschnitt.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 153, "text": "Die zahlreich umstehende Bedienung rührte dies nicht, kein Wort des Bedauerns, keinerlei Nachfrage oder gar ob ich vielleicht etwas anderes...?", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 154, "text": "Dies kann passieren bei erhöhter Kundschaft und ließe sich verzeihen, allerdings war die Bedienung, die unfreundlichste Person, die mich in meinem ganzen Leben bedient hat.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 155, "text": "Dieser Laden sieht uns nie wieder, auch wenn uns das Ambiente sehr gut gefallen hat.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 156, "text": "Dieses war entäuschend.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 157, "text": "Draußen sitzt man nur auf \"Bierzeltbänken\", was auf Dauer nicht sehr bequem ist.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 158, "text": "Ebenfalls ist der Service vergleichsweise mittelmäßig.", "labels": ["(SERVICE#GENERAL, NEUTRAL)"]}
+{"id": 159, "text": "Ecktisch oben- perfekt, wenn man ungestört essen will.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 160, "text": "Ein Trauerspiel.Das Ganze \" Ensemble\" dann für sagenhafte 76,.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 161, "text": "Ein anderer Tisch bekam alles vorher obwohl die später ankamen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 162, "text": "Ein besonderes Lob gilt der netten Servicekraft, die trotz vollem Restaurant sehr freundlich und schnell war.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 163, "text": "Ein herzliches Dankeschön an das gesamte Team vom LOC.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 164, "text": "Ein tolles Ambiente und eine wunderbare Speisekarte - man kann sich nur schwer entscheiden, weil sich alles so toll anhört.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 165, "text": "Ein tolles Restaurant mit hausgemachter Pasta.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 166, "text": "Ein unvergessliches Erlebnis, das Sie auf eine Geschmacksreise entführt.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 167, "text": "Ein unvergessliches Erlebnis, das ich wärmstens empfehlen kann!”", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 168, "text": "Ein wunderschönes Restaurant zum Verweilen und genießen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 169, "text": "Eine Geräuschkulisse wie auf dem Bahnhof.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 170, "text": "Eine kreative Speisekarte und ein Lokal, dass sich in Windeseile füllt.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 171, "text": "Einfach ein schöner Abend im LOC.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 172, "text": "Er hat immer geguckt dass wir was zu trinken hatten.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 173, "text": "Erst auf Nachfrage Besteck bekommen und dann kam das Brot auch erst nochmal 5 min später.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 174, "text": "Es dauerte aber fast 20 Minuten bis einer der Kellner meine Bestellung aufgenommen hat.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 175, "text": "Es gibt eine gute Auswahl an Tapas.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 176, "text": "Es heisst \"Hier muss man gewesen sein \", wir sagen: stimmt.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 177, "text": "Es ist extrem süffig.", "labels": ["(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 178, "text": "Es ist laut, das Personal überfordert, und vor allem, das Essen ist eine Katastrophe: Kalbschnitzel mit matschiger Panade, auch beim zweiten Versuch, nach Reklamation, matschig, die Kartoffeln waren mindestens drei Tage alt, die Haxe war mehr Knorpel als Fleisch, die Knödel als Beilage war Fertigproduktniveau.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 179, "text": "Es roch nach Urin und eine Grundreinigung hat wohl schon länger nicht mehr stattgefunden.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 180, "text": "Es stimmte alles: die Bedienung war sehr engagiert, kompetent und mega freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 181, "text": "Es war nett.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 182, "text": "Es war wie immer ein Erlebnis!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 183, "text": "Es waren die schlechtesten Tapas die ich bisher hatte.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 184, "text": "Es wirkte alles ein bisschen fade und lieblos.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 185, "text": "Es wurde ein Sharing/ Tisch Buffet angeboten, man konnte zwischen verschiedene Hauptspeisen wählen (diese konnte man auch immer wieder nachbestellen) diese wurden dann frisch zubereitet und waren sehr lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 186, "text": "Essen fand ich nicht gut.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 187, "text": "Essen lecker, Bratwurst eine der besseren.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 188, "text": "Essen nein.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 189, "text": "Essen richtig leckerBedienung Bruno war einfach charmant Lokalität richtig gemütlichKommen auf jeden Fall wieder", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 190, "text": "Essen sehr lecker und mittelpreisig.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#PRICES, NEUTRAL)"]}
+{"id": 191, "text": "Essen top, Bedienung freundlich und schnell.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 192, "text": "Essen und Atmosphäre waren gut.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 193, "text": "Essen war okay, die Bratkartoffeln sogar richtig gut.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 194, "text": "Fanden wir wirklich klasse.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 195, "text": "Fleisch war komplett schwarz und verbrennt (auch bei Nachbarn) Wir mussten sehr lange auf Getränke warten.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 196, "text": "Für das Personal 2 von 5 Sternen- das war eine extreme Enttäuschung !", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 197, "text": "Für den aufgerufenen Kurs von fast 200€ für 4 Personen war die LOC Bratwurst für 3€ (pro Person) heute auf dem LOC ein richtig leckerer Schnapper!", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#PRICES, POSITIVE)"]}
+{"id": 198, "text": "Für die aufgerufenen Preise in diesem Lokal haben wir deutlich mehr erwartet.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 199, "text": "Für fast 300 EUR Gesamtpreis hätte ich ich 1A Fleischqualität erwartet.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 200, "text": "Gemütlich, einheimisch und immer lecker.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 201, "text": "Gemütlich.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 202, "text": "Gerne wieder!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 203, "text": "Großes Kompliment!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 204, "text": "Grundsätzlich ok.", "labels": ["(RESTAURANT#GENERAL, NEUTRAL)"]}
+{"id": 205, "text": "Gut für einen ‚zünftigen‘ Wirtshausbesuch in extrem bayrischer Atmosphäre.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 206, "text": "Gute Beratung der aktuellen Karte.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 207, "text": "Gute Weisswürste, süsser Senf und resche Brezen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 208, "text": "Guter Hauswein und unser Essen war super.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 209, "text": "Hab meinen Teller zur Seite geschoben und bei meiner Tochter mitgegessen.. ihre Pizza war ok… Der Kellner lief einige Male vorbei und hat nicht einmal gefragt , ob alles ok sei.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 210, "text": "Haben Dank Susanna sogar etwas Italienisch lernen können.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 211, "text": "Haben uns einen Platz im Aussenbereich gesucht, der wahrlich nicht ansprechend ist.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 212, "text": "Hat uns gefallen und ist weiterzuempfehlen!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 213, "text": "Herausragend war wirklich die Freundlichkeit der Bedienung.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 214, "text": "Herzlichen Dank wollen wir sagen!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 215, "text": "Heute waren wir alle wirklich einmal enttäuscht, weil die Kuchenstücke allesamt irgendwie immer kleiner zu werden scheinen und dazu eher noch teurer werden.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#PRICES, NEGATIVE)"]}
+{"id": 216, "text": "Hier ist von Zahnstochern über Hygieneartikel bis hin zur Listerine alles vorhanden Wir kommen gerne wieder", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 217, "text": "Ich bin hier immer sehr zufrieden und kann einen Besuch empfehlen,", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 218, "text": "Ich bin sicher, wir kommen bald wieder.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 219, "text": "Ich habe dort die schlechtesten Pommes Frites ever gegessen - mehlige Kartoffelscheiben, blass wie eine gekalkte Wand, völlig salzlos.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 220, "text": "Ich hatte bei so einem Affront keine Lust mehr, mehr zu essen.....Ich bestelle daraufhin nur noch ein Tiramisu, welches völlig unspektakulär mit 4 (vier) Beeren präsentiert wurde.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 221, "text": "Ich hatte hier das beste Essen meines Lebens!", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 222, "text": "Ich hatte mir aufgrund der sehr guten Bewertungen sehr, sehr viel mehr erwartet.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 223, "text": "Ich kann es nur weiterempfehlen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 224, "text": "Ich könnte mir keinen besseren Ort wünschen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 225, "text": "Ich werde wiederkommen und dieses Restaurant meinen Freundin empfehlen (war mit Familie da).", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 226, "text": "Ich wohne nah an LOC, war aber noch nie vorher im LOC und werde wohl nicht mehr hingehen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 227, "text": "Im ganzen, gerne wieder!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 228, "text": "In LOC based, bin ich schlechten Service zwar gewohnt aber was die hier in diesem Laden abliefern ist hostil, menschenfeindlich und dazu bei exorbitanten Preisen und einer sehr mittelmäßigen Qualität des Essens.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(RESTAURANT#PRICES, NEGATIVE)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 229, "text": "Insgesamt ist das LOC nicht uneingeschränkt zu empfehlen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 230, "text": "Insgesamt können wir die guten bis sehr guten Bewertungen nicht nachvollziehen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 231, "text": "Insgesamt: schade", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 232, "text": "Keinerlei Servicegedanke und absolut unkooperativ und unflexibel.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 233, "text": "Kellner Salvatore sehr aufmerksam.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 234, "text": "Kennen wir so sonst nicht, schade!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 235, "text": "Kindermenü super Preis-Leistung, Getränke ziemlich teuer.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 236, "text": "Klasse Biere, klasse Location aber leider schlechter Service (weder besonders bemüht, noch aufmerksam, keine Ahnung der verwendeten Hopfen Sorten).", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 237, "text": "Kleine Sonderwünsche sind schwierig zu realisieren .", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 238, "text": "Kommen regelmäßig und sind noch nie enttäuscht worden.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 239, "text": "Kulturaustausch mit allen Nationen beim frischgezapften Bierchen und ev.", "labels": ["(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 240, "text": "LOC in gemütlicher Atmosphäre, typisch italienisches Ambiente, sehr sehr gutes Essen.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#MISCELLANEOUS, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 241, "text": "LOC war insgesamt bei uns 4 gut und lecker.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 242, "text": "Leckeres ,authentisches Essen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 243, "text": "Leider funktionieren Reservierungen nicht und es wurde auf Tellergerichte umgestellt wo es vorher Reis und z.B. Curry getrennt in Schälchen gab.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 244, "text": "Leider hat der Service nach der Pandemie abgebaut.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 245, "text": "Leider scheint man jetzt auf LOC und Massenabspeisung umgestiegen zu sein .", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 246, "text": "Leider war der Service unaufmerksam und langsam.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 247, "text": "Leider waren die Kellner auch nicht in der Lage uns einen Wein zu empfehlen und wir wurden auf eine kleine Karte verwiesen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 248, "text": "Leider waren wir am Ende etwas enttäuscht.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 249, "text": "Leider waren wir diesmal, das erste Mal, in einem HRCafe nicht zufrieden.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 250, "text": "Liebes RESTAURANT_NAME-Team,Vielen Dank für das tolle Essen und vor allem die extrem freundliche Unterstützung nachdem ich mein Portemonnaie vergessen habe.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 251, "text": "Lokal außergewöhnlich und interessant ausgestattet.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 252, "text": "Mal zum Essen dort und sind immer wieder begeistert von dem Ambiente und dem leckeren Essen.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 253, "text": "Man findet eine urige Atmosphäre, die an die Anfänge des letzten Jahrhunderts erinnert.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 254, "text": "Man kann hier gut Essen!", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 255, "text": "Man kann hier gut griechische Küche genießen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 256, "text": "Man könnte dieses Restaurant fast als LOC bezeichnen…uns wird das LOC ein zweites Mal definitiv nicht als Gäste begrüßen dürfen!!!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 257, "text": "Man sieht den Kellnern die viele und sicher auch stressige Arbeit an, dennoch sind sie alle freundlich, herzlich und absolut bemüht.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 258, "text": "Manchmal fragt man sich, wie einzelne Restaurants an die Position in TripAdvisor gelangen können, an der sie sich befinden.", "labels": ["(RESTAURANT#MISCELLANEOUS, NEGATIVE)"]}
+{"id": 259, "text": "Marco hat uns auch wieder erkannt und wie immer die besten Empfehlungen ausgesprochen.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 260, "text": "Milchreis nicht frisch.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 261, "text": "Muscheln noch zu und Tintenfischen zu fettig.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 262, "text": "Natürlich Bier vom Fass, lecker, von sehr freundlichen Mitarbeitern serviert.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 263, "text": "Neben den feinen Torten lieben wir dort auch traditionelle Gerichte, wie Ragout fin in der Königinpastete und jahreszeitliche Fleischgerichte.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 264, "text": "Nett, freundlich, bezüglich der Küche aber eindeutig überbewertet.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 265, "text": "Nette Bedienung, schönes Ambiente.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 266, "text": "Nie schwer, aber immer bereit flexibel auf Sonderwünsche zu reagieren.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 267, "text": "Nie wieder!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 268, "text": "Nun gut…Das Essen kam kalt an den Tisch und nicht gemeinsam.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 269, "text": "Nur die schöne Einrichtung und die nette Bedienung veranlassten uns, 2 Punkte zu vergeben.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 270, "text": "Ob mit Reservierung oder ohne, jeder wird irre nett empfangen.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 271, "text": "Obwohl ich die Tapas nicht gegessen habe musste ich sie bezahlen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 272, "text": "Perfekter Abend, sehr gut gegessen und getrunken.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 273, "text": "Preis/Leistung passt in unseren Augen nicht zusammen.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 274, "text": "Preislich ist das Alex absolut ok.", "labels": ["(RESTAURANT#PRICES, NEUTRAL)"]}
+{"id": 275, "text": "Preislich ist das ok gewesen.", "labels": ["(RESTAURANT#PRICES, NEUTRAL)"]}
+{"id": 276, "text": "Qualität der Stöcke eher schlecht, aber es geht ja um die Gaudi", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 277, "text": "Sauberkeit auch so lala, auf der LOC (Klo nicht Pissoir) waren überall Kot-Spritzer, an der Hinterwand, links sowie rechts, genauso wie an der Türe gegenüber dem Klo, waren auch schon etwas länger und angetrocknet.", "labels": ["(RESTAURANT#MISCELLANEOUS, NEGATIVE)", "(RESTAURANT#MISCELLANEOUS, NEGATIVE)", "(RESTAURANT#MISCELLANEOUS, NEUTRAL)"]}
+{"id": 278, "text": "Schade für ein Pastarestaurant.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 279, "text": "Schade um die Zeit und das Geld.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 280, "text": "Schade.. das war mal anders.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 281, "text": "Schlangen und Wartezeiten bei Reservierung, Reservierung verloren, Essen sehr geschmacksneutral (soll früher im kleinen Restaurant besonders gewesen sein), die Einheitlichkeit des Essens läßt Vermutungen zur Herstellung aufkommen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 282, "text": "Schlecht eingeschenkte Getränke, insbesondere das Bier.", "labels": ["(DRINKS#QUALITY, NEGATIVE)", "(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 283, "text": "Schnelle Küche mit typisch bayrischer Speisekarte, sehr voll ohne Reservierung schwer einen Tisch zu ergattern", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 284, "text": "Schöne Einrichtung dazu.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 285, "text": "Schönes Ambiente.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 286, "text": "Sehr authentisches portugiesisches Restaurant mit gut eingespieltem Service.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 287, "text": "Sehr freundlicher und entspannter Service.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 288, "text": "Sehr freundliches Personal, immer wieder recht leckeres Essen, wir sind öfter dort gepflegte Atmosphäre, Tisch zu reservieren sei sehr empfohlen", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 289, "text": "Sehr freundliches Personal.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 290, "text": "Sehr gutes Essen in sehr schönem Ambiente mit sehr gutem Service.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 291, "text": "Sehr leckerer Fisch mit festen Fleisch aus dem hohen Norden LOC.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 292, "text": "Sehr schade..", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 293, "text": "Sehr schöne Lokation.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 294, "text": "Sehr sehr gutes Essen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 295, "text": "Seit der Renovierung hin zum Benners wurde alles Atmosphärisches abgehängt.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 296, "text": "Seit vielen Jahren mal wieder hier gewesen und leider ziemlich enttäuscht worden.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 297, "text": "Selbst Kölsch wurde nicht nachgeschenkt.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 298, "text": "Sensationelle Genusserfahrung mit perfekten Gerichten und Weinbegleitung , Spitzenpersonal , besser geht es nicht 😃", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 299, "text": "Service aufmerksam Aber sie wissen, was sie alles gemacht haben.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 300, "text": "Service schnell und freundlich", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 301, "text": "Service und Essensqualität auf gleich schlechtem Niveau.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 302, "text": "Service, Preis, Preis-Leistungsverhältnis, Ambiente alles nicht zu übertreffen.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#PRICES, POSITIVE)", "(RESTAURANT#PRICES, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 303, "text": "So kann man mit den Kunden gar nicht umgehen!", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 304, "text": "So stelle ich mir einen perfekten Restaurantbesuch vor.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 305, "text": "So toll hier auf der Terrasse gesessen.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 306, "text": "So was bekommt man in LOC fast überall besser.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 307, "text": "Sollte der schnelle Euro die aktuelle Haupt-Motivation der CUBE-Macher sein, möchte ich zu Protokoll geben, dass ich meinen Betrag geleistet habe und in Zukunft wieder anständig dort Essen möchte!", "labels": ["(RESTAURANT#PRICES, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 308, "text": "Sophie war kompetent, charmant und eine exzellente Service-Kraft.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 309, "text": "Sorgfältig zubereitete Speisen, zuvorkommender Service aber vollkommen überteuert bei recht übersichtlichen Portionen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#PRICES, NEGATIVE)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 310, "text": "Spart lieber euer Geld und holt Streetfood .", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 311, "text": "Spitzen Kellner Yassin - zuvorkommend, höflich und nicht zu aufdringlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 312, "text": "Störend war, das ständig ein Taxi im Aussenbereich unmittelbar zum Tisch immer hielt und mit laufenden Motor die Gäste hat aussteigen lassen!", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 313, "text": "Toll, wie Sie Ihren Job lebt.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 314, "text": "Top Service, dazu lecker und gute anzusehen.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 315, "text": "Trotz Rush-Hour (es fand eine Vorstellung im Theater statt) und das Restaurant war sehr voll, war der Service 1a ohne lange Wartezeiten.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 316, "text": "Trotz des hohen Personaleinsatzes war der Service enttäuschend.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 317, "text": "Tut nur auf nett - keine schöne Erfahrung.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 318, "text": "Typische Touriabzocke !", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 319, "text": "Und alles in sehr entspannter uriger Atmosphäre mit tollem Service.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 320, "text": "Und der Braten hat hat nix geschmeckt, wahrscheinlich auch deswegen, weil er von der Fertigsoße umhült war.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 321, "text": "Und der Chef schleicht imAußenbereich vorbei und bekommt von dem allen nichts mit, oder es ist ihm egal.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 322, "text": "Und wer früher kommt, kriegt auch noch einen Platz ohne Reservierung :-)", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 323, "text": "Unsere Bedienung Andrea war super.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 324, "text": "Unsere Bedienung Herr LOC hatte uns wunderbar beraten über verschiedenste Schnitte und Zubereitung.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 325, "text": "Unsere Goldbrasse lag inkl. Schwanzflosse auf einem roten Tomatenrisotto, welches nicht aussah wie Risotto.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 326, "text": "Viel Auswahl an Fisch und Meeresfrüchten.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 327, "text": "Vielen Dank für den schönen Abend!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 328, "text": "Von dort wurden wir barsch vertrieben und uns wurde ein kleiner und ein noch kleinerer Tisch ohne Tischtücher zur Auswahl gestellt, der Herr Restaurantleiter entfernte sich.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 329, "text": "Vorbereitet waren wir auf die üblichen \"Touristenangebote\", bekommen haben wir sehr leckere \"kleine\" Gerichte die auch für eine Hauptmahlzeit geeignet sind.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 330, "text": "Vorspeise Carpaccio war sehr gut dünn geschnitten und fein abgeschmeckt.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 331, "text": "Vorspeise Zaziki, lecker, aber nichts besonderes.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 332, "text": "Waren 2x dort, da uns das Ambiente eigentlich gut gefällt.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 333, "text": "Was für ein Mittagstisch!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 334, "text": "Was uns nicht so gut gefallen hat, war die laute Musik und die Dunkelheit.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)", "(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 335, "text": "Wassergläser uralt und mit x Gebrauchsspuren, was die Gläser sehr unansehnlich macht.", "labels": ["(DRINKS#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 336, "text": "Wenn ihr also auf der Suche nach einem lustigen Abend mit köstlichem Essen und gutem Bier seid, dann solltet ihr unbedingt ins Restaurant LOC gehen und Magdalena um Bedienung bitten.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 337, "text": "Wer eine bunte, manchmal etwas laute aber immer fröhliche und weltoffene Wirtshauskultur schätzt, ist hier bestens aufgehoben.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 338, "text": "Wer mag kann auch frische Pasta für zu Hause kaufen und mitnehmen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 339, "text": "Wer weiß wie es in LOC schmeckt wird hier bitter enttäuscht!", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 340, "text": "Wer wirklich gut essen möchte, sucht besser woanders.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 341, "text": "Wir haben einen Tisch ergattern können und waren rundum zufrieden.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 342, "text": "Wir haben es zwar gegessen, aber bereits zu Beginn erneut reklamiert.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 343, "text": "Wir haben zweit Hauptgerichte zurück gehen lassen.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 344, "text": "Wir hatten einen Tisch reserviert, das Restaurant war sehr gut besucht , der Tisch stand mitten im Gang , sehr unruhig!", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 345, "text": "Wir hatten in Erinnerung an das frühere Käfer Restaurant einen Tisch im Außenbereich reserviert, das hat gut funktioniert.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 346, "text": "Wir hätten deutlich mehr erwartet und kommen nicht wieder", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 347, "text": "Wir kommen auf jeden Fall wieder!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 348, "text": "Wir kommen gerne wieder.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 349, "text": "Wir kommen immer wieder gerne her und sind noch nie enttäuscht worden.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 350, "text": "Wir kommen nicht wieder!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 351, "text": "Wir kommen sicher wieder.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 352, "text": "Wir kommen trotzdem gerne wieder!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 353, "text": "Wir kommen wieder.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 354, "text": "Wir sind dann mit einem eher schlechten Gefühl rausgegangen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 355, "text": "Wir waren 8 Personen zum Abendessen und Bruno hat ein super Service gemacht und Essen war sehr lecker.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 356, "text": "Wir waren das erste Mal in der RESTAURANT_NAME und waren sehr zufrieden.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 357, "text": "Wir waren mit unserem Essen sehr zufrieden, die Portion reichlich und der Preis angemessen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#PRICES, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 358, "text": "Wir wollten aufgrund der tollen Bewertungen das LOC ausprobieren und waren sehr enttäuscht.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 359, "text": "Wir wollten ein tolles Abendessen in dem Restaurant genießen, leider war schon die Stimmung nicht wirklich toll, der Chef hat die Bedienungen von den Gästen kritisiert, das ist nicht angebracht.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 360, "text": "Wir würden diesen Ort nicht empfehlen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 361, "text": "Während der Service manchmal etwas verbessert werden könnte, ist es dennoch eine gute Wahl für Steakliebhaber, die eine gemütliche und herzliche Umgebung suchen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 362, "text": "Würden jederzeit wiederkommen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 363, "text": "Würden wir weiterempfehlen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 364, "text": "Zu empfehlen", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 365, "text": "Zum Dessert die Quarkkeulchen (ähnlich wie Kaiserschmarren) auch sehr lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 366, "text": "Zumindest solange wir dort selbst zahlen müssen - nie wieder.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 367, "text": "Zunächst zahlt man viel Geld, um erst mal an einem Tisch Platz nehmen zu dürfen (10,00 € für 3 Erw.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 368, "text": "auch wenn die alt gläser kaum gefüllt sind (keine 70%), so ist es immer wieder ein erlebnishier einzukehren.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(DRINKS#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 369, "text": "auf dem Trockenen gesessen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 370, "text": "gerade in der waren Jahreszeit ist der Aussenbereich für das Abendessen super.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 371, "text": "sehr köstlich.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 372, "text": "Übervordertes Personal.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 373, "text": "Überwältigt von der grandiosen Aussicht auf den LOC und die historischen Gebäude drumherum nahmen wir Platz.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 374, "text": "„Wenn Sie einen Teller brauchen, können Sie einen haben“ wurde mir in leicht pampigen Ton mitgeteilt.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 375, "text": "Diese sind sehr schmackhaft und die Portionen sind großzügig.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 376, "text": "Unsere Bedienung, Susanna, war sehr freundlich und zuvorkommend.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 377, "text": "Wie kann die Küche einen steinharten doppelt garen Almhütten-Burger rausgeben?", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 378, "text": "Kleine Portionen und 1,5 std Wartezeit von Bestellung bis das Essen am Tisch war, trotz leerem Restaurant mit 10 Gästen", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 379, "text": "Leider etwas zäh und nicht warm genug, der Speckkloß lauwarm und das für 29€!", "labels": ["(FOOD#PRICES, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 380, "text": "Gutes Bier, fränkische Küche, aufmerksames Personal.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 381, "text": "Die Getränke waren auch sehr lecker und für den Ausblick und das Ambiente waren die Preise auch nicht extrem überzogen.", "labels": ["(RESTAURANT#PRICES, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 382, "text": "Man hieß uns herzlich willkommen, die Bedienung war nett, höflich, kompetent und schnell.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 383, "text": "Fragen zu Inhaltsstoffen wurden kompetent beantwortet.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 384, "text": "Sehr zu empfehlen!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 385, "text": "Die Atmosphäre ist wie auf einem Bahnhof: Chaos, viel zu viele Menschen (die meistens betrunken) und viel zu laut!", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 386, "text": "Ein tolles uriges Brauhaus mit viel Platz.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 387, "text": "Nie wieder.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 388, "text": "+ Lage direkt am LOC / LOC Bedienung flott und freundlich+ Röggelchen mit Mett und Zwiebeln extrem lecker, unbedingt probieren!", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 389, "text": "Wir können vom Besuch nur abraten.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 390, "text": "Die Aussicht spricht für sich.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 391, "text": "Auch das Preis-Leistungs-Verhältnis ist absolut stimmig.", "labels": ["(RESTAURANT#PRICES, POSITIVE)"]}
+{"id": 392, "text": "Das Bier ist jedenfalls hervorragend geschmacklich .", "labels": ["(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 393, "text": "Die Kellern waren alle sehr freundlich, aufmerksam und sehr schnell, genauso wie der Inhaber des Restaurants.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 394, "text": "Wir wurden bestens vom Barkeeper Hristo versorgt.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 395, "text": "Das rustikale Restaurant war brechend voll, wir fanden an einer langen \"Tafel\" Platz.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 396, "text": "Fazit: Zum Biertrinken in Ordnung.", "labels": ["(DRINKS#QUALITY, NEUTRAL)"]}
+{"id": 397, "text": "Unser Kellner Yassin ist sehr freundlich und führt einen stets gut gelaunt durch den Abend.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 398, "text": "Wir waren zum 1. Mai mit 6 Personen zur Biergarteneröffnung wieder einmal in der Dampfe und haben uns wie immer gut aufgehoben gefühlt!", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 399, "text": "Dort bekommt man alles war das Herz begehrt.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 400, "text": "Sehr heiss und sehr lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 401, "text": "Zum Kaffee trinken würde ich die Location deshalb nicht weiterempfehlen.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 402, "text": "Eine Nachfrage zwischendurch, ob noch etwas gewünscht wird, blieb aus.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 403, "text": "Der Kellner machte \"Scherze\" über meinen Getränkewunsch, ihm würde das nicht schmecken.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 404, "text": "Schade.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 405, "text": "Das geht gar nicht!!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 406, "text": "Das erste Mal seit langem, dass ich kein Trinkgeld gebe.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 407, "text": "Darüber hinaus sind noch zwei,drei andere Dinge passiert, die nur verdeutlichen, dass sich der Besitzer nicht mehr auf diesem Planeten befindet und Kundennähe nicht zum Wortschatz gehört.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 408, "text": "Danke an Marco und sein tolles Team für den genialen Abend!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 409, "text": "Wir kommen auf jeden Fall wieder", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 410, "text": "Die Gerichte sind immer noch recht groß, aber am Fleisch wird gespart.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 411, "text": "Das andere Gericht war angeblich ein Gulasch, sah eher aus wie ein Gemüseeinzopf mit ein paar trockenenStücken Fleisch.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 412, "text": "Nach einem 20 minütigen Spaziergang kam ich hungrig und erwartungsvoll an und wurde sehr herzlich in Empfang genommen.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 413, "text": "Besser als das Essen war nur unsere Bedingungsfee Magdalena.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 414, "text": "Als sehr schmackhaft empfinde ich den Kartoffelsalat, der nicht aus dem Eimer kommt und frisch zubereitet wird.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 415, "text": "Eine freundliche Küche grüsst mit phantasievollen Kostproben, die neugierig auf Mehr machen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 416, "text": "Sitzplätze im Innenbereich laut und ungemütlich.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 417, "text": "Auch die Knödel sind sehr lecker 😋 Habe ein Dessert gegessen, auch dass war schön angerichtet und 😋.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 418, "text": "Schade, denn am Restaurant gibt es absolut nichts auszusetzen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 419, "text": "Vorspeise trieft leider vor Fett egal ob Paprika Frischkäse oder Datteln.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 420, "text": "LOC weg ein \"Gruß aus der Küche\", eine kleine Salatprobe als Appetitanreger, hinten drauf ein kleiner, aber feiner Nachtisch aufs Haus.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 421, "text": "Essen , Anbiente und Service waren ganz hervorragend!", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 422, "text": "Beides war eiskalt und geschmacksneutral, wirklich langweilig.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 423, "text": "Leckere Ente mit Rotkohl (2.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 424, "text": "Unglaublich entspanntes Abendessen mit Freunden und auf jeden Fall das Gefühl von Kurzurlaub!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 425, "text": "Gehe ich nicht mehr hin.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 426, "text": "Sehr gute Fleischgerichte und gute Fischgerichte.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 427, "text": "Bei der Hauptspeise war der Kabeljau verkocht, das Steak und der Lammrücken waren gut, nichts auszusetzen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 428, "text": "Am meisten ärgert mich das es einfach verarschung an Gast ist.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 429, "text": "Sonst aber sehr lecker, wenn die Soße auch was scharf war, aber das ist ja Geschmackssache.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 430, "text": "Das Rindertartar war ok , die dazu angepriesene spezial Majo 2 Cent groß.. schade !", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 431, "text": "Laut, wuselig und unpersönlich.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 432, "text": "Schönes Ambiente, aber das reicht leider nicht.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 433, "text": "Erst mal wurde ein falsches Gericht geliefert.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 434, "text": "Wir kamen auf Empfhelung von Freunden und wurden nicht enttäuscht:Ein perfekter Abend mit leckerem Essen ( mmmmh- die Saisonkarte ist toll!", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 435, "text": "ich kenne das \"Füchschen\" jetzt schon mehr als 30 Jahre und bin immer gerne dort eingekehrt, sowohl zum Essen als auch einfach so, um ein paar Altbier zu trinken und Freunde zu treffen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 436, "text": "Wir waren sehr zufrieden.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 437, "text": "Zur Hauptspeise die Fischplatte (für 1 Person) geteilt, war lecker und reichlich.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 438, "text": "Das gesamte Personal war sehr aufmerksam, unsere Bestellung wurde schnell aufgenommen und das Essen, phantastische Tagliatelle mit Lachs ließen nicht lange auf sich warten.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 439, "text": "Das Ambiente ist zum Wohlfühlen und das Essen schmeckt super und macht sehr satt.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 440, "text": "Nun es war der teuerste Restaurantbesuch, an den ich mich erinnern kann.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 441, "text": "Das Personal war sehr freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 442, "text": "Baguette war hart und die Keller nur bemüht den Nachbartisch zu bedienen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 443, "text": "Leider war später im Restaurant Betreff Beschwerde, kein Ansprechpartner zu sprechen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 444, "text": "Das war aber kein naturtrüb, das war gammeltrüb.", "labels": ["(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 445, "text": "Und die Qualität war echt nicht gut.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 446, "text": "Die Vorspeisenvariation ein Spaß um sich durchzukosten.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 447, "text": "Nach kurzer Zeit war das Lüngerl zwar heiß, aber dünnflüssiger, d.h. mit Wasser verdünnt, aber nicht Reiniger sauer.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 448, "text": "Das man an so einem besonderen Tag keine Reservierung entgegennimmt ist schon beschämend.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 449, "text": "Recht laut.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 450, "text": "Wer \"neu\" in der Tapaswelt ist, wird super beraten - vom Essen bis zum passenden Wein.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 451, "text": "Sehr zu empfehlen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 452, "text": "Tolle Location auch mit Hund und Kindern.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 453, "text": "Preis- Leistung stand in keinem Verhältnis… wir kommen nicht LOC, LOC", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)", "(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 454, "text": "Wie dieses Restaurant auf Platz 1 landet, ist und völlig schleierhaft.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 455, "text": "Das Hausbier und die Marille vom Haus, herzlichen Dank dafür, rundeten das ganze ab.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 456, "text": "Den Versuch einer über Döner & Co angesiedelten Küche kann man als gescheitert ansehen.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 457, "text": "Gern komme ich wieder", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 458, "text": "Tolles Essen, sehr aufmerksamer Service, abwechslungsreiche Karte und angemessene Preise.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)", "(RESTAURANT#PRICES, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 459, "text": "Typische Gastfreundlichkeit aus LOC.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 460, "text": "Echt schade, da wir das letzte Mal so begeistert waren.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 461, "text": "Preislich mittlerweile etwas angezogen, gleichwohl ok.", "labels": ["(RESTAURANT#PRICES, NEUTRAL)", "(RESTAURANT#GENERAL, NEUTRAL)"]}
+{"id": 462, "text": "Sehr lecker gegessen ( Lamm und Bifteki) und sehr freundliche Mitarbeiter .", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 463, "text": "Ein Alptraum!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 464, "text": "Dann kommt die Karte, und du holst tief Luft, denn die Preise sind saftig.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 465, "text": "Das Essen ist total überteuert und, im wahrsten Sinne des Wortes, geschmacklos.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#PRICES, NEGATIVE)"]}
+{"id": 466, "text": "Ein Sushängeschild für Gastfreundlichkeit nie.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 467, "text": "Wir haben uns dann jeweils für Vorspeise und Hauptgang entschieden und da kann ich sagen, dass das Essen im Grunde sehr gut war.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 468, "text": "Das Essen war total in Ordnung aber auch nicht mehr.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 469, "text": "Pekingsuppe, Vorspeise, Ente, Nudeln, Reis , Gemüse, Shrimps, gebackene Banane einfach köstlich und vor allem kalte Cola light.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 470, "text": "Haben meinen Junggesellenabschied hier gefeiert und es war toll.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 471, "text": "Gute Nudeln, auch für Glutenallergiker.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 472, "text": "Lena hat uns gut, freundlich und kompetent beraten.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 473, "text": "Große Auswahl an Coktails und tolles Ambiente.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 474, "text": "90min gewartet dann kamen mehrere Gerichte nicht.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 475, "text": "Das sind wir anders gewohnt.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 476, "text": "Eigentlich schade, denn mit der türkischen Sultansküche gäbe es ja genug Anregungen für Türkisch über LOC.", "labels": ["(RESTAURANT#MISCELLANEOUS, NEGATIVE)"]}
+{"id": 477, "text": "Die Bedienung schon am Eingang sehr höflich, half mir mit der Tür im Regen.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 478, "text": "Abwechslungsreiche Getränke.", "labels": ["(DRINKS#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 479, "text": "Tischreservierung übers Internet zuverlässignegativ: Preis für das Hausbier recht hoch.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(DRINKS#PRICES, NEGATIVE)"]}
+{"id": 480, "text": "Sehr nette Gastgeberin.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 481, "text": "Knackpunkt hierbei: Eine Servicekraft, die die Bitte bis zum nächsten Tisch dann schon wieder vergessen hat.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 482, "text": "Hier gibts Burger und dazu überteuerten Wein, alles ist ziemlich lecker, doch die umliegenden FalaffelPlaces sind alle so viel besser.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(DRINKS#PRICES, NEGATIVE)"]}
+{"id": 483, "text": "Knödel mit Schwammerln Waren lecker, Käsespätzle waren zu matschig.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 484, "text": "Das Essen war sehr gut.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 485, "text": "Urige, rustikale Lokalität mit herzhafter deutscher Küche.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 486, "text": "Eine Stunde Wartezeit Samstagmittag um 14.30 Uhr.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 487, "text": "Da stimmt für Tapas Preis/Leistung überhaupt nicht.", "labels": ["(FOOD#PRICES, NEGATIVE)"]}
+{"id": 488, "text": "Wir waren vorher in der Varieté Show die absolut super war, sowie der Service oben.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 489, "text": "Sehr, sehr toll!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 490, "text": "Dann mußte ich mich noch beschimpfen lassen, daß wir ja nicht die einzigen Gäste waren.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 491, "text": "Zudem schmeckte der Leberknödel grauenhaft.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 492, "text": "Der Service unaufmerksam und nur daran interessiert möglichst viele Gäste in kurzer Zeit abzufertigen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 493, "text": "Kann nur gutes berichten.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 494, "text": "Das Ambiente lädt zum langen Verweilen und Zusammensitzen ein.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 495, "text": "Ich würde gern weniger als 0 Sterne bewerten ist leider nicht möglich!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 496, "text": "Obwohl die Mitarbeiter/innen sehr lässig gekleidet waren, nicht mal ein einheitliches Outfit trugen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 497, "text": "Der empfohlene Braten war zäh und statt der versprochenen Spätzle gab es \"nur\" Nudeln.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 498, "text": "Zum ersten Male in meinem Leben habe ich in einer Gaststätte ein serviertes Gericht zurückgehen lassen.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 499, "text": "Die Aromen waren perfekt ausbalanciert und die Präsentation der Gerichte war ästhetisch ansprechend.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 500, "text": "Danke für nichts!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 501, "text": "Das Essen ist schmackhaft und das Preis-Leistungsverhältnis passt wirklich.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(RESTAURANT#PRICES, POSITIVE)"]}
+{"id": 502, "text": "Leckeres Brot mit Dip.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 503, "text": "Dass man aber 5 Minuten warten muss, bis jemandem ein Kellner erklärt, dass man einen Engpass hat, ist dann schon ein starkes Stück.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 504, "text": "Beim Service hatte ich das Gefühl in einer sehr einfachen Kneipe zu sein.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 505, "text": "Eine sehr gute Wahl, sie einzustellen!", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 506, "text": "Beim zweiten war es genauso, nur haben wir zusätzlich dazu ewig darauf gewartet und es war bereits abgestanden.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 507, "text": "Ich fand das Essen sehr eklig es hat garnicht geschmeckt .", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 508, "text": "Uns hat es hier gut gefallen, wir werden auf jeden Fall wiederkommen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 509, "text": "So musste ich leider mit dem wenigen auskommen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 510, "text": "Schönes Lokal mit gutbürgerlicher Küche und regionalen Produkten.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 511, "text": "Carpaccio mit Trüffel geteilt und dann feine Mezzelune ( schwarz) gegessen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 512, "text": "Wir sind draußen in der Sonne gesessen und haben uns durch verschiedene Tapas gekostet (vor allem auch die vegetarischen Optionen haben uns gut gefallen).", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 513, "text": "Wir waren vor gut einem Jahr schon mal hier und waren damals echt begeistert.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 514, "text": "Dass man alte Bahnhöfe zu Kneipen umbaut, haben wir schon gesehen,aber dieser LOC LOC ist schon besonders gelungen.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 515, "text": "Sehr freundliche und professionelle Bedienung.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 516, "text": "Das Hirschgulasch spottete jeder Beschreibung.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 517, "text": "Das Essen hatte Schnellimbißcharakter und war sehr teuer: großes Töttchen € 14, Wiener Schnitzel € 25.", "labels": ["(FOOD#PRICES, NEGATIVE)", "(FOOD#PRICES, NEGATIVE)", "(RESTAURANT#PRICES, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 518, "text": "Pommes leicht gebräunt, innen roh und matschig.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 519, "text": "Leider hat die Dame ihren Beruf verfehlt.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 520, "text": "Die sollte man mal dringend renovieren / sauber machen.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 521, "text": "das Frühstück wird als Highlight auf Etageren serviert, die Auswahl der Produkte entspricht dem Standard, leider nicht außergewöhnlich oder detailverliebt angerichtet.", "labels": ["(FOOD#STYLE_OPTIONS, NEUTRAL)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 522, "text": "Wir hatten uns mehr erwartet.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 523, "text": "Sehr leckeres Essen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 524, "text": "Aber ehrlich: würden sie ein klein wenig schneller arbeiten, wäre die Schlange der Wartenden nicht so lang und vielleicht würden dann auch nicht so Viele auf den Imbisswagen aufmerksam.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 525, "text": "Vielen Dank wir komme definitiv wieder.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 526, "text": "Obwohl wir reserviert hatten, war unser Platz nicht frei, so dass wir bei winterlichen Temperaturen nach draußen komplimentiert wurden, wo mindestens 20 Menschen das gleiche Schicksal teilten.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 527, "text": "Habe mehr von Geschmack erwartet.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 528, "text": "Die Lokation ist echt einzigartig 2.", "labels": ["(LOCATION#GENERAL, POSITIVE)"]}
+{"id": 529, "text": "Das Essen ist eher mittelmäßig, preislich aber nicht ganz so überdreht wie anderswo.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(RESTAURANT#PRICES, NEUTRAL)"]}
+{"id": 530, "text": "Es gibt keinen geeigneteren Ort, um am Sonntagmorgen in LOC zum Frühschoppen zu gehen.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 531, "text": "Essen ist in Ordnung.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 532, "text": "Stellt und noch patzig die Dessertkarte hin.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 533, "text": "Schnelle und sehr nette Bedienung, sehr gutes Essen bei Lotters Bier.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 534, "text": "Burrata kann man nicht geschmackloser servieren!", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 535, "text": "Man bekommt gut bürgerliches Essen, eine gute Bedienung und kann auch am Brunnen draußen gut sitzen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 536, "text": "Wir wurden sehr freundlich empfangen und auch bedient.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 537, "text": "Romantisches Ambiente.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 538, "text": "Ich kann es jedem wegen des hervorragenden Service empfehlen", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 539, "text": "Also, Finger weg, Alternative suchen!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 540, "text": ":) Fisch besonders zu empfehlen und es liegt viel viel gutes am Teller:)", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 541, "text": "Vorallem der Kellner Herr Jonas mittag hat uns gut beraten und uns nett durch den Abend begleitet.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 542, "text": "Wir hoffen, wir finden für unseren nächsten Besuch in LOC einen entspannteren Ort um gut bayrisch Essen zu können.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 543, "text": "Wir werden nie mehr wieder kommen!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 544, "text": "Wir werden in jedem Fall wiederkommen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 545, "text": "Der Service war ausgezeichnet, das Personal sehr herzlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 546, "text": "Der Service ist super aufmerksam und kompetent sowie nett und hilfsbereit.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 547, "text": "Warum kann man dann einen Gast nicht gründlich darauf hinweisen und einen anderen Tisch anbieten?", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 548, "text": "Ich kann die Steak Manufaktur wirklich nur empfehlen, ich habe dort meinen Geburtstag gefeiert und es war wirklich ein tolles Erlebnis.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 549, "text": "Wir hatten zweimal Wienerschnitzel mit Fritten und Salat zum stolzen Preis von 18,30 € pro Person .", "labels": ["(FOOD#PRICES, NEGATIVE)", "(FOOD#PRICES, NEGATIVE)"]}
+{"id": 550, "text": "Alles frisch und für uns original bayerisch.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 551, "text": "Die Brauerei ist urig eingerichtet, immer gut besucht (sind auch Abends daran vorbei gelaufen) und das Bier ist süffig.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 552, "text": "Das Essen war sehr schnell zubereitet und das Personal sehr freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 553, "text": "15 Minuten kein/e LOC sich für uns zuständig fühlte.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 554, "text": "Super Service (der Ladenbesitzer ist köstlich und ein super Typ!)", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 555, "text": "Aber kulinarisch keine Offenbarung.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 556, "text": "Die Küche (Austern gefolgt von einem gegrillten Steinbutt) war hervorragend.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 557, "text": "Gemütliches Ambiente.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 558, "text": "Leider dieses Mal enttäuschend.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 559, "text": "Sie war superlieb, hat sich um alle gekümmert, besonders um unser Kind.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 560, "text": "Schon die Platzzuweisung war sehr \"von oben herab\", bis zur Bestellungsaufnahme dauerte es trotz etlicher herumwuselnder LOC sehr lange, und die Getränke wurden erst nach zweimaliger Erinnerung an verschiedene Servicekräfte geliefert, als wir mit dem Essen bereits zu mehr als der Hälfte fertig waren.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 561, "text": "Gemütlich, gutes Bier, gutes Essen, Personal im Stress aber freundlich.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 562, "text": "Die Bedienung war früher sehr viel herzlicher und mit Herzblut dabei.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 563, "text": "Ein freundlicher Service, lecker Essen, ein guter Schmäh von Araz (Kellner) mit dem wir am Schluss noch gemeinsam einen Nachtisch verdrückt haben und lachten.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 564, "text": "Das Gebäude und die Einrichtung sind wunderschön - und dann gibt es auch noch richtig gute Torten.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 565, "text": "Ist nach wie vor lecker, aber die Portionen sind so klein geworden, dass man nicht mehr satt wird.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 566, "text": "Toll um einen Absacker zu trinken", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 567, "text": "Haben dann eigenmächtig den Tisch gewechselt und wurden von einer anderen Kellnerin barsch zurecht gewiesen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 568, "text": "Jederzeit greifbar, immer bemüht aufmerksam zu sein und eine sehr natürliche Freundlichkeit.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(LOCATION#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 569, "text": "Nie wieder.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 570, "text": "Wir haben eine sehr leckere Dorade mit Bratkartoffeln und ein Omelette verzehrt, dazu einen makedonischen Weißwein.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 571, "text": "Hier kann man keinen netten Abend verbringen, zwar ist in der direkten Nähe die imposante LOC, aber das Etablissement „Augustiner“ ist eine Schande für das Denkmal.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)", "(RESTAURANT#GENERAL, NEGATIVE)", "(LOCATION#GENERAL, POSITIVE)"]}
+{"id": 572, "text": "Belügen kann ich mich selbst.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 573, "text": "Unsere Reklamation wurde zwar zur Kenntnis genommen, doch eine Entschuldigung oder ein Entgegenkommen blieb aus.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 574, "text": "Das \"LOC\" ist ideal gelegen am LOC und bietet eine Vielzahl an Sitzplätzen innen und außen.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)", "(LOCATION#GENERAL, POSITIVE)"]}
+{"id": 575, "text": "Weinauswahl in Ordnung , Bier empfehlenswert .", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 576, "text": "Obwohl das Restaurant nicht zu voll ist, dauert es mindestens 20 min bis überhaupt eine Bedienung kommt und diese schreibt nichts auf und vergisst die Hälfte bzw bringt falsche Sachen...", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(AMBIENCE#GENERAL, NEUTRAL)"]}
+{"id": 577, "text": "Und ich rate auch anderen Mitmenschen von einem Besuch ab wegen der so nicht hinzunehmenden Essensqualität.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 578, "text": "Die Tapas-Auswahl war riesig und köstlich.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 579, "text": "Kann man empfehlen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 580, "text": "Die Salate waren reichhaltig mit leckeren Dressings.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 581, "text": "Danke an den Kellner Arsim :-)", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 582, "text": "Vorspeise und Hauptgang waren lecker, Nachspeise enttäuschend.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 583, "text": "Sowohl die Vorspeisen als auch alle fünf Hauptgerichte waren nicht gut.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 584, "text": "Nehmt es von einem LOC, dieses Restaurant ist sein Geld nicht Wert, man wird ausgenommen, die Kellner nerven und es wird bei Speis und Trank nichts besonderes geboten, wie einem suggeriert wird.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)", "(FOOD#QUALITY, NEUTRAL)", "(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 585, "text": "Wir wurden noch in keinem Cafe oder Lokal so extrem unfreundlich behandelt!!", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 586, "text": "Die Qualität der Speisen allerdings hat uns enttäuscht und würden wir eher als mittelmäßig beschreiben.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 587, "text": "Für Gruppen-Events sicherlich ok, privat würde ich nicht hingehen.", "labels": ["(RESTAURANT#MISCELLANEOUS, NEUTRAL)", "(RESTAURANT#MISCELLANEOUS, NEGATIVE)"]}
+{"id": 588, "text": "Und wenn man spontan was trinken und/ oder essen möchte ideal.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 589, "text": "Das Ambiente passt zu 100 Prozent für einen RESTAURANT_NAME, sehr gemütlich, stilvoll.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 590, "text": "Die von der Bedienung hoch gelobten Zimtpflaumen... Große Enttäuschung!", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 591, "text": "Vier Wochen vor der Anreise hatten wir versucht, einen Tisch zu reservieren, was rundheraus zurückgewiesen wurde.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 592, "text": "Sehr freundliches Personal, aber das Essen ein absoluter Reinfall.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 593, "text": "Das Schnitzel okay.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 594, "text": "Perfekt bearbeitet und optisch sehr lecker, so kommen die Speisen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 595, "text": "Aus unserer Sicht hochgradige Desorganisation dieser Location!", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 596, "text": "Und Besteck einfach so auf einen Holztisch zu legen, geht gar nicht!", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 597, "text": "Einziger Kritikpunkt: recht kleine Portionen.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 598, "text": "Die Reaktion darauf leider Achselzucken.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 599, "text": "Wirklich, wirklich sehr schlecht.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 600, "text": "Das Essen und Bier war ok.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(DRINKS#QUALITY, NEUTRAL)"]}
+{"id": 601, "text": "Kritisch anmerken muss ich, warum kostet der Bembel genausoviel wie das LOC?", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 602, "text": "Die Küche zeichnet sich durch frische Zutaten und Mut zum Würzen aus.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 603, "text": "Leider kann man keine 0 Sterne vergeben", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 604, "text": "Keiner hatte den Anstand uns zu informieren, ebenfalls mit uns wartete eine Familie auf eine kleine Aufmerksamkeit seitens des Personals.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 605, "text": "Der Service ist kompetent, freundlich und persönlich - \"Waldi\" ist eine Klasse für sich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 606, "text": "Ich dachte, die tolle Lage dieser Lokalität ist optimal für ein Mittagessen.", "labels": ["(LOCATION#GENERAL, POSITIVE)"]}
+{"id": 607, "text": "Das Essen wurde dann lieblos aufgenommen und serviert.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 608, "text": "Essen kam nach 20 Miuten, Bedienung freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 609, "text": "Die Portionen sind großzügig und das Essen ist mega lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 610, "text": "Der Hauptgang, Rinderfilet satt, war Champions League.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 611, "text": "Das Essen war auf den Teller \" geklatscht\", keine Garnierung, nicht schön zurecht gemacht, einfach völlig lieblos.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 612, "text": "Einziger Kritikpunkt, das Fleisch war deutlich zu scharf gebraten und wies eine deutliche Schwärzung auf.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 613, "text": "Pasta eher mittelmässig, grosse gute Soßen-Auswahl.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 614, "text": "Leider nicht empfehlenswert!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 615, "text": "Sollten die Inhaber / Geschäftsführer an dieser Praxis festhalten, werden sie uns als Stammkunden verlieren.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 616, "text": "Die Biere waren leider nie bis zum Eichstirch voll.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 617, "text": "Der Besuch bei der RESTAURANT_NAME war eine 11/10.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 618, "text": "Der Kellner war dunkelhaarig und eine Brille, er war sehr gestresst und unfreundlich.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 619, "text": "Das LOC bestand fast nur aus Knorpel und der Reis war ebenfalls nicht zu genießen.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 620, "text": "Das war nicht Ordnung.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 621, "text": "Der Service bei Bruno war wunderschön.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 622, "text": "War früher oft gerne bei Ihnen, das hat sich erledigt.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 623, "text": "Nur die Sonnenschirme könnten mal wieder gereinigt werden.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 624, "text": "Das war eine absolute Unverschämtheit.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 625, "text": "Obwohl Monate vorher reserviert wollte man uns im 1.OG an einen \"LOC\" mitten im Durchgang setzen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 626, "text": "Von der Kartoffelsuppe waren wir enttäuscht.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 627, "text": "Und auch hier haben wir schon so toll gegessen", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 628, "text": "Wir waren im LOC - sehr nett.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 629, "text": "Wenn wir wieder in LOC sind, steht der LOC auf jeden Fall wieder auf unserer Liste.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 630, "text": ":(Der Service war leider auch nicht gut.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 631, "text": "Das Essen war sehr gut.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 632, "text": "Das Essen, der Service, das Ambiente waren sehr gut, und der Abend hätte schöner nicht sein können.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 633, "text": "Ungenießbar (LOC).", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 634, "text": "Bis zu diesem Zeitpunkt alles in Ordnung.", "labels": ["(RESTAURANT#GENERAL, NEUTRAL)"]}
+{"id": 635, "text": "Wir waren zusätzlich enttäuscht, dass trotz all dem kein wirkliches Entgegenkommen oder eine Art Wiedergutmachung gekommen ist.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 636, "text": "Allgemein in Ordnung - nur der Nachtisch (hausgemachte LOC rote Grütze mit Vanillesauce (winziger Kleks)) war im Preis 8,80 € einfach nicht akzeptabel.", "labels": ["(RESTAURANT#GENERAL, NEUTRAL)", "(FOOD#PRICES, NEGATIVE)"]}
+{"id": 637, "text": "Sehr zu empfehlen, insbesondere der Gruss aus der Küche.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 638, "text": "Eine überaus freundliche Bedienung runden diesen tollen Abend ab.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 639, "text": "Der Braumeister Matthias Richter versteht nicht nur nur sein Handwerk perfekt, er ist auch ein erstklassiger Redner mit viel Esprit.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 640, "text": "Sehr schade, denn auch die meisten Angestellten sind nett.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 641, "text": "Das Essen war gut, allerdings nichts besonderes.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 642, "text": "Doch dann kam der Gang zur Toilette und ab der ersten Treppenstufe, wie sage ich es am besten, stank es zum Himmel nach LOC.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 643, "text": "Die Räume waren sehr sauber.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 644, "text": "Absolut zu empfehlen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 645, "text": "Wir verstehen, dass die Gastronomie nach LOC Personalmangel hat, aber so geht es wirklich nicht.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 646, "text": "Viel Auswahl an tollen Premium Steaks.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 647, "text": "Daumen Hoch", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 648, "text": "Der LOC ist gewohnt gut, aber das Essen......", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 649, "text": "Dieser Laden macht den Ruhm LOC als Servicewüste allen Ehren.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 650, "text": "Der Rest aber sehr toll und die Atmosphäre auch gut", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 651, "text": "Erster Eindruck - das Lokal sprüht vor italienischen Flair.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 652, "text": "Das reißt dann auch die gute Qualität des Essens nicht mehr raus.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 653, "text": "Das Essen ist wirklich authentisch.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 654, "text": "Der Hamburger meines Mannes war ok.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 655, "text": "Wer einen Vorgeschmack von portogesischer Küche bekommen möchte ist hier genau richtig.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 656, "text": "Bei regnerischem Wetter mussten wir trotz Reservierung mit zwei Kindern 20 Minuten vor dem Gebäude anstehen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 657, "text": "5 halbe, zu harte Pflaumen eine Kugel Movenpick Walnusseis und etwas Sprühsahne für 12,50€.", "labels": ["(FOOD#PRICES, NEGATIVE)"]}
+{"id": 658, "text": "Auf dem Salat lagen :- einige wenige Scheiben Wurst ( mit Fettrand und sicherlich kein Kalbfleisch !", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 659, "text": "Trotz des warmen Wetter war es innen angenehm.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 660, "text": "Alles in alles OK aber auch das ist alles !", "labels": ["(RESTAURANT#GENERAL, NEUTRAL)"]}
+{"id": 661, "text": "Wir wurden von einem super freundlichen Kellner bedient.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 662, "text": "Haben uns gegrilltes Fleisch geholt und es war perfekt.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 663, "text": "Dies wurde auch umgehend als Kritik von der sehr netten Bedienung (Yassin) aufgenommen und in die Küche weitergeleitet.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 664, "text": "Das Bier zudem nur 4 statt 5dl gefüllt (auch bei den Nachbartischen).", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 665, "text": "Rundum ein sehr unproffesionelles, ja sogar unverschämtes Verhalten, dass wir in dieser Form noch nicht erlebt haben.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 666, "text": "Ich wollte endlich mal in dieses Kaffee und meinem Freund ein tolles traditionelles Kaffee zeigen.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 667, "text": "Garnelen in der Füllung waren nicht herauszuschmecken.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 668, "text": "Inspirierend!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 669, "text": "Das Essen ist super lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 670, "text": "Zu jedem Gang ein dazu passender Wein.", "labels": ["(DRINKS#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 671, "text": "Wirklich, alles hat hier für uns gepasst.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 672, "text": "Wer in die bayrische Küche und speziell in die Welt der Nürnberger Würste eintauchen möchte, ist hier goldrichtig.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(RESTAURANT#MISCELLANEOUS, POSITIVE)"]}
+{"id": 673, "text": "Fazit: Preis-/Leistungsverhältnis mehr als stimmig!", "labels": ["(RESTAURANT#PRICES, POSITIVE)"]}
+{"id": 674, "text": "Nichts tolles, nichts übetkandiedeltes, sondern Schnitzel und Bratkartoffeln.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 675, "text": "Ich war vor Jahren leidenschaftlicher Fan dieses Restaurants.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 676, "text": "Dort können sie sehr wohl, sich als gute Gastgeber behaupten.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 677, "text": "Filetsteak perfekt auf den Punkt gebraten.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 678, "text": "Für € 11.90 könnte wenigstens ein Salat inkludiert sein.", "labels": ["(FOOD#PRICES, NEGATIVE)"]}
+{"id": 679, "text": "Da hilft auch die gute Location nichts ... Leider", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)", "(LOCATION#GENERAL, POSITIVE)"]}
+{"id": 680, "text": "Geschmacklich war das Essen okay.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 681, "text": "Die Qualität des Essens war gut, wenn auch nicht aussergewöhnlich.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 682, "text": "Schade, denn vom Trinken her ist es hier perfekt.", "labels": ["(DRINKS#QUALITY, POSITIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 683, "text": "Keine Empfehlung!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 684, "text": "Von Seiten des Inhabers wurden wir weiter unflätigst beleidigt und des Hauses verwiesen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 685, "text": "Auch Sonderwünsche wurden schnell versucht umzusetzen.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 686, "text": "Die Hochzeitssuppe war o.k.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 687, "text": "Das Ambiente ist traumhaft, das Essen war Mega lecker, super Service durch Jason und sein Team.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 688, "text": "Das Essen : Licht und Schatten: die Antipasti misto mit billigen Mozarella - die Lammkoteletts waren dafür 1a, ebenso die Fusili mit salciche3.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 689, "text": "Das Essen ist sehr gut.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 690, "text": "Die Vorspeisen waren sehr gut, wir hatten einen Salat und eine Suppe.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 691, "text": "Der Service war mal wieder ganz ausgezeichnet.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 692, "text": "Auch, dass es spanisches Bier gab war ein absoluter Pluspunkt.", "labels": ["(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 693, "text": "Tolle Qualität der Speisen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 694, "text": "Kein Hinweis bei der Aufgabe der Bestellung, dass mit überlangen Wartezeiten zu rechnen ist, keine Entschuldigung und auch kein Versuch eines Ausgleichs durch ein freies Getränk oder einen Nachlass auf die Rechnung.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 695, "text": "Der Empfang war ziemlich teilnahmslos.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 696, "text": "Befremdet war ich über das Sesamöl in der Guacamole.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 697, "text": "Großartiges Ambiente, wunderbares Essen, nette Bedienung - klare Empfehlung unsererseits.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 698, "text": "Tischdecke teilweise befleckt dreckig von den vorherigen Gäste.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 699, "text": "Die Auswahl ist gut und die Karte abwechslungsreich.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 700, "text": "Erstens war es auf im hinteren Teil des Wirtshauses unerträglich laut und man musste euch anbrüllen.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 701, "text": "Diese Gaststätte hat eigentlich nicht mal einen Stern verdient.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 702, "text": "Für mich war das leider rausgeworfenes Geld.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 703, "text": "Sehr freundlicher Gastgeber mit einem tollen Team.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 704, "text": "Wir sind wirklich sehr traurig über die Entwicklung dieses bisher wirklich hervorragenden LOC.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 705, "text": "Dafür hat der schlechteste „Keller“ überhaupt gesorgt.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 706, "text": "Essen und Getränke waren klasse.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 707, "text": "Das Brauhaus ist vor allem für Fußball Fans zu empfehlen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 708, "text": "Abgesehen von den überhöhten Preisen ist z.b. der Kartoffelsalat zu den Bratwürsten viel weniger geworden und schmeckt auch nicht mehr.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 709, "text": "die sossedünn/wässrig/geschmack ist anders... schade..das essen meiner partnerin war auch einfach ok...das personal ist das beste am ganzen!", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, NEUTRAL)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 710, "text": "Persönliche würde ich deswegen eine solche Lokalität für ein gemütliches Abendessen, eventuell noch mehrgängig, ausschliessen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 711, "text": "Die Teller des Hauptgangs wurden uns dagegen so heiss in die Hand gedrückt, ohne Vorwarnung.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 712, "text": "Eher durchschnittliches Essen, Bewirtung hat versucht sich zu bemühen.", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 713, "text": "Wir werden auf jeden Fall wieder kommen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 714, "text": "Die Menü Karte ist nicht groß aber ich denke es hat etwas für jeder Mann.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 715, "text": "Die Tapas als Vorspeisen kamen innerhalb weniger Minuten, auf die Hauptgerichte mussten wir 45 Minuten warten (teilweise nur lauwarm).", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 716, "text": "Kommen gerne wieder.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 717, "text": "Von einer vernünftigen Sauce war dieses Gericht sehr weit entfernt.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 718, "text": "Die gewünschte Beilage war auf der Speisekarte, da wär etwas mehr Flexibilität wünschenswer.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 719, "text": "Das schlimmste ist aber die Lautstärke.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 720, "text": "Allerdings eine Spur zu teuer.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 721, "text": "Klassische Einrichtung, ohne dass es zu finster wirkt.", "labels": ["(AMBIENCE#GENERAL, NEUTRAL)"]}
+{"id": 722, "text": "Die Vorspeisen kamen auch so schnell, dass sie nicht frisch zubereitet sein konnten, sondern knapp über dem Gefrierpunkt gelagert wurden.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 723, "text": "Macht weiter so!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 724, "text": "Wenn man das mag, passt das alles, der Service ist in Ordnung, die Qualität im Erwartungshorizont, kulinarische Erweckungserlebnisse hat man hier nicht, aber das erwartet man auch nicht.", "labels": ["(RESTAURANT#GENERAL, NEUTRAL)", "(FOOD#QUALITY, NEUTRAL)", "(SERVICE#GENERAL, NEUTRAL)"]}
+{"id": 725, "text": "Der herzliche Service und das charmante Ambiente schaffen eine einladende Atmosphäre 😊.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 726, "text": "Die Kirchweihente war zwar nicht knusprig, aber ganz ok.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 727, "text": "Der Service war sehr aufmerksam und freundlich, ansonsten wirklich alles top... nur mein Kürbisrisotto war der totale Flop.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(FOOD#QUALITY, NEGATIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 728, "text": "LOC von einem sehr freundlichen Kellner an einen Tisch begleitet.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 729, "text": "Um es vorweg zu nehmen: Es ist laut hier, die Halbe Hofbräu Bier ist mit 5,40 Euro ziemlich teuer, und unser Kellner war überfordert.", "labels": ["(DRINKS#PRICES, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)", "(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 730, "text": "Da wir alle die gleichen trockenen Stücke hatten gehe ich davon aus das der Fisch gefroren war.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 731, "text": "Klassische LOC Essen aber das war’s dann auch.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 732, "text": "Schlechter Service.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 733, "text": "Der Laden ist sehr schön.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 734, "text": "Was uns wirklich geärgert hat, war der Kellner mit der besonderen Stimme (Name weiß ich nicht).", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 735, "text": "Der Service war unfreundlich (schlecht gelaunt) und unpersönlich.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 736, "text": "Interessante Speisen und einige vegetarische Optionen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 737, "text": "Wir haben das Menue fuer zwei Personen gewaehlt und sind von der Vielseitigkeit begeistert gewesen.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 738, "text": "Es saßen schon Leute dort, doch uns wurde in leider unfreundlichem Ton erklärt, dass wir nicht innen sitzen dürfen, wegen Service.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 739, "text": "Das Essen, war wirklich super lecker, jeder von uns vier hatte ein anderes Gericht und alle haben geschwärmt.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 740, "text": "Ein wirklich großes Café, dass durch Persönlichkeit glänzt.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 741, "text": "Sehr unhöflicher Kellner.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 742, "text": "Das war in dem Fall leider nix.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 743, "text": "Ich trinke sehr gerne Äppelwoi, aber so eine Miese Qualität habe ich noch nie serviert bekommen.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 744, "text": "Das Ambiente ist schön und wir haben uns wohl gefühlt.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 745, "text": "Die Reklamation wurde komplett übergangen.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 746, "text": "Vor allem sehr salzig.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 747, "text": "Das Essen war wunderbar (tolle Tapas!", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 748, "text": "Bei meiner Reklamation wurde ich zudem von ihm durch einen Stoß an der Schulter attackiert.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 749, "text": "LOC war gut,aber nicht unbedingt umwerfend.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 750, "text": "Uns wurde die RESTAURANT_NAME von Freunden empfohlen, super Laden, keine Frage kommen wieder!!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 751, "text": "Lange warten für einen Kebab den man auch in 5 min bekommt.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 752, "text": "Lediglich die Bedienung war sehr freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 753, "text": "Das Bier war fantastisch und nicht abgestanden.", "labels": ["(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 754, "text": "Die Bedienung war leider eher unfreundlich und hatte keine Lust entgegen aller anderen Servicekräfte.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 755, "text": "Als wir die Rechnung bestellen und mit Gutschein bezahlen wollten gab es ein Problem.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 756, "text": "Vorspeise so noch nie gesehen und völlig überrascht wie lecker die Kombi war.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 757, "text": "Das Zaziki war definitiv fertig aus dem Laden und hat im Öl geschwommen, der Salat war lieblos zubereitet und das Dressing bestand hauptsächlich aus Öl.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 758, "text": "Das Sauerkraut mit Speck war viel zu weich gekocht und überwürzt.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 759, "text": "Dass der Musiker am Keyboard seine Aufgabe für unseren Geschmack etwas fehlinterpretierte, ist wahrscheinlich unser individuelles Gefühl, aber Musik sollte in diesem Fall Tischgespräche untermalen, nicht übertönen und für Stimmung sorgen.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 760, "text": "Wir kennen dieses Restaurant seit Jahren und wurden dort immer sehr höflich und schnell bedient, die Portionen waren reichlich und schmackhaft.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 761, "text": "LOC wurde teilweise falsch serviert.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 762, "text": "Leider hatten wir das Gefühl das die Qualität massiv nachgelassen hat.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 763, "text": "Der Leberkäse mit Bratkartoffeln wirkte irgendwie verloren.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 764, "text": "Auerbachs Keller ein Muss.....NEIN!!!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 765, "text": "Wahnsinn Service und super Essen!!", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 766, "text": "Gern wieder.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 767, "text": "Ein Besuch im Frenzen ist absolut empfehlenswert!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 768, "text": "Nach wie vor super, mega aufmerksam und freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 769, "text": "Absolut nicht zu empfehlen!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 770, "text": "Leider nicht mehr zu empfehlen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 771, "text": "Aber der absolute Hammer ist, dass in diesem Brauhaus mit System unter der Eich eingeschenkt wird!!!", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 772, "text": "Pesto Pasta oder Norma- mit Tomatensauce und Auberginen- echt lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 773, "text": "Als der Kellner unsere Pfanne zu uns gebracht hat, haben alle Besucher ihre Köpfe zu uns gedreht, echt))) Das Gericht sah märchenhaft aus und hat genauso gut geschmeckt!", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 774, "text": "LOC… einfache und zünftige Speisen… Nette Bedienung… selbstgebraute Biere… Immer wieder gerne", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)", "(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 775, "text": "Das bestellte Essen war gut, die Beilagen hatten wenig mit typisch portugiesisch zu tun.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 776, "text": "Als Gruppe von 5 Personen wurde uns im vollen Haus noch ein Tisch organisiert, Essen war sehr gut.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, NEUTRAL)"]}
+{"id": 777, "text": "Ganz sicher nicht zum letzten Mal!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 778, "text": "Auch Schnitzel war gut.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 779, "text": "Preis und Leistung stimmen überhaupt nicht.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 780, "text": "Wir waren abends im Innenhof und genossen die schöne Atmosphäre und das leckere Essen bei einem freundlichen Service.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 781, "text": "Lieben Dank für den feinen Service.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 782, "text": "Die Bedienung war sehr aufmerksam und freundlich.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 783, "text": "\"6\" setzen, liebe Möchtegern-Bayern, besser den Laden bzw. die Küche gleich ganz schließen!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 784, "text": "Dem musste ich hinterherrennen, weil ich trotz leerem Laden und 3 Bedienungen nicht bemerkt wurde (man stand gemeinsam zum Plusch teils Kaffe trinkend hinter dem Tresen).", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 785, "text": "Anschließend konnte man sich gut unterhalten.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 786, "text": "Bier sehr empfehlenswert .... Essen... Geschmackssache", "labels": ["(FOOD#QUALITY, NEUTRAL)", "(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 787, "text": "Wir wurden erst bestimmt eine Stunde komplett ignoriert und nachdem wir zwei mal auf uns Aufmerksam gemacht haben, kam ein absolut grantiger Kellner.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 788, "text": "Das Essen war ausgezeichnet und der Service war aufmerksam, schnell und freundlich.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 789, "text": "Kann man nicht weiterempfehlen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 790, "text": "Preislich liegt alles im Rahmen.", "labels": ["(RESTAURANT#PRICES, NEUTRAL)"]}
+{"id": 791, "text": "Leider insgesamt für uns eher enttäuschend.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 792, "text": "Pfifige Vorspeisen, interessante Zwischengänge.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 793, "text": "Wir waren absolut enttäuscht.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 794, "text": "Der Salat passte in eine Espressotasse, dass Schnitzel war dünner wie eine Serviette und hätte locker auf einer Untertasse serviert werden können.", "labels": ["(FOOD#STYLE_OPTIONS, NEGATIVE)", "(FOOD#STYLE_OPTIONS, NEGATIVE)"]}
+{"id": 795, "text": "Auch geschmacklich gibt es hier bessere Alternativen.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 796, "text": "LOC war gut und die Portion angemessen.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 797, "text": "Bayrisches Schnitzel war ok, aber auch nicht mehr.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 798, "text": "Bei den ersten 2 Besuchen gab es 3 Punkte, die überzeugten: Die Location/Ambiente, der Service und das Essen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 799, "text": "Schade.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 800, "text": "Immer wieder schön für ein entspannten Abend.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 801, "text": "Wir bekamen verbrannte Kartoffelwürfel, ersäuft in der Bratensauce (statt aussen herum) ein Hühnchen das kälter als der temperierte Teller war und 1 Spargel darauf.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 802, "text": "Der Koch hat dabei allerdings sehr gute arbeit geleistet und ein leckeres Essen gekocht (pfefferschnitzel).", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 803, "text": "Wir kommen wieder!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 804, "text": "Ein ausgezeichneter Service von Susanna.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 805, "text": "Kommen gern wieder.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 806, "text": "Obwohl das Lokal ziemlich voll war klappte der Service reibungslos.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 807, "text": "Es erinnerte mehr an einen roten unerkenntlichen Matsch - aber nicht an Risotto.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 808, "text": "Die Wartezeiten für Getränke und leider auch für die Rechnung war sehr lang.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 809, "text": "Salatdressing komisch gewürzt.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 810, "text": "Leider war keine feste Bedienung an unserem Tisch, sondern mehrere.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 811, "text": "Sehr schlechter Service.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 812, "text": "Dass es am Verkaufstalent etwas mangelte, fand ich traurig; ein leeres Bierglas animierte niemanden nachzufragen, ob ich noch etwas trinken wollte.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 813, "text": "Das Essen passt in die Brauhausatmosphäre, ist deftig und konservativ - halt was wo man Bier und nicht Wein dazu trinken möchte - wobei die Preise weniger nach Brauhaus, sondern eher nach weissgedecktem Weinlokal anmuten.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 814, "text": "Die Decke wurde auch nicht zuende geschtrich war woll zu teuer.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 815, "text": "Obwohl es sehr gut besucht war und wir nicht reserviert hatten, wurden wir freundlich begrüßt und an einen gerade frei gewordenen Tisch begleitet.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 816, "text": "Grüße gehen raus an Magdalena - weiter so :) ;)", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 817, "text": "Das RESTAURANT_NAME bietet in einem Ambiente von Großmutters Eßzimmer, wenn Feiertag ist, ein zuverlässiges gutes Speise-Erlebnis.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 818, "text": "Wirkte alles etwas unkoordiniert, teilweise schmuddelig.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 819, "text": "Jedoch hat das Essen eine gleichbleibend gute Qualität und ist mit der Lage einfach empfehlenswert.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)", "(LOCATION#GENERAL, POSITIVE)"]}
+{"id": 820, "text": "Das Fleisch war undefinierbar und alles hatte eine hellbeige Farbe.", "labels": ["(FOOD#QUALITY, NEUTRAL)"]}
+{"id": 821, "text": "Letztendlich eine Frechheit, so etwas in einem solchen traditionsreichem Restaurant anzubieten.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 822, "text": "Einfach nur traurig, dass so was in einem bairischen Traditionshaus serviert wird", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 823, "text": "Fazit: Ein sensationeller Abend mit Familie und Freunden!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 824, "text": "Leider musste ich feststellen, ich war schon oft im Alex, das der Service und die Sauberkeit der Tische nicht mehr so ist.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 825, "text": "Essen war lecker, preislich okay.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(RESTAURANT#PRICES, NEUTRAL)"]}
+{"id": 826, "text": "Alles ist sehr zu empfehlen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 827, "text": "30 Minuten gewartet um überhaupt eine Bestellung aufzugeben.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 828, "text": "Leckeres Essen in altertümlichem Ambiente mit viel Charme, es macht Spaß dort seinen Abend zu verbringen.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 829, "text": "Geschmacklich war alles gut.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 830, "text": "Ich schließe mich den Lobgesängen meiner Vorredner gerne an.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 831, "text": "Der Wein war schon nur durchschnittlich, aber egal.", "labels": ["(DRINKS#QUALITY, NEUTRAL)"]}
+{"id": 832, "text": "Leider hat das Essen nicht unseren Erwartungen entsprochen.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 833, "text": "Wenn man dann einen Platz hat, bekommt man zwar, was auf der Karte steht, aber eine gemütliche Atmosphäre kommt nicht so recht auf.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 834, "text": "Die Bedienung war sehr freundlich, fürsorglich und schnell.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 835, "text": "Sehr unfreundliches Personal verweigerte mir einen Platz an einem LOC Platz.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 836, "text": "Sehr nette Bedienung und schickes Ambiente.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 837, "text": "Salat war mit einer großen Menge an Cocktailsauce, wie man sie aus den 80ern kennt, ertränkt.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 838, "text": "Aber für uns heißt es erstmal, Abstand von Momo auf unbestimmte Zeit.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 839, "text": "Wir kommen immer wieder gern.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 840, "text": "Leider geht es immer weiter bergab mit allem!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 841, "text": "Also in den LOC Keller kommen wir so schnell leider nicht mehr.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 842, "text": "Die Kellner haben einen fixen Bereich und den überwachen sie gut.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 843, "text": "Es war sehr lecker.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 844, "text": "Im Aussenbereich gibt es auch schöne Sitzgelegenheiten.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 845, "text": "Man versteht sein eigenes Wort nicht und eine Unterhaltung ist unmöglich.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 846, "text": "Wie schon die Überschrift sagt, hier sorgt die Lage für das bestimmte Etwas.", "labels": ["(LOCATION#GENERAL, POSITIVE)"]}
+{"id": 847, "text": "Die aioli war eine gelbe, salzige Senf Soße ohne einen Hauch von knoblauch und auf Nachfrage /Beschwerde hieß es : da könne man nix für, die kommt so vom Lieferanten und das mit den Baguettes gibt er an die Küche weiter, aber die sind immer so.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 848, "text": "Zusätzlich hat es im hinteren Teil des Restaurants auch sehr nach der Küche gerochen, unsere Bekleidung hat hinterher fürchterlich gestunken.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)"]}
+{"id": 849, "text": "Ein Cheeseburger fùr 16 €, kann man ja machen, aber dafür erwartet man mehr als LOC einen winzigen Klecks Salat und unter dem Patty ein sogenanntes Blockhousebrot, quasi ein ein Stück Bouguete auf der Schnittseite angeröstet.", "labels": ["(FOOD#PRICES, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 850, "text": "Unsere Bedienung, Lena, war sehr höflich und es war im Allgemeinen ein gutes Erlebnis.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 851, "text": "Das einzig gute war, dass das Essen relativ schnell kam.", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 852, "text": "Bei ersten Mal war es recht gut.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 853, "text": "Jeder Besuch ist wie ein kleiner Urlaub bei einer tollen Atmosphäre.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 854, "text": "Da versteht jemand sein Handwerk.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 855, "text": "Auf die hingenuschelte Nachfrage, wie das Essen war, sagte ich nur „Naja“, das hat den Kellner aber nicht interessiert.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 856, "text": "Wenn ich was nicht mag, dann ist es eine Küche die über gesalzene Preise ein Versprechen abgibt welches sie nicht annähernd einhalten kann.", "labels": ["(FOOD#PRICES, NEGATIVE)"]}
+{"id": 857, "text": "\"handgemacht\", lecker sind sie deswegen aber nicht).", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 858, "text": "Das erste Bier kam deutlich unter dem Strich gefüllt bei uns an.", "labels": ["(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 859, "text": "Wer richtig gute italienische Küche genießen möchte, sollte der LOC unbedingt einen Besuch abstatten.", "labels": ["(RESTAURANT#MISCELLANEOUS, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 860, "text": "Nur den Höhepunkt der Peinlichkeit: Wir sind eigentlich wegen der Cocktails hin.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 861, "text": "Auf die Heißgetränke haben wir fast 20 Minuten gewartet, trotz 2 maligen nachfragen, dann hieß es, als sie endlich kamen, die Maschine hätte einen Stromausfall gehabt ( für den Tisch gegenüber hat sie anscheinend funktioniert) bei Begleichung der Rechnung wurde dann noch extra nachgefragt, ob wir noch Trinkgeld für Service /Küche geben möchten...", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 862, "text": "Eines der sympathischsten Restaurants in LOC, wenn nicht in LOC und LOC", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 863, "text": "Zwischenzeitlich kam erneut besagte Kellnerin vorbei, und gab wieder Ihr sinnfreies Gefasel von -\" das ist eine Frage der Menschlichkeit \"-von sich.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 864, "text": "Essen und Trinken kamen sehr zügig.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 865, "text": "Eine gute Entscheidung, wie sich gezeigt hat.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 866, "text": "Das ist sehr empfehlenswert.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 867, "text": "Die Eierschecke ist sehr zu empfehlen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 868, "text": "Super netter und aufmerksamer Service und leckeres Essen!", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 869, "text": "Obwohl es sehr voll und jeder Platz besetzt war der Service sehr charmant und aufmerksam, ohne dass wir fragen mussten haben wir zusätzliche Eiswürfel bekommen, sobald ein Getränk leer war, wurde schon nachgefragt, ob man noch etwas benötigt.", "labels": ["(AMBIENCE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 870, "text": "Schade!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 871, "text": "Das Kotelett war auf den Punkt gebraten dazu die Bratkartoffeln mit den Zwiebeln waren wirklich sehr lecker", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#QUALITY, POSITIVE)"]}
+{"id": 872, "text": "Bei diesem Restaurant wird viel Wirbel um nichts gemacht.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 873, "text": "Dass Essen kam leider stark verzögert bei uns an Tisch an.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 874, "text": "Erstmals in LOC verdurstet.", "labels": ["(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 875, "text": "Der Besuch war es definitiv wert!", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 876, "text": "Nachdem man das Brot zur Vorspeise vergessen hatte und den Wein erst nach dem Essen brachte, wurde noch ein ungeniesbares Weizenbier, in dem wohl noch Spülwasser war, serviert.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(DRINKS#QUALITY, NEGATIVE)", "(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 877, "text": "Nie mehr wieder Wagner.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 878, "text": "Das Bier ist selbstgebraut - mein Geschmack ist es nicht.", "labels": ["(DRINKS#QUALITY, NEGATIVE)"]}
+{"id": 879, "text": "Das Bier hat geschmeckt.", "labels": ["(DRINKS#QUALITY, POSITIVE)"]}
+{"id": 880, "text": "Absolute Empfehlung", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 881, "text": "Hochwertige Speisen.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 882, "text": "Auch bei diesem Besuch hat alles gestimmt.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 883, "text": "Im gesamten bekommt es von mir immer noch 3 Sterne.", "labels": ["(RESTAURANT#GENERAL, NEUTRAL)"]}
+{"id": 884, "text": "Trotz des HH Marathons und dem dadurch wirklich gut gefüllten Restaurants, kam einem die Bedienung nie überfordert vor.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 885, "text": "Völlig überbewertetes Restaurant.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 886, "text": "Der Service ist viel zu bemüht, eher etwas \"Over the Top\" für das was geboten wird (der Kellner war sehr pathetisch und versuchte uns später noch die Vorspeisen, die man schon tausendmal woanders gegessen hat, zu erklären, als wäre es Haute Cousine).", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 887, "text": "Schade, das war keine Empfehlung um hier noch mal mit Familie oder Freunden hinzugehen.", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 888, "text": "holzig, den meisten Speisen fehlt der gewisse Pep.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 889, "text": "Ja, wir sind in der LOC, ja es wird alles teurer, aber 264€ für 5 Personen für nur grieschiche Gerichte, ist schon eine Ansage.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 890, "text": "Sehr typische Küche.", "labels": ["(FOOD#STYLE_OPTIONS, POSITIVE)"]}
+{"id": 891, "text": "Das ist eine sehr schöne Location, in der man sich wohlfühlen kann.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 892, "text": "Ist leider total überlaufen, darum Massenabfertigung, laut, unruhig, hektisch.", "labels": ["(SERVICE#GENERAL, NEGATIVE)", "(AMBIENCE#GENERAL, NEGATIVE)", "(RESTAURANT#MISCELLANEOUS, NEGATIVE)"]}
+{"id": 893, "text": "Insgesamt eine teure Enttäuschung.", "labels": ["(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 894, "text": "Ein solides griechisches Essen mit einem netten Wirt, aber mit Sicherheit nicht Platz 2 aller Restaurants in LOC.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 895, "text": "Gesessen haben wir im etwas kleineren, vorderen Bereich, dort war die Lautstärke mehr als erträglich.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 896, "text": "Service sehr freundlich und mit Getränken sehr flott.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 897, "text": "Allerdings sollte das Essen, trotz Energiesparens, nicht lauwarm sein!", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 898, "text": "Unsere Bedienung Eva war wundervoll, sehr schnell, sehr freundlich und zuvorkommend.", "labels": ["(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 899, "text": "Positiv: Service sehr freundlich, urige spanische Atmosphäre.", "labels": ["(AMBIENCE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 900, "text": "Die Preise sind zwar extrem angestiegen, dafür aber die Qualität des Essens unter aller Kanone.", "labels": ["(FOOD#QUALITY, NEGATIVE)", "(RESTAURANT#PRICES, NEGATIVE)"]}
+{"id": 901, "text": "Sonst würde ich niemandem empfehlen, hier zu essen.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 902, "text": "Das tolle Essen hätte es verdient besser gesehen zu werden.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 903, "text": "Tipp: einfach meiden!", "labels": ["(RESTAURANT#GENERAL, NEGATIVE)"]}
+{"id": 904, "text": "Nich immer ist das Essen sehr lecker.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 905, "text": "Der Empfang war sehr kühl.", "labels": ["(SERVICE#GENERAL, NEGATIVE)"]}
+{"id": 906, "text": "Die Füllung der Tortellini war schlecht bis gar nicht gewürzt.", "labels": ["(FOOD#QUALITY, NEGATIVE)"]}
+{"id": 907, "text": "Ein Glas Wasser 0.2 l für 4.10 Euro ist absolut nicht gerechtfertigt.", "labels": ["(DRINKS#PRICES, NEGATIVE)"]}
+{"id": 908, "text": "Alles wird frisch zubereitet und zum Teilen auf den großen Tisch gestellt.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 909, "text": "Super Meeresfrüchte.", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 910, "text": "Ein super leckeres Erlebnis für einen Abschluss des Tages!", "labels": ["(FOOD#QUALITY, POSITIVE)"]}
+{"id": 911, "text": "Wieder mal ein wunderschöner Abend bei euch.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 912, "text": "Einfach nur top.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 913, "text": "Bei Sonnenschein ist das LOC unschlagbar!", "labels": ["(AMBIENCE#GENERAL, POSITIVE)"]}
+{"id": 914, "text": "Immer wieder gerne.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 915, "text": "Hier verbringt man seinen Abend gerne.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 916, "text": "Ich fand die Bewirtung klasse, super freundlicher Patron!", "labels": ["(SERVICE#GENERAL, POSITIVE)", "(SERVICE#GENERAL, POSITIVE)"]}
+{"id": 917, "text": "Wir waren zum wiederholten Male im Augustiner und es hat uns bisher immer gut gefallen.", "labels": ["(RESTAURANT#GENERAL, POSITIVE)"]}
+{"id": 918, "text": "Alle bestellten Gerichte waren geschmacklich sehr gut und schön angerichtet.", "labels": ["(FOOD#QUALITY, POSITIVE)", "(FOOD#STYLE_OPTIONS, POSITIVE)"]}

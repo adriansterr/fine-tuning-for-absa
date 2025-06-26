@@ -1,0 +1,12 @@
+Standard:
+python baselines/bert_clf/baseline_acd_acsa.py \ --model_name google-bert/bert-large-uncased
+
+
+Deutsches Modell mit englischen Daten:
+python baselines/bert_clf/baseline_acd_acsa.py \ --model_name deepset/gbert-large
+
+
+
+Verschiedene Parameter:
+python baselines/bert_clf/baseline_acd_acsa.py --model_name deepset/gbert-large
+python baselines/bert_clf/baseline_acd_acsa.py --model_name deepset/gbert-large --learning_rate 2e-4
