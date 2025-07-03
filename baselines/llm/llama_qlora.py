@@ -10,14 +10,6 @@ import os, sys
 os.environ["TORCHINDUCTOR_DISABLE"] = "1"
 os.environ["TORCHDYNAMO_DISABLE"] = "1"
 
-utils = os.path.abspath('./src/utils/') # Relative path to utils scripts
-print(utils)
-sys.path.append(utils)
-
-from preprocessing import createPrompts, loadDataset
-from llama_eval import evaluate_model
-from config import Config
-
 import unsloth
 import torch
 import json
@@ -27,6 +19,13 @@ from trl import SFTTrainer
 from datasets import Dataset
 from transformers import TrainingArguments, set_seed
 
+utils = os.path.abspath('./src/utils/') # Relative path to utils scripts
+print(utils)
+sys.path.append(utils)
+
+from preprocessing import createPrompts, loadDataset
+from llama_eval import evaluate_model
+from config import Config
 
 def main():
     config = Config()
@@ -83,18 +82,16 @@ def main():
             lr_scheduler_type="linear",
             per_device_train_batch_size=8,
             gradient_accumulation_steps=2,
-            num_train_epochs=2, 
+            num_train_epochs=5, 
             fp16=not is_bfloat16_supported(),
             bf16=is_bfloat16_supported(),
-            logging_steps=10,
+            logging_steps=100,
             optim="adamw_8bit",
             weight_decay=0.01,
             warmup_steps=20,
             output_dir="output/model_built_prompts",
-            eval_strategy="steps",
-            eval_steps=50,
-            save_strategy="steps",
-            save_steps=50,
+            eval_strategy="no",
+            save_strategy="epoch",
             seed=0
         ),
     )

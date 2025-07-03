@@ -1,4 +1,5 @@
 import torch
+from tqdm import tqdm
 from evaluation import (
     extractAspects, convertLabels, createResults
 )
@@ -6,7 +7,7 @@ from evaluation import (
 def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path=None):
     predictions = []
     model.eval()
-    for prompt in prompts_test:
+    for prompt in tqdm(prompts_test, desc="Evaluating"): # progress bar
         inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
         with torch.no_grad():
             output_ids = model.generate(
