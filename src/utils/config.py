@@ -4,19 +4,19 @@ class Config(object):
     def __init__(self):
 
         # General Params
-        self.task = None
+        self.task = 'acsa'
         self.wandb = False
         self.run_tag = ''
-        self.output_dir = '../results/'
-        self.data_path = '../data/'
+        self.output_dir = 'results/llama_acsa/'
+        self.data_path = 'data/'
         
         # Dataset Params
-        self.dataset = None
-        self.split = None
-        self.low_resource_setting = None
-        self.original_split = False
+        self.dataset = 'rest-16'
+        self.split = 0
+        self.low_resource_setting = False
+        self.original_split = True
         self.lang = 'en'
-        self.prompt_style = None
+        self.prompt_style = 'basic'
         
         # Training Params
         self.flash_attention = False
@@ -48,7 +48,7 @@ class Config(object):
         self.few_shots = None
         
         # Model Params
-        self.model_name_or_path = "meta-llama/Meta-Llama-3-8B"
+        self.model_name_or_path = 'unsloth/Meta-Llama-3.1-8B-bnb-4bit'
         self.seed = 42
         self.bf16 = True
         self.max_seq_length = 2048
@@ -96,16 +96,16 @@ class Config(object):
         parser.add_argument('--epoch', type=int, help='Epoch checkpoint of the model.')
         parser.add_argument('--output_dir', type=str, help='Relative path to output directory.')
         # Dataset-related arguments
-        parser.add_argument('--dataset', type=str, required=True, help="Which dataset to use: ['hotel', 'rest' or 'germeval']")
+        parser.add_argument('--dataset', type=str, help="Which dataset to use: ['hotel', 'rest' or 'germeval']")
         parser.add_argument('--lang', type=str, help='Language of the prompt.')
         parser.add_argument('--shots', type=str, help='Amount and style of few shot examples for evaluation.')
-        parser.add_argument('--prompt_style', type=str, required=True, help='Style of the prompt for evaluation.')
-        parser.add_argument('--low_resource_setting', type=int, required=True, help='Amount of samples to train on (0 -> full dataset; 500 samples; 1000 samples).')
-        parser.add_argument('--split', type=int, required=True, help='Which split of the dataset to use.')
+        parser.add_argument('--prompt_style', type=str, help='Style of the prompt for evaluation.')
+        parser.add_argument('--low_resource_setting', type=int, help='Amount of samples to train on (0 -> full dataset; 500 samples; 1000 samples).')
+        parser.add_argument('--split', type=int, help='Which split of the dataset to use.')
         parser.add_argument('--wandb', action='store_true', help='If to report to wandb.')
         parser.add_argument('--max_seq_length', type=int, help="Maximum context length during training and inference.")
         parser.add_argument('--task', type=str, default="acsa", help="Which ABSA Task the model was trained on. ['acd', 'acsa', 'acsd']")
-        parser.add_argument('--original_split', action='store_true', help='If to use original dataset split.')
+        parser.add_argument('--original_split', help='If to use original dataset split.')
         
          # Training arguments
         parser.add_argument('--per_device_train_batch_size', type=int, help='The training batch size per GPU.')

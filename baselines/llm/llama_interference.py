@@ -1,7 +1,7 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextStreamer
 import torch
 
-model_name = "merged_model_2"
+model_name = "finetuned_models/merged_model_ohne_eos_2"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
@@ -26,7 +26,7 @@ prompt = tokenizer.apply_chat_template(
 inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
 
 text_streamer = TextStreamer(tokenizer)
-_ = model.generate(input_ids=inputs["input_ids"], streamer=text_streamer, max_new_tokens=128, use_cache=True)
+_ = model.generate(input_ids=inputs["input_ids"], streamer=text_streamer, max_new_tokens=256, use_cache=True)
 
 # Direkter Prompt, manuell eingegeben:
 
