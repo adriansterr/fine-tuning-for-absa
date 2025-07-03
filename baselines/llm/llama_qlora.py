@@ -15,12 +15,13 @@ print(utils)
 sys.path.append(utils)
 
 from preprocessing import createPrompts, loadDataset
+from llama_eval import evaluate_model
 from config import Config
+
 import unsloth
 import torch
 import json
 import pandas as pd
-from unsloth.chat_templates import get_chat_template
 from unsloth import FastLanguageModel, is_bfloat16_supported
 from trl import SFTTrainer
 from datasets import Dataset
@@ -61,10 +62,7 @@ def main():
     prompts_train = pd.DataFrame(prompts_train, columns = ['text'])
     prompts_test = pd.DataFrame(prompts_test, columns = ['text'])
     
-    print("Test prompt: ", prompts_test['text'][0], "\n")
-    print("Test prompt: ", prompts_test['text'][1], "\n")
-    print("Test prompt: ", prompts_test['text'][2], "\n")
-    print("Test prompt: ", prompts_test['text'][3], "\n")
+    print("Prompt: ", prompts_train['text'][0], "\n")
 
     ds_train = Dataset.from_pandas(prompts_train)
     ds_test = Dataset.from_pandas(prompts_test)
@@ -92,7 +90,7 @@ def main():
             optim="adamw_8bit",
             weight_decay=0.01,
             warmup_steps=20,
-            output_dir="output/llama_output_3_categories_low_lr",
+            output_dir="output/model_built_prompts",
             eval_strategy="steps",
             eval_steps=50,
             save_strategy="steps",
@@ -104,17 +102,23 @@ def main():
     print("Starting training...")
     trainer.train()
 
-    eval_results = trainer.evaluate()
-    with open("output/llama_output_3_categories_low_lr/eval_results.json", "w") as f:
-        json.dump(eval_results, f, indent=2)
-    print("Evaluation results saved")
-
     model.save_pretrained("lora_adapter", save_adapter=True, save_config=True)
 
     merged_model = model.merge_and_unload()
-    merged_model.save_pretrained("merged_model_3_low_lr_categories", max_shard_size="10GB")
-    tokenizer.save_pretrained("merged_model_3_low_lr_categories")
+    merged_model.save_pretrained("finetuned_models/model_built_prompts", max_shard_size="10GB")
+    tokenizer.save_pretrained("finetuned_models/model_built_prompts")
     print("Model saved")
+    
+    print("Starting evaluation on test set...")
+    evaluate_model(
+        model=merged_model,
+        tokenizer=tokenizer,
+        config=config,
+        prompts_test=prompts_test['text'].tolist(),
+        ground_truth_labels=ground_truth_labels,
+        label_space=label_space,
+        results_path="output/model_built_prompts/eval/"
+    )
 
 if __name__ == "__main__":
     main()

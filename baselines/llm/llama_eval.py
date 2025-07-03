@@ -1,60 +1,47 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
-import re
-import json
+from evaluation import (
+    extractAspects, convertLabels, createResults
+)
 
-model_name = "merged_model_2"
+def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path=None):
+    predictions = []
+    model.eval()
+    for prompt in prompts_test:
+        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        with torch.no_grad():
+            output_ids = model.generate(
+                input_ids=inputs["input_ids"],
+                max_new_tokens=128,
+                do_sample=False,
+                pad_token_id=tokenizer.eos_token_id
+            )
+        output_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+        predictions.append(output_text)
 
-def extract_pairs(text):
-    # Nur die Paare (ASPECT#CATEGORY, SENTIMENT)
-    pairs = re.findall(r'\(([^)]+)\)', text)
-    # lowercase, strip whitespace
-    return set(pair.lower().strip() for pair in pairs)
+    processed_preds = [extractAspects(p, config.task, config.prompt_style == 'cot', True) for p in predictions]
+    processed_gts = [extractAspects(gt, config.task, config.prompt_style == 'cot') for gt in ground_truth_labels]
 
-model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16, device_map="auto")
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+    gold_labels, _ = convertLabels(processed_gts, config.task, label_space)
+    pred_labels, false_predictions = convertLabels(processed_preds, config.task, label_space)
 
-with open("data/rest-16/llama_test_chatml.jsonl", "r", encoding="utf-8") as f:
-    test_data = [json.loads(line) for line in f]
+    results_asp, results_asp_pol, results_pairs, results_pol, results_phrases = createResults(pred_labels, gold_labels, label_space, config.task)
 
-total = 0
-correct = 0
-partial_scores = []
+    if results_path:
+        import pandas as pd, os, json
+        os.makedirs(results_path, exist_ok=True)
+        pd.DataFrame({'prompt': prompts_test, 'ground_truth': ground_truth_labels, 'prediction': predictions}).to_csv(os.path.join(results_path, "predictions.csv"), index=False)
+        with open(os.path.join(results_path, "metrics.json"), "w") as f:
+            json.dump({
+                "results_asp": results_asp,
+                "results_asp_pol": results_asp_pol,
+                "results_pairs": results_pairs,
+                "results_pol": results_pol,
+                "results_phrases": results_phrases
+            }, f, indent=2)
 
-for example in test_data:
-    messages = example["messages"]
-    target = messages[-1]["content"]  # Antwort
-    
-    prompt = tokenizer.apply_chat_template(
-        messages[:-1], # ohne die Antwort
-        tokenize=False,
-        add_generation_prompt=False
-    ) #+ tokenizer.eos_token
-
-    print(f"Prompt: {prompt}\n")
-
-    inputs = tokenizer(prompt, return_tensors="pt").to("cuda")  
-
-    output = model.generate(inputs["input_ids"], max_new_tokens=256)
-    # pred = tokenizer.decode(output[0][inputs.shape[1]:], skip_special_tokens=True).strip()
-    pred = tokenizer.decode(output[0])
-    print(f"Generated: {pred}")
-
-    target_pairs = extract_pairs(target)
-    pred_pairs = extract_pairs(pred)
-
-    # metrics
-    intersection = target_pairs & pred_pairs
-    precision = len(intersection) / len(pred_pairs) if pred_pairs else 0
-    recall = len(intersection) / len(target_pairs) if target_pairs else 0
-    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0
-
-    partial_scores.append(f1)
-    if target_pairs == pred_pairs:
-        correct += 1
-    total += 1
-
-    print(f"Target: {target_pairs}\nPred: {pred_pairs}\nF1: {f1:.2f}\n")
-
-print(f"Exact set match accuracy: {correct/total:.2%} ({correct}/{total})")
-print(f"Average F1 (pair extraction): {sum(partial_scores)/len(partial_scores):.2%}")
+    print("Evaluation complete.")
+    print("Aspect metrics:", results_asp)
+    print("Aspect+Polarity metrics:", results_asp_pol)
+    print("Pair metrics:", results_pairs)
+    print("Polarity metrics:", results_pol)
+    print("Phrase metrics:", results_phrases)
