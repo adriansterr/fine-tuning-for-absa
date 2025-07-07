@@ -1,13 +1,17 @@
 import torch
 from tqdm import tqdm
-from evaluation import (
-    extractAspects, convertLabels, createResults
-)
+import sys, os
+sys.path.append(os.path.abspath('./src/utils/'))
+
+from evaluation import extractAspects, convertLabels, createResults, subset_recall
+from preprocessing import loadDataset, createPrompts
+from config import Config
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path=None):
     predictions = []
     model.eval()
-    for prompt in tqdm(prompts_test, desc="Evaluating"): # progress bar
+    for prompt in tqdm(prompts_test, desc="Generating Outputs"): # progress bar
         inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
         with torch.no_grad():
             output_ids = model.generate(
@@ -18,12 +22,19 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
             )
         output_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
         predictions.append(output_text)
+        # print(f"Prompt: {prompt}\nPrediction: {output_text}\n")
 
-    processed_preds = [extractAspects(p, config.task, config.prompt_style == 'cot', True) for p in predictions]
-    processed_gts = [extractAspects(gt, config.task, config.prompt_style == 'cot') for gt in ground_truth_labels]
+    processed_predictions = [extractAspects(p, config.task, config.prompt_style) for p in predictions]
+    processed_ground_truths = [extractAspects(gt, config.task, config.prompt_style) for gt in ground_truth_labels]
 
-    gold_labels, _ = convertLabels(processed_gts, config.task, label_space)
-    pred_labels, false_predictions = convertLabels(processed_preds, config.task, label_space)
+    gold_labels, _ = convertLabels(processed_ground_truths, config.task, label_space)
+    pred_labels, false_predictions = convertLabels(processed_predictions, config.task, label_space)
+    
+    print("Gold Labels:", gold_labels, "\n")
+    print("Predicted Labels:", pred_labels, "\n")
+    
+    emr = subset_recall(pred_labels, gold_labels)
+    print(f"Subset recall (all gold labels found in prediction): {emr:.3f}")    
 
     results_asp, results_asp_pol, results_pairs, results_pol, results_phrases = createResults(pred_labels, gold_labels, label_space, config.task)
 
@@ -46,3 +57,23 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
     print("Pair metrics:", results_pairs)
     print("Polarity metrics:", results_pol)
     print("Phrase metrics:", results_phrases)
+    
+    
+if __name__ == "__main__":
+    model_name = "finetuned_models/model_built_prompts"
+
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        torch_dtype=torch.float16,
+        device_map="auto",
+    )
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+    config = Config()
+    df_train, df_test, label_space = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
+    
+    # Limit test set to 20 entries for testing purposes
+    df_test = df_test.iloc[:5]
+    
+    prompts_train, prompts_test, ground_truth_labels = createPrompts(df_train, df_test, config, eos_token=tokenizer.eos_token)
+    evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path="output/model_built_prompts/eval/")
