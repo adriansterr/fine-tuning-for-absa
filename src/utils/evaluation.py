@@ -10,6 +10,11 @@ REGEX_PHRASES_ACSD = r"\([^,]+,\s*[^,]+\s*,\s*\"([^\"]*)\"\s*\)"
 REGEX_LABELS_ACSA = r'\(([^,]+),\s*([^)]+)\)'
 REGEX_PAIRS_ACSA_ACSD = r'\([^()]+?\)'
 POLARITIES = ['POSITIVE', 'NEUTRAL', 'NEGATIVE']
+ASPECTS = [
+    "AMBIENCE#GENERAL", "DRINKS#PRICES", "DRINKS#QUALITY", "DRINKS#STYLE_OPTIONS",
+    "FOOD#PRICES", "FOOD#QUALITY", "FOOD#STYLE_OPTIONS", "LOCATION#GENERAL",
+    "SERVICE#GENERAL", "RESTAURANT#GENERAL", "RESTAURANT#PRICES", "RESTAURANT#MISCELLANEOUS"
+]
 
 class StoppingCriteriaSub(StoppingCriteria):
     def __init__(self, stops = [], encounters=1):
@@ -77,12 +82,32 @@ def extractAspects(output, task, cot = False, evaluation = False):
         
     elif task == 'acsa':
                 
-        pattern_pairs = re.compile(REGEX_PAIRS_ACSA_ACSD)
-        pattern_lab = re.compile(REGEX_LABELS_ACSA)
+        # pattern_pairs = re.compile(REGEX_PAIRS_ACSA_ACSD)
+        # pattern_lab = re.compile(REGEX_LABELS_ACSA)
         
-        pairs = pattern_pairs.findall(output)
+        # pairs = pattern_pairs.findall(output)
+        # return [[m[1], m[2]] for pair in pairs if (m := pattern_lab.search(pair))] or []
         
-        return [[m[1], m[2]] for pair in pairs if (m := pattern_lab.search(pair))] or []
+        aspect_pattern = "|".join(re.escape(a) for a in ASPECTS)
+        polarity_pattern = "|".join(POLARITIES)
+        # Matches: (ASPECT, SENTIMENT), - ASPECT: SENTIMENT, ASPECT: SENTIMENT
+        REGEX_HARDCODED = re.compile(
+            rf"(?:\(\s*({aspect_pattern})\s*,\s*({polarity_pattern})\s*\)|-?\s*({aspect_pattern})\s*:\s*({polarity_pattern}))",
+            re.IGNORECASE
+        )
+        
+        matches = REGEX_HARDCODED.findall(output)
+        # print("Matches found:", matches)
+        
+        results = []
+        for m in matches:
+            # m is a tuple of 4 elements, only two will be filled per match
+            aspect = m[0] or m[2]
+            polarity = m[1] or m[3]
+            if aspect and polarity:
+                results.append([aspect.upper(), polarity.upper()])
+        return results
+
 
     elif task in ['e2e', 'e2e-e', 'tasd']:
         if task in ['e2e', 'e2e-e']:
@@ -390,3 +415,14 @@ def createResults(pred_labels, gold_labels, label_space, task):
         result_pol['Macro-AVG'] = macro_pol
         
         return result_asp, result_asp_pol, result_pairs, result_pol, result_asp_pol_phrases
+
+def subset_recall(pred_labels, gold_labels):
+    """
+    Returns the proportion of samples where all gold labels are present in the prediction.
+    """
+    correct = 0
+    for pred, gold in zip(pred_labels, gold_labels):
+        # All gold labels must be in pred (ignore extra predictions)
+        if all(label in pred for label in gold):
+            correct += 1
+    return correct / len(gold_labels) if gold_labels else 0.0
