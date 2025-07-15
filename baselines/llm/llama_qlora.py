@@ -4,6 +4,7 @@
 
 # wenn UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 54278: character maps to <undefined>:
 # set PYTHONUTF8=1
+# set HF_HUB_ENABLE_HF_TRANSFER=0
 
 from ast import mod
 import os, sys
@@ -34,9 +35,9 @@ def main():
     print("loading model...")
     max_seq_length = 2048
     base_model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name="unsloth/Meta-Llama-3.1-8B-bnb-4bit",
+        model_name="unsloth/Meta-Llama-3.1-8B-Instruct",
         max_seq_length=max_seq_length,
-        load_in_4bit=True,
+        load_in_4bit=True, # 4-bit quantization, später in voller Präzision mergen
         dtype=None,
     )
 
@@ -89,7 +90,7 @@ def main():
             optim="adamw_8bit",
             weight_decay=0.01,
             warmup_steps=20,
-            output_dir="output/model_built_prompts",
+            output_dir=config.output_dir,
             eval_strategy="no",
             save_strategy="epoch",
             seed=0
@@ -99,23 +100,23 @@ def main():
     print("Starting training...")
     trainer.train()
 
-    model.save_pretrained("lora_adapter", save_adapter=True, save_config=True)
+    model.save_pretrained("lora_adapter/meta_llama_load_4_bit", save_adapter=True, save_config=True)
 
     merged_model = model.merge_and_unload()
-    merged_model.save_pretrained("finetuned_models/model_built_prompts", max_shard_size="10GB")
-    tokenizer.save_pretrained("finetuned_models/model_built_prompts")
+    merged_model.save_pretrained("finetuned_models/meta_llama_load_4_bit", max_shard_size="10GB")
+    tokenizer.save_pretrained("finetuned_models/meta_llama_load_4_bit")
     print("Model saved")
     
-    print("Starting evaluation on test set...")
-    evaluate_model(
-        model=merged_model,
-        tokenizer=tokenizer,
-        config=config,
-        prompts_test=prompts_test['text'].tolist(),
-        ground_truth_labels=ground_truth_labels,
-        label_space=label_space,
-        results_path="output/model_built_prompts/eval/"
-    )
+    # print("Starting evaluation on test set...")
+    # evaluate_model(
+    #     model=merged_model,
+    #     tokenizer=tokenizer,
+    #     config=config,
+    #     prompts_test=prompts_test['text'].tolist(),
+    #     ground_truth_labels=ground_truth_labels,
+    #     label_space=label_space,
+    #     results_path="output/model_built_prompts/eval/"
+    # )
 
 if __name__ == "__main__":
     main()

@@ -8,3 +8,4 @@
 /lora_adapter/*
 /.vscode/
 /finetuned_models/*
+/offload/*

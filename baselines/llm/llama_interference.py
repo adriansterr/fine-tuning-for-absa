@@ -7,12 +7,12 @@ sys.path.append(utils)
 from preprocessing import createPromptText
 
 
-model_name = "finetuned_models/merged_model_ohne_eos_2"
+model_name = "finetuned_models/meta_llama_load_4_bit"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
-    torch_dtype=torch.float16,
-    device_map="auto",
+    torch_dtype=torch.bfloat16,
+    device_map="auto"
 )
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -24,7 +24,7 @@ prompt, _ = createPromptText(
     lang='en',
     prompt_templates=prompt_templates,
     prompt_style='basic',
-    example_text="The food was great but the service was slow.", 
+    example_text="The food was great, but the service was slow.", 
     example_labels=["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, NEGATIVE)"],
     dataset_name='rest-16',
     absa_task='acsa',
@@ -32,7 +32,10 @@ prompt, _ = createPromptText(
 )
 prompt = prompt + tokenizer.eos_token
 
+print("Prompt: ", prompt, "\n")
+
 inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
 
 text_streamer = TextStreamer(tokenizer)
-_ = model.generate(input_ids=inputs["input_ids"], streamer=text_streamer, max_new_tokens=256, use_cache=True)
+print("Generating text...\n")
+_ = model.generate(input_ids=inputs["input_ids"], streamer=text_streamer, max_new_tokens=256, use_cache=False)

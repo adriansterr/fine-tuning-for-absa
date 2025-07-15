@@ -7,7 +7,7 @@ class Config(object):
         self.task = 'acsa'
         self.wandb = False
         self.run_tag = ''
-        self.output_dir = 'results/llama_acsa/'
+        self.output_dir = 'output/llama/non_quantized_prompts'
         self.data_path = 'data/'
         
         # Dataset Params
@@ -48,7 +48,7 @@ class Config(object):
         self.few_shots = None
         
         # Model Params
-        self.model_name_or_path = 'unsloth/Meta-Llama-3.1-8B-bnb-4bit'
+        self.model_name_or_path = 'unsloth/Meta-Llama-3.1-8B-Instruct'
         self.seed = 42
         self.bf16 = True
         self.max_seq_length = 2048
