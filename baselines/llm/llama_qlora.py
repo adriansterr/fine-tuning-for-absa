@@ -35,10 +35,10 @@ def main():
     print("loading model...")
     max_seq_length = 2048
     base_model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name="unsloth/Meta-Llama-3.1-8B-Instruct",
-        max_seq_length=max_seq_length,
-        load_in_4bit=True, # 4-bit quantization, später in voller Präzision mergen
-        dtype=None,
+      model_name="unsloth/Meta-Llama-3.1-8B-Instruct",
+      max_seq_length=max_seq_length,
+      dtype=torch.float16,  # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
+      device_map="auto" 
     )
 
     model = FastLanguageModel.get_peft_model(
@@ -52,7 +52,7 @@ def main():
         use_rslora=True,
         use_gradient_checkpointing="unsloth"
     )
-    
+
     df_train, df_test, label_space = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
     prompts_train, prompts_test, ground_truth_labels = createPrompts(df_train, df_test, config, eos_token = tokenizer.eos_token)
 
@@ -61,12 +61,10 @@ def main():
 
     prompts_train = pd.DataFrame(prompts_train, columns = ['text'])
     prompts_test = pd.DataFrame(prompts_test, columns = ['text'])
-    
     print("Prompt: ", prompts_train['text'][0], "\n")
 
     ds_train = Dataset.from_pandas(prompts_train)
     ds_test = Dataset.from_pandas(prompts_test)
-    
     print(ds_train, "\n")
 
     trainer = SFTTrainer(
@@ -90,7 +88,7 @@ def main():
             optim="adamw_8bit",
             weight_decay=0.01,
             warmup_steps=20,
-            output_dir=config.output_dir,
+            output_dir="content/drive/MyDrive/colab_data/output/llama/meta_llama_full",
             eval_strategy="no",
             save_strategy="epoch",
             seed=0
@@ -100,23 +98,15 @@ def main():
     print("Starting training...")
     trainer.train()
 
-    model.save_pretrained("lora_adapter/meta_llama_load_4_bit", save_adapter=True, save_config=True)
+    print("Start Saving Adapter...")
+    model.save_pretrained("content/drive/MyDrive/colab_data/lora_adapter/meta_llama_full", save_adapter=True, save_config=True)
 
+    print("Start Saving Model...")
     merged_model = model.merge_and_unload()
-    merged_model.save_pretrained("finetuned_models/meta_llama_load_4_bit", max_shard_size="10GB")
-    tokenizer.save_pretrained("finetuned_models/meta_llama_load_4_bit")
-    print("Model saved")
-    
-    # print("Starting evaluation on test set...")
-    # evaluate_model(
-    #     model=merged_model,
-    #     tokenizer=tokenizer,
-    #     config=config,
-    #     prompts_test=prompts_test['text'].tolist(),
-    #     ground_truth_labels=ground_truth_labels,
-    #     label_space=label_space,
-    #     results_path="output/model_built_prompts/eval/"
-    # )
+    merged_model.save_pretrained("content/drive/MyDrive/colab_data/finetuned_models/meta_llama_full", max_shard_size="4GB")
+    tokenizer.save_pretrained("content/drive/MyDrive/colab_data/finetuned_models/meta_llama_full")    
+    print("Finished")
+
 
 if __name__ == "__main__":
     main()
