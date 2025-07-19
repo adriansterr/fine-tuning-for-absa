@@ -1,3 +1,4 @@
+from unsloth import FastLanguageModel
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextStreamer
 import os, sys, torch, json
 
@@ -7,14 +8,23 @@ sys.path.append(utils)
 from preprocessing import createPromptText
 
 
-model_name = "finetuned_models/meta_llama_load_4_bit"
+model_name = "finetuned_models/meta_llama_full_colab_remerge_2"
 
-model = AutoModelForCausalLM.from_pretrained(
+# AutoModelForCausalLM ist von huggingface/transformers
+# model = AutoModelForCausalLM.from_pretrained(
+#     model_name,
+#     torch_dtype=torch.float16,
+#     device_map="auto"
+# )
+# tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+# FastLanguageModel ist von unsloth
+model, tokenizer = FastLanguageModel.from_pretrained(
     model_name,
-    torch_dtype=torch.bfloat16,
-    device_map="auto"
+    max_seq_length=2048,
+    device_map="cuda" 
 )
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+FastLanguageModel.for_inference(model)
 
 # base_dir = os.path.dirname(os.path.abspath(__file__))
 with open("src/utils/prompts_rest16.json", encoding='utf-8') as json_prompts:
@@ -38,4 +48,4 @@ inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
 
 text_streamer = TextStreamer(tokenizer)
 print("Generating text...\n")
-_ = model.generate(input_ids=inputs["input_ids"], streamer=text_streamer, max_new_tokens=256, use_cache=False)
+_ = model.generate(input_ids=inputs["input_ids"], streamer=text_streamer, max_new_tokens=256)
