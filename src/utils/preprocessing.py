@@ -37,29 +37,29 @@ def loadDataset(data_path, dataset_name, low_resource_setting, task, split = 0, 
         return None, None, None
 
     DATASET_PATH = data_path if task != 'e2e-e' else data_path + '/data_e2e_e'
-    
     label_space = LABEL_SPACES[DATASETS.index(dataset_name)]
-
     fn_suffix = '_full' if low_resource_setting == 0 else f'_{low_resource_setting}'
-    
-    if original_split:
-        path_train = f'{DATASET_PATH}/{dataset_name}/train.tsv'
-        path_eval = f'{DATASET_PATH}/{dataset_name}/test.tsv'
 
+    if dataset_name == 'GERestaurant':
+        path_train = f'{DATASET_PATH}/{dataset_name}/12_categories/train_preprocessed.json'
+        path_eval = f'{DATASET_PATH}/{dataset_name}/12_categories/test_preprocessed.json'
+        df_train = pd.read_json(path_train).set_index('id')
+        df_eval = pd.read_json(path_eval).set_index('id')
     else:
-        if split != 0: # CV Test Phase
-            path_train = f'{DATASET_PATH}/{dataset_name}/split_{split}/train{fn_suffix}.tsv'
-            path_eval = f'{DATASET_PATH}/{dataset_name}/split_{split}/test_full.tsv'
-            
-        else: # HT Phase
-            path_train = f'{DATASET_PATH}/{dataset_name}/train{fn_suffix}.tsv'
-            path_eval = f'{DATASET_PATH}/{dataset_name}/val{fn_suffix}.tsv'
+        if original_split:
+            path_train = f'{DATASET_PATH}/{dataset_name}/train.tsv'
+            path_eval = f'{DATASET_PATH}/{dataset_name}/test.tsv'
+        else:
+            if split != 0: # CV Test Phase
+                path_train = f'{DATASET_PATH}/{dataset_name}/split_{split}/train{fn_suffix}.tsv'
+                path_eval = f'{DATASET_PATH}/{dataset_name}/split_{split}/test_full.tsv'
+            else: # HT Phase
+                path_train = f'{DATASET_PATH}/{dataset_name}/train{fn_suffix}.tsv'
+                path_eval = f'{DATASET_PATH}/{dataset_name}/val{fn_suffix}.tsv'
+        converters = {'labels': literal_eval, 'labels_phrases': literal_eval}
+        df_train = pd.read_csv(path_train, sep='\t', converters=converters).set_index('id')
+        df_eval = pd.read_csv(path_eval, sep='\t', converters=converters).set_index('id')
 
-    converters = {'labels': literal_eval, 'labels_phrases': literal_eval}
-    
-    df_train = pd.read_csv(path_train, sep='\t', converters=converters).set_index('id')
-    df_eval = pd.read_csv(path_eval, sep='\t', converters=converters).set_index('id')
-    
     print(f'Loading dataset ...')
     print(f'Dataset name: {dataset_name}')
     print(f'Split setting: ', 'Original' if original_split else 'Custom')
@@ -97,7 +97,7 @@ def createCoTText(few_shot_template, absa_task, examples_text, examples_labels, 
                 labels_text = 'The final result thus consists of the following aspect-sentiment-pairs: '
         elif len(re_aspects) > 2: 
             if lang == 'ger':
-                aspect_labels = 'Zuerst identifizieren wir hierfür die im Satz angesprochenen Aspekte: ' + ', '.join(re_aspects[:-1]) + ' und ' + re_aspects[-1]
+                aspect_labels = 'Zuerst identifizieren wir hierfür die im Satz angesprochene Aspekte: ' + ', '.join(re_aspects[:-1]) + ' und ' + re_aspects[-1]
                        
                 sentiment_expressions = []
             
