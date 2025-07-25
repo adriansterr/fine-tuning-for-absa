@@ -3,6 +3,9 @@
 /baselines/tas_bert/uncased_L-12_H-768_A-12/*
 /baselines/tas_bert/gbert-base/*
 /baselines/llm/test.py
+/baselines/llm/__pycache__/*
+/src/utils/__pycache__/*
+/src/unsloth_compiled_cache/*
 /output/*
 /results/*
 /lora_adapter/*

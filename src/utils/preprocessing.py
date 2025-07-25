@@ -9,15 +9,8 @@ from ast import literal_eval
 
 DATASETS = ['GERestaurant', 'rest-16']
 
-LABEL_SPACES = [      
-    ###
-    #  GERestaurant
-    ###
-['AMBIENCE:NEGATIVE','AMBIENCE:NEUTRAL','AMBIENCE:POSITIVE','FOOD:NEGATIVE','FOOD:NEUTRAL','FOOD:POSITIVE','PRICE:NEGATIVE','PRICE:NEUTRAL','PRICE:POSITIVE','GENERAL-IMPRESSION:NEGATIVE','GENERAL-IMPRESSION:NEUTRAL','GENERAL-IMPRESSION:POSITIVE','SERVICE:NEGATIVE','SERVICE:NEUTRAL','SERVICE:POSITIVE'],
-    ###
-    #  SemEval Rest-16
-    ###
-    ['AMBIENCE#GENERAL:POSITIVE', 'AMBIENCE#GENERAL:NEUTRAL', 'AMBIENCE#GENERAL:NEGATIVE', 'DRINKS#PRICES:POSITIVE', 'DRINKS#PRICES:NEUTRAL', 'DRINKS#PRICES:NEGATIVE', 'DRINKS#QUALITY:POSITIVE', 'DRINKS#QUALITY:NEUTRAL', 'DRINKS#QUALITY:NEGATIVE', 'DRINKS#STYLE_OPTIONS:POSITIVE', 'DRINKS#STYLE_OPTIONS:NEUTRAL', 'DRINKS#STYLE_OPTIONS:NEGATIVE', 'FOOD#PRICES:POSITIVE', 'FOOD#PRICES:NEUTRAL', 'FOOD#PRICES:NEGATIVE', 'FOOD#QUALITY:POSITIVE', 'FOOD#QUALITY:NEUTRAL', 'FOOD#QUALITY:NEGATIVE', 'FOOD#STYLE_OPTIONS:POSITIVE', 'FOOD#STYLE_OPTIONS:NEUTRAL', 'FOOD#STYLE_OPTIONS:NEGATIVE', 'LOCATION#GENERAL:POSITIVE', 'LOCATION#GENERAL:NEUTRAL', 'LOCATION#GENERAL:NEGATIVE', 'RESTAURANT#GENERAL:POSITIVE', 'RESTAURANT#GENERAL:NEUTRAL', 'RESTAURANT#GENERAL:NEGATIVE', 'RESTAURANT#MISCELLANEOUS:POSITIVE', 'RESTAURANT#MISCELLANEOUS:NEUTRAL', 'RESTAURANT#MISCELLANEOUS:NEGATIVE', 'RESTAURANT#PRICES:POSITIVE', 'RESTAURANT#PRICES:NEUTRAL', 'RESTAURANT#PRICES:NEGATIVE', 'SERVICE#GENERAL:POSITIVE', 'SERVICE#GENERAL:NEUTRAL', 'SERVICE#GENERAL:NEGATIVE']]
+# Für GERestaurant werden die 12 Kategorien verwendet, deswegen gleicher Label Space wie bei rest-16
+LABEL_SPACE = ['AMBIENCE#GENERAL:POSITIVE', 'AMBIENCE#GENERAL:NEUTRAL', 'AMBIENCE#GENERAL:NEGATIVE', 'DRINKS#PRICES:POSITIVE', 'DRINKS#PRICES:NEUTRAL', 'DRINKS#PRICES:NEGATIVE', 'DRINKS#QUALITY:POSITIVE', 'DRINKS#QUALITY:NEUTRAL', 'DRINKS#QUALITY:NEGATIVE', 'DRINKS#STYLE_OPTIONS:POSITIVE', 'DRINKS#STYLE_OPTIONS:NEUTRAL', 'DRINKS#STYLE_OPTIONS:NEGATIVE', 'FOOD#PRICES:POSITIVE', 'FOOD#PRICES:NEUTRAL', 'FOOD#PRICES:NEGATIVE', 'FOOD#QUALITY:POSITIVE', 'FOOD#QUALITY:NEUTRAL', 'FOOD#QUALITY:NEGATIVE', 'FOOD#STYLE_OPTIONS:POSITIVE', 'FOOD#STYLE_OPTIONS:NEUTRAL', 'FOOD#STYLE_OPTIONS:NEGATIVE', 'LOCATION#GENERAL:POSITIVE', 'LOCATION#GENERAL:NEUTRAL', 'LOCATION#GENERAL:NEGATIVE', 'RESTAURANT#GENERAL:POSITIVE', 'RESTAURANT#GENERAL:NEUTRAL', 'RESTAURANT#GENERAL:NEGATIVE', 'RESTAURANT#MISCELLANEOUS:POSITIVE', 'RESTAURANT#MISCELLANEOUS:NEUTRAL', 'RESTAURANT#MISCELLANEOUS:NEGATIVE', 'RESTAURANT#PRICES:POSITIVE', 'RESTAURANT#PRICES:NEUTRAL', 'RESTAURANT#PRICES:NEGATIVE', 'SERVICE#GENERAL:POSITIVE', 'SERVICE#GENERAL:NEUTRAL', 'SERVICE#GENERAL:NEGATIVE']
 
 TRANSLATE_POLARITIES_EN = {'POSITIVE': 'positively', 'NEUTRAL': 'neutrally', 'NEGATIVE': 'negatively'}
 TRANSLATE_POLARITIES_GER = {'POSITIVE': 'positiv', 'NEUTRAL': 'neutral', 'NEGATIVE': 'negativ'}
@@ -37,14 +30,13 @@ def loadDataset(data_path, dataset_name, low_resource_setting, task, split = 0, 
         return None, None, None
 
     DATASET_PATH = data_path if task != 'e2e-e' else data_path + '/data_e2e_e'
-    label_space = LABEL_SPACES[DATASETS.index(dataset_name)]
     fn_suffix = '_full' if low_resource_setting == 0 else f'_{low_resource_setting}'
 
     if dataset_name == 'GERestaurant':
         path_train = f'{DATASET_PATH}/{dataset_name}/12_categories/train_preprocessed.json'
         path_eval = f'{DATASET_PATH}/{dataset_name}/12_categories/test_preprocessed.json'
-        df_train = pd.read_json(path_train).set_index('id')
-        df_eval = pd.read_json(path_eval).set_index('id')
+        df_train = pd.read_json(path_train, lines=True).set_index('id')
+        df_eval = pd.read_json(path_eval, lines=True).set_index('id')
     else:
         if original_split:
             path_train = f'{DATASET_PATH}/{dataset_name}/train.tsv'
@@ -69,7 +61,7 @@ def loadDataset(data_path, dataset_name, low_resource_setting, task, split = 0, 
     print(f'Eval Length: ', len(df_eval))
     print(f'Split: {split}')
         
-    return df_train, df_eval, label_space
+    return df_train, df_eval, LABEL_SPACE
     
 def createCoTText(few_shot_template, absa_task, examples_text, examples_labels, lang):
     if absa_task == 'acsa':
