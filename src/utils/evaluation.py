@@ -74,36 +74,27 @@ def extractAspects(output, task, cot = False, evaluation = False):
         output = strip_cot_output(output, keywords)
         
     if task == 'acd':
-
         pattern_asp = re.compile(REGEX_ASPECTS_ACD)
         matches = pattern_asp.findall(output)
         
         return matches[0].split(', ') if matches else []
         
     elif task == 'acsa':
-                
-        # pattern_pairs = re.compile(REGEX_PAIRS_ACSA_ACSD)
-        # pattern_lab = re.compile(REGEX_LABELS_ACSA)
-        
-        # pairs = pattern_pairs.findall(output)
-        # return [[m[1], m[2]] for pair in pairs if (m := pattern_lab.search(pair))] or []
-        
         aspect_pattern = "|".join(re.escape(a) for a in ASPECTS)
         polarity_pattern = "|".join(POLARITIES)
-        # Matches: (ASPECT, SENTIMENT), - ASPECT: SENTIMENT, ASPECT: SENTIMENT
+        # Matches: "<any or none symbol> ASPECT <any symbol> POLARITY <any or none symbol>"
+        # For example: (FOOD#QUALITY, POSITIVE), (FOOD#QUALITY: POSITIVE), (FOOD#QUALITY POSITIVE), FOOD#QUALITY: POSITIVE, FOOD#QUALITY POSITIVE, -FOOD#QUALITY POSITIVE
         REGEX_HARDCODED = re.compile(
-            rf"(?:\(\s*({aspect_pattern})\s*,\s*({polarity_pattern})\s*\)|-?\s*({aspect_pattern})\s*:\s*({polarity_pattern}))",
+            rf"\W?\s*({aspect_pattern})\s*\W+\s*({polarity_pattern})\W?",
             re.IGNORECASE
         )
         
         matches = REGEX_HARDCODED.findall(output)
-        # print("Matches found:", matches)
         
         results = []
         for m in matches:
-            # m is a tuple of 4 elements, only two will be filled per match
-            aspect = m[0] or m[2]
-            polarity = m[1] or m[3]
+            aspect = m[0]
+            polarity = m[1]
             if aspect and polarity:
                 results.append([aspect.upper(), polarity.upper()])
         return results
@@ -114,10 +105,6 @@ def extractAspects(output, task, cot = False, evaluation = False):
             
             return extract_valid_e2e_tuples(output)
         
-            # return [
-            #     [pattern_phrase.search(pair)[1], pattern_pol.search(pair)[1]]
-            #     for pair in pairs if pattern_phrase.search(pair) and pattern_pol.search(pair)
-            # ]
         else:  # task == 'tasd'
             max_depth = 5
             pattern_targets = re.compile(safe_recursive_pattern(0, max_depth))
@@ -151,6 +138,17 @@ def convertLabels(labels, task, label_space):
         conv_l.append(conv_s)
 
     return conv_l, false_predictions
+
+def subset_recall(pred_labels, gold_labels):
+    """
+    Returns the proportion of samples where all gold labels are present in the prediction.
+    """
+    correct = 0
+    for pred, gold in zip(pred_labels, gold_labels):
+        # All gold labels must be in pred (ignore extra predictions)
+        if all(label in pred for label in gold):
+            correct += 1
+    return correct / len(gold_labels) if gold_labels else 0.0
 
 def calculateMetrics(predictions, ground_truths):
     tp, fp, fn = 0, 0, 0
@@ -209,11 +207,11 @@ def createResults(pred_labels, gold_labels, label_space, task):
     
     elif task == 'acsa':
         
-        # Calculate Micro Metrics
+        # Calculate Micro Metrics; Overall performance (all pairs pooled)
         micro_asp_pol = calculateMetrics(pred_labels, gold_labels)
     
-        # label_space = list(set([label for labels in gold_labels for label in labels]))
-        # label_space.sort()
+        label_space = list(set([label for labels in gold_labels for label in labels]))
+        label_space.sort()
 
         # Group Aspect labels together ignoring their polarity
         label_space_grouped = [[label for label in label_space if label.split(':')[0] ==  aspect] for aspect in sorted(list(set([lab.split(':')[0] for lab in label_space])))]
@@ -288,8 +286,10 @@ def createResults(pred_labels, gold_labels, label_space, task):
         result_pol = {metr['polarity']:metr['metrics'] for metr in metrics_pol}
         result_pol['Micro-AVG'] = micro_asp_pol
         result_pol['Macro-AVG'] = macro_pol
-        
-        return result_asp, result_asp_pol, result_pairs, result_pol, None
+
+        result_subset_recall = subset_recall(pred_labels, gold_labels)
+
+        return result_asp, result_asp_pol, result_pairs, result_pol, None, result_subset_recall
 
     elif task == 'e2e' or task == 'e2e-e':
         micro_pairs = calculateMetrics(pred_labels, gold_labels)
@@ -415,14 +415,3 @@ def createResults(pred_labels, gold_labels, label_space, task):
         result_pol['Macro-AVG'] = macro_pol
         
         return result_asp, result_asp_pol, result_pairs, result_pol, result_asp_pol_phrases
-
-def subset_recall(pred_labels, gold_labels):
-    """
-    Returns the proportion of samples where all gold labels are present in the prediction.
-    """
-    correct = 0
-    for pred, gold in zip(pred_labels, gold_labels):
-        # All gold labels must be in pred (ignore extra predictions)
-        if all(label in pred for label in gold):
-            correct += 1
-    return correct / len(gold_labels) if gold_labels else 0.0
