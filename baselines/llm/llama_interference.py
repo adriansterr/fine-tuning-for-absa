@@ -8,17 +8,9 @@ sys.path.append(utils)
 from preprocessing import createPromptText
 
 
-model_name = "finetuned_models/meta_llama_full_colab_remerge_2"
+model_name = "D:/Uni/Masterarbeit Code/test/mergekit/merges/trained/llama/meta_llama_full_precision_sauerkraut/linear"
 
-# AutoModelForCausalLM ist von huggingface/transformers
-# model = AutoModelForCausalLM.from_pretrained(
-#     model_name,
-#     torch_dtype=torch.float16,
-#     device_map="auto"
-# )
-# tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-# FastLanguageModel ist von unsloth
+# FastLanguageModel von unsloth
 model, tokenizer = FastLanguageModel.from_pretrained(
     model_name,
     max_seq_length=2048,
@@ -34,7 +26,7 @@ prompt, _ = createPromptText(
     lang='en',
     prompt_templates=prompt_templates,
     prompt_style='basic',
-    example_text="The food was great, but the service was slow.", 
+    example_text="Das Essen war sehr lecker, aber der Service war schlecht.", 
     example_labels=["(FOOD#QUALITY, POSITIVE)", "(SERVICE#GENERAL, NEGATIVE)"],
     dataset_name='rest-16',
     absa_task='acsa',

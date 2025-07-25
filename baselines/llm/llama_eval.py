@@ -7,7 +7,6 @@ sys.path.append(os.path.abspath('./src/utils/'))
 from evaluation import extractAspects, convertLabels, createResults, subset_recall
 from preprocessing import loadDataset, createPrompts
 from config import Config
-from transformers import AutoModelForCausalLM, AutoTokenizer
 
 def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path=None):
     predictions = []
@@ -28,16 +27,15 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
     processed_predictions = [extractAspects(p, config.task, config.prompt_style) for p in predictions]
     processed_ground_truths = [extractAspects(gt, config.task, config.prompt_style) for gt in ground_truth_labels]
 
+    print("Processed Ground Truths:", processed_ground_truths, "\n")
+
     gold_labels, _ = convertLabels(processed_ground_truths, config.task, label_space)
     pred_labels, false_predictions = convertLabels(processed_predictions, config.task, label_space)
     
-    # print("Gold Labels:", gold_labels, "\n")
-    # print("Predicted Labels:", pred_labels, "\n")
-    
-    emr = subset_recall(pred_labels, gold_labels)
-    print(f"Subset recall (all gold labels found in prediction): {emr:.3f}")    
+    print("Gold Labels:", gold_labels, "\n")
+    print("Predicted Labels:", pred_labels, "\n")
 
-    results_asp, results_asp_pol, results_pairs, results_pol, results_phrases = createResults(pred_labels, gold_labels, label_space, config.task)
+    results_asp, results_asp_pol, results_pairs, results_pol, results_phrases, results_subset_recall = createResults(pred_labels, gold_labels, label_space, config.task)
 
     if results_path:
         import pandas as pd, os, json
@@ -49,7 +47,8 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
                 "results_asp_pol": results_asp_pol,
                 "results_pairs": results_pairs,
                 "results_pol": results_pol,
-                "results_phrases": results_phrases
+                "results_phrases": results_phrases,
+                "results_subset_recall": results_subset_recall
             }, f, indent=2)
 
     print("Evaluation complete.")
@@ -58,10 +57,11 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
     print("Pair metrics:", results_pairs)
     print("Polarity metrics:", results_pol)
     print("Phrase metrics:", results_phrases)
+    print("Subset recall:", results_subset_recall)
     
     
 if __name__ == "__main__":
-    model_name = "D:/Uni/Masterarbeit Code/test/mergekit/merges/trained/llama/meta_llama_full_precision_sauerkraut/linear"
+    model_name = "D:/Uni/Masterarbeit Code/test/mergekit/merges/trained/llama/meta_llama_full_precision_sauerkraut/linear/50_50"
 
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name,
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     df_train, df_test, label_space = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
     
     # Limit test set to 20 entries for testing purposes
-    df_test = df_test.iloc[:20]
+    df_test = df_test.iloc[:5]
     
     prompts_train, prompts_test, ground_truth_labels = createPrompts(df_train, df_test, config, eos_token=tokenizer.eos_token)
     evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path="results/llama/meta_llama_full_precision_sauerkraut/linear/")
