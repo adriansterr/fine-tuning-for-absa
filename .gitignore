@@ -9,6 +9,7 @@
 /output/*
 /results/*
 /lora_adapter/*
-/.vscode/
+/.vscode/*
 /finetuned_models/*
 /offload/*
+/unsloth_compiled_cache/*
