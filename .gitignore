@@ -7,10 +7,10 @@
 /src/utils/__pycache__/*
 /src/unsloth_compiled_cache/*
 /output/*
-/results/*
+/results/bert_clf/*
 /lora_adapter/*
 /.vscode/*
 /finetuned_models/*
 /offload/*
 /unsloth_compiled_cache/*
-/unsloth_compiled_cache/*
+baselines/llm/nix.txt
