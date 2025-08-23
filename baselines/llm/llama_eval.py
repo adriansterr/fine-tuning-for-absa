@@ -1,15 +1,43 @@
-from unittest import result
 from unsloth import FastLanguageModel
 import torch
 from tqdm import tqdm
 import sys, os
-import argparse
+import time
 sys.path.append(os.path.abspath('./src/utils/'))
 import glob
 
 from evaluation import extractAspects, convertLabels, createResults
 from preprocessing import loadDataset, createPrompts
 from config import Config
+
+# Wait for merge process to complete by checking lock file
+def wait_for_merge_completion():
+    lock_file = "merge_in_progress.lock"
+    complete_file = "merge_complete.flag"
+    
+    print("Checking if merge is in progress...")
+    
+    # If no lock file exists and no complete file, merge hasn't started yet
+    if not os.path.exists(lock_file) and not os.path.exists(complete_file):
+        print("Waiting for merge to start...")
+        while not os.path.exists(lock_file) and not os.path.exists(complete_file):
+            time.sleep(5)
+    
+    # Wait while merge is in progress
+    while os.path.exists(lock_file):
+        print("Merge still in progress... waiting 30 seconds")
+        time.sleep(30)
+    
+    # Wait for completion signal
+    while not os.path.exists(complete_file):
+        print("Waiting for merge completion signal...")
+        time.sleep(10)
+    
+    print("Merge completed! Starting evaluation...")
+    
+    # Clean up the completion flag
+    if os.path.exists(complete_file):
+        os.remove(complete_file)
 
 def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path=None):
     predictions = []
@@ -25,18 +53,12 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
             )
         output_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
         predictions.append(output_text)
-        # print(f"Prompt: {prompt}\nPrediction: {output_text}\n")
 
     processed_predictions = [extractAspects(p, config.task, config.prompt_style) for p in predictions]
     processed_ground_truths = [extractAspects(gt, config.task, config.prompt_style) for gt in ground_truth_labels]
 
-    # print("Processed Ground Truths:", processed_ground_truths, "\n")
-
     gold_labels, _ = convertLabels(processed_ground_truths, config.task, label_space)
     pred_labels, false_predictions = convertLabels(processed_predictions, config.task, label_space)
-    
-    # print("Gold Labels:", gold_labels, "\n")
-    # print("Predicted Labels:", pred_labels, "\n")
 
     results_asp, results_asp_pol, results_pairs, results_pol, results_phrases, results_subset_recall = createResults(pred_labels, gold_labels, label_space, config.task)
 
@@ -64,30 +86,51 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
     
     
 if __name__ == "__main__":    
+    wait_for_merge_completion()
+    
     base_model_dir = "D:/Uni/Masterarbeit Code/test/mergekit/merges/trained/llama/meta_llama_full_precision_sauerkraut/evaluate"
     model_dirs = [f for f in glob.glob(f"{base_model_dir}/*") if os.path.isdir(f)]
 
     for model_name in model_dirs:
-        print(f"Evaluating model: {model_name}")
-        results_path = os.path.join("results/merges/meta_llama_full_precision_sauerkraut/finished_evaluation", os.path.basename(model_name))
-        os.makedirs(results_path, exist_ok=True)
+        print(f"Checking model: {model_name}")
 
-        model, tokenizer = FastLanguageModel.from_pretrained(
-            model_name,
-            max_seq_length=2048,
-            device_map="cuda"
-        )
-        FastLanguageModel.for_inference(model)
+        # Try-catch block, so one bad model doesn't break the entire evaluation
+        try:
+            print(f"Evaluating model: {model_name}")
+            results_path = os.path.join("results/merges/meta_llama_full_precision_sauerkraut/finished_evaluation", os.path.basename(model_name))
+            os.makedirs(results_path, exist_ok=True)
 
-        config = Config()
-        config.dataset = 'GERestaurant'
-        config.lang = 'ger'
+            model, tokenizer = FastLanguageModel.from_pretrained(
+                model_name,
+                max_seq_length=2048,
+                device_map="cuda"
+            )
+            FastLanguageModel.for_inference(model)
 
-        df_train, df_test, label_space = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
-        prompts_train, prompts_test, ground_truth_labels = createPrompts(df_train, df_test, config, eos_token=tokenizer.eos_token)
-        evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path=results_path)
+            config = Config()
+            config.dataset = 'GERestaurant'
+            config.lang = 'ger'
 
-        # Free up VRAM
-        del model
-        del tokenizer
-        torch.cuda.empty_cache()
+            df_train, df_test, label_space = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
+            prompts_train, prompts_test, ground_truth_labels = createPrompts(df_train, df_test, config, eos_token=tokenizer.eos_token)
+            evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path=results_path)
+
+            # Free up VRAM
+            del model
+            del tokenizer
+            torch.cuda.empty_cache()
+            
+            print(f"SUCCESS: {os.path.basename(model_name)} evaluated successfully!")
+            
+        except Exception as e:
+            print(f"ERROR: Failed to evaluate {os.path.basename(model_name)}: {str(e)}")
+            # Clean up any partially loaded models
+            try:
+                del model
+                del tokenizer
+            except:
+                pass
+            torch.cuda.empty_cache()
+            continue
+    
+    print("All evaluations completed!")
