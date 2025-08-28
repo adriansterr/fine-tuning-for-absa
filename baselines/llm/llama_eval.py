@@ -2,42 +2,12 @@ from unsloth import FastLanguageModel
 import torch
 from tqdm import tqdm
 import sys, os
-import time
 sys.path.append(os.path.abspath('./src/utils/'))
 import glob
 
 from evaluation import extractAspects, convertLabels, createResults
 from preprocessing import loadDataset, createPrompts
 from config import Config
-
-# Wait for merge process to complete by checking lock file
-def wait_for_merge_completion():
-    lock_file = "merge_in_progress.lock"
-    complete_file = "merge_complete.flag"
-    
-    print("Checking if merge is in progress...")
-    
-    # If no lock file exists and no complete file, merge hasn't started yet
-    if not os.path.exists(lock_file) and not os.path.exists(complete_file):
-        print("Waiting for merge to start...")
-        while not os.path.exists(lock_file) and not os.path.exists(complete_file):
-            time.sleep(5)
-    
-    # Wait while merge is in progress
-    while os.path.exists(lock_file):
-        print("Merge still in progress... waiting 30 seconds")
-        time.sleep(30)
-    
-    # Wait for completion signal
-    while not os.path.exists(complete_file):
-        print("Waiting for merge completion signal...")
-        time.sleep(10)
-    
-    print("Merge completed! Starting evaluation...")
-    
-    # Clean up the completion flag
-    if os.path.exists(complete_file):
-        os.remove(complete_file)
 
 def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, label_space, results_path=None):
     predictions = []
@@ -86,8 +56,6 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
     
     
 if __name__ == "__main__":    
-    wait_for_merge_completion()
-    
     base_model_dir = "D:/Uni/Masterarbeit Code/test/mergekit/merges/trained/llama/meta_llama_full_precision_sauerkraut/evaluate"
     model_dirs = [f for f in glob.glob(f"{base_model_dir}/*") if os.path.isdir(f)]
 
