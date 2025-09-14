@@ -41,4 +41,6 @@ echo MERGE_COMPLETE > "D:\Uni\Masterarbeit Code\jakob_finetuning\merge_complete.
 
 echo All merges completed with tokenizers!
 
+shutdown /s
+
 endlocal
