@@ -6,6 +6,7 @@ import ast
 
 """
 Translate the whole rest-16 dataset (train and test) to German using DeepL API.
+https://github.com/DeepLcom/deepl-python/tree/main
 """
 class DeepLTranslator:
     def __init__(self, api_key):
@@ -165,7 +166,7 @@ def main():
     input_dir = os.path.join(base_dir, "rest-16")
     output_dir = os.path.join(base_dir, "rest-16-german")
 
-    for input_file, output_file in [("train.tsv", "train_german.tsv"), ("test.tsv", "test_german.tsv")]:
+    for input_file, output_file in [("train.tsv", "train.tsv"), ("test.tsv", "test.tsv")]:
         input_path = os.path.join(input_dir, input_file)
         output_path = os.path.join(output_dir, output_file)
         
