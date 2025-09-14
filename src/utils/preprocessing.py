@@ -1,7 +1,6 @@
 import pandas as pd
 import re
 import json
-import torch
 import os
 
 from itertools import product
@@ -406,7 +405,7 @@ def createCoTText(few_shot_template, absa_task, examples_text, examples_labels, 
 def createPromptText(lang, prompt_templates, prompt_style, example_text, example_labels, dataset_name = 'rest-16', absa_task = 'acd', train = False):
 
     # Set templates based on prompt config
-    if dataset_name not in ['GERestaurant', 'rest-16']:
+    if dataset_name not in DATASETS:
         raise NotImplementedError('Prompt template not found: Dataset name not valid.')
     else:
         dataset_name = dataset_name.replace('-','')[:6]
@@ -518,7 +517,7 @@ def createPrompts(df_train, df_test, args, eos_token = ''):
     
     base_dir = os.path.dirname(os.path.abspath(__file__))
     
-    if args.dataset in ['rest-16', 'GERestaurant']:
+    if args.dataset in DATASETS:
         with open(os.path.join(base_dir, f'prompts_{args.dataset.replace("-","")}.json'), encoding='utf-8') as json_prompts:
              prompt_templates = json.load(json_prompts)
     else:
