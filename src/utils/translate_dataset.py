@@ -5,12 +5,14 @@ import re
 import ast
 
 """
-Translate the whole rest-16 dataset (train and test) to German using DeepL API.
+Translate the whole rest-16 dataset (train and test) to any language using DeepL API.
 https://github.com/DeepLcom/deepl-python/tree/main
 """
 class DeepLTranslator:
-    def __init__(self, api_key):
+    def __init__(self, api_key, source_lang, target_lang):
         self.client = deepl.DeepLClient(api_key)
+        self.source_lang = source_lang
+        self.target_lang = target_lang
     
     def check_usage(self):
         usage = self.client.get_usage()
@@ -26,7 +28,7 @@ class DeepLTranslator:
         if not text or text.strip() == "":
             return None
         try:
-            result = self.client.translate_text(text, target_lang="DE", source_lang="EN")
+            result = self.client.translate_text(text, target_lang=self.target_lang, source_lang=self.source_lang)
             return result.text
         except deepl.QuotaExceededException:
             print("QUOTA EXCEEDED! Translation stopped.")
@@ -154,7 +156,10 @@ def translate_dataset_file(input_file, output_file, translator):
 
 def main():
     API_KEY = input("Enter your DeepL API key: ").strip()
-    translator = DeepLTranslator(API_KEY)
+    # https://developers.deepl.com/docs/getting-started/supported-languages
+    SOURCE_LANG = "EN"
+    TARGET_LANG = "FR"
+    translator = DeepLTranslator(API_KEY, SOURCE_LANG, TARGET_LANG)
     
     try:
         translator.check_usage()
@@ -164,7 +169,7 @@ def main():
     
     base_dir = "D:/Uni/Masterarbeit Code/jakob_finetuning/data"
     input_dir = os.path.join(base_dir, "rest-16")
-    output_dir = os.path.join(base_dir, "rest-16-german")
+    output_dir = os.path.join(base_dir, "rest-16-translated-french")
 
     for input_file, output_file in [("train.tsv", "train.tsv"), ("test.tsv", "test.tsv")]:
         input_path = os.path.join(input_dir, input_file)
