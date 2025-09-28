@@ -1,0 +1,481 @@
+{
+  "results_asp": {
+    "AMBIENCE#GENERAL": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "DRINKS#PRICES": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "DRINKS#QUALITY": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "DRINKS#STYLE_OPTIONS": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "FOOD#PRICES": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "FOOD#QUALITY": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "FOOD#STYLE_OPTIONS": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "LOCATION#GENERAL": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "RESTAURANT#GENERAL": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "RESTAURANT#MISCELLANEOUS": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "RESTAURANT#PRICES": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "SERVICE#GENERAL": {
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "accuracy": 0,
+      "support": 0
+    },
+    "Micro-AVG": {
+      "precision": 0.7584,
+      "recall": 0.8172,
+      "f1": 0.7867,
+      "accuracy": 0.6484,
+      "support": 1351
+    },
+    "Macro-AVG": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": "",
+      "support": 1351
+    }
+  },
+  "results_asp_pol": {
+    "AMBIENCE#GENERAL": {
+      "precision": 0.7557,
+      "recall": 0.7857,
+      "f1": 0.7704,
+      "accuracy": 0.6266,
+      "support": 158
+    },
+    "DRINKS#PRICES": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "accuracy": 0.6667,
+      "support": 12
+    },
+    "DRINKS#QUALITY": {
+      "precision": 0.4118,
+      "recall": 0.7,
+      "f1": 0.5185,
+      "accuracy": 0.35,
+      "support": 20
+    },
+    "DRINKS#STYLE_OPTIONS": {
+      "precision": 0.5833,
+      "recall": 0.6364,
+      "f1": 0.6087,
+      "accuracy": 0.4375,
+      "support": 16
+    },
+    "FOOD#PRICES": {
+      "precision": 0.5741,
+      "recall": 0.7561,
+      "f1": 0.6526,
+      "accuracy": 0.4844,
+      "support": 64
+    },
+    "FOOD#QUALITY": {
+      "precision": 0.7601,
+      "recall": 0.8385,
+      "f1": 0.7974,
+      "accuracy": 0.663,
+      "support": 368
+    },
+    "FOOD#STYLE_OPTIONS": {
+      "precision": 0.5181,
+      "recall": 0.6232,
+      "f1": 0.5658,
+      "accuracy": 0.3945,
+      "support": 109
+    },
+    "LOCATION#GENERAL": {
+      "precision": 0.5,
+      "recall": 0.7778,
+      "f1": 0.6087,
+      "accuracy": 0.4375,
+      "support": 32
+    },
+    "RESTAURANT#GENERAL": {
+      "precision": 0.8278,
+      "recall": 0.6712,
+      "f1": 0.7413,
+      "accuracy": 0.5889,
+      "support": 253
+    },
+    "RESTAURANT#MISCELLANEOUS": {
+      "precision": 0.2,
+      "recall": 0.3846,
+      "f1": 0.2632,
+      "accuracy": 0.1515,
+      "support": 33
+    },
+    "RESTAURANT#PRICES": {
+      "precision": 0.5484,
+      "recall": 0.4359,
+      "f1": 0.4857,
+      "accuracy": 0.3208,
+      "support": 53
+    },
+    "SERVICE#GENERAL": {
+      "precision": 0.7824,
+      "recall": 0.9234,
+      "f1": 0.8471,
+      "accuracy": 0.7348,
+      "support": 279
+    },
+    "Micro-AVG": {
+      "precision": 0.7177,
+      "recall": 0.7733,
+      "f1": 0.7445,
+      "accuracy": 0.593,
+      "support": 1398
+    },
+    "Macro-AVG": {
+      "precision": 0.6051,
+      "recall": 0.6944,
+      "f1": 0.6383,
+      "accuracy": "",
+      "support": 1398
+    }
+  },
+  "results_pairs": {
+    "AMBIENCE#GENERAL:NEGATIVE": {
+      "precision": 0.875,
+      "recall": 0.7778,
+      "f1": 0.8235,
+      "accuracy": 0.7,
+      "support": 50
+    },
+    "AMBIENCE#GENERAL:NEUTRAL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0,
+      "accuracy": 0.0,
+      "support": 5
+    },
+    "AMBIENCE#GENERAL:POSITIVE": {
+      "precision": 0.7111,
+      "recall": 0.8312,
+      "f1": 0.7665,
+      "accuracy": 0.6214,
+      "support": 103
+    },
+    "DRINKS#PRICES:NEGATIVE": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "accuracy": 0.75,
+      "support": 8
+    },
+    "DRINKS#PRICES:POSITIVE": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "accuracy": 0.5,
+      "support": 4
+    },
+    "DRINKS#QUALITY:NEGATIVE": {
+      "precision": 0.3333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "accuracy": 0.3333,
+      "support": 3
+    },
+    "DRINKS#QUALITY:POSITIVE": {
+      "precision": 0.4286,
+      "recall": 0.6667,
+      "f1": 0.5217,
+      "accuracy": 0.3529,
+      "support": 17
+    },
+    "DRINKS#STYLE_OPTIONS:NEGATIVE": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6667,
+      "accuracy": 0.5,
+      "support": 6
+    },
+    "DRINKS#STYLE_OPTIONS:NEUTRAL": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "accuracy": 0.0,
+      "support": 1
+    },
+    "DRINKS#STYLE_OPTIONS:POSITIVE": {
+      "precision": 0.5,
+      "recall": 0.8,
+      "f1": 0.6154,
+      "accuracy": 0.4444,
+      "support": 9
+    },
+    "FOOD#PRICES:NEGATIVE": {
+      "precision": 0.7778,
+      "recall": 0.875,
+      "f1": 0.8235,
+      "accuracy": 0.7,
+      "support": 20
+    },
+    "FOOD#PRICES:NEUTRAL": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "accuracy": 0.0,
+      "support": 1
+    },
+    "FOOD#PRICES:POSITIVE": {
+      "precision": 0.4722,
+      "recall": 0.7083,
+      "f1": 0.5667,
+      "accuracy": 0.3953,
+      "support": 43
+    },
+    "FOOD#QUALITY:NEGATIVE": {
+      "precision": 0.597,
+      "recall": 0.8511,
+      "f1": 0.7018,
+      "accuracy": 0.5405,
+      "support": 74
+    },
+    "FOOD#QUALITY:NEUTRAL": {
+      "precision": 0.5,
+      "recall": 0.3333,
+      "f1": 0.4,
+      "accuracy": 0.25,
+      "support": 24
+    },
+    "FOOD#QUALITY:POSITIVE": {
+      "precision": 0.8182,
+      "recall": 0.8761,
+      "f1": 0.8462,
+      "accuracy": 0.7333,
+      "support": 270
+    },
+    "FOOD#STYLE_OPTIONS:NEGATIVE": {
+      "precision": 0.5,
+      "recall": 0.6207,
+      "f1": 0.5538,
+      "accuracy": 0.383,
+      "support": 47
+    },
+    "FOOD#STYLE_OPTIONS:NEUTRAL": {
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.3333,
+      "accuracy": 0.2,
+      "support": 5
+    },
+    "FOOD#STYLE_OPTIONS:POSITIVE": {
+      "precision": 0.5333,
+      "recall": 0.6667,
+      "f1": 0.5926,
+      "accuracy": 0.4211,
+      "support": 57
+    },
+    "LOCATION#GENERAL:POSITIVE": {
+      "precision": 0.5,
+      "recall": 0.7778,
+      "f1": 0.6087,
+      "accuracy": 0.4375,
+      "support": 32
+    },
+    "RESTAURANT#GENERAL:NEGATIVE": {
+      "precision": 0.7568,
+      "recall": 0.7,
+      "f1": 0.7273,
+      "accuracy": 0.5714,
+      "support": 49
+    },
+    "RESTAURANT#GENERAL:NEUTRAL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0,
+      "accuracy": 0.0,
+      "support": 11
+    },
+    "RESTAURANT#GENERAL:POSITIVE": {
+      "precision": 0.8521,
+      "recall": 0.7035,
+      "f1": 0.7707,
+      "accuracy": 0.6269,
+      "support": 193
+    },
+    "RESTAURANT#MISCELLANEOUS:NEGATIVE": {
+      "precision": 0.1667,
+      "recall": 0.3333,
+      "f1": 0.2222,
+      "accuracy": 0.125,
+      "support": 16
+    },
+    "RESTAURANT#MISCELLANEOUS:NEUTRAL": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "accuracy": 0.0,
+      "support": 1
+    },
+    "RESTAURANT#MISCELLANEOUS:POSITIVE": {
+      "precision": 0.2308,
+      "recall": 0.5,
+      "f1": 0.3158,
+      "accuracy": 0.1875,
+      "support": 16
+    },
+    "RESTAURANT#PRICES:NEGATIVE": {
+      "precision": 0.7059,
+      "recall": 0.6316,
+      "f1": 0.6667,
+      "accuracy": 0.5,
+      "support": 24
+    },
+    "RESTAURANT#PRICES:NEUTRAL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0,
+      "accuracy": 0.0,
+      "support": 5
+    },
+    "RESTAURANT#PRICES:POSITIVE": {
+      "precision": 0.3846,
+      "recall": 0.3125,
+      "f1": 0.3448,
+      "accuracy": 0.2083,
+      "support": 24
+    },
+    "SERVICE#GENERAL:NEGATIVE": {
+      "precision": 0.6883,
+      "recall": 0.8833,
+      "f1": 0.7737,
+      "accuracy": 0.631,
+      "support": 84
+    },
+    "SERVICE#GENERAL:NEUTRAL": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "accuracy": 0.0,
+      "support": 5
+    },
+    "SERVICE#GENERAL:POSITIVE": {
+      "precision": 0.8216,
+      "recall": 0.9682,
+      "f1": 0.8889,
+      "accuracy": 0.8,
+      "support": 190
+    },
+    "Micro-AVG": {
+      "precision": 0.7177,
+      "recall": 0.7733,
+      "f1": 0.7445,
+      "accuracy": 0.593,
+      "support": 1398
+    },
+    "Macro-AVG": {
+      "precision": 0.4735,
+      "recall": 0.5365,
+      "f1": 0.4861,
+      "accuracy": "",
+      "support": 1398
+    }
+  },
+  "results_pol": {
+    "POSITIVE": {
+      "precision": 0.7457,
+      "recall": 0.8133,
+      "f1": 0.7781,
+      "accuracy": 0.6367,
+      "support": 958
+    },
+    "NEUTRAL": {
+      "precision": 0.4118,
+      "recall": 0.1458,
+      "f1": 0.2154,
+      "accuracy": 0.1207,
+      "support": 58
+    },
+    "NEGATIVE": {
+      "precision": 0.6625,
+      "recall": 0.7737,
+      "f1": 0.7138,
+      "accuracy": 0.555,
+      "support": 382
+    },
+    "Micro-AVG": {
+      "precision": 0.7177,
+      "recall": 0.7733,
+      "f1": 0.7445,
+      "accuracy": 0.593,
+      "support": 1398
+    },
+    "Macro-AVG": {
+      "precision": 0.6067,
+      "recall": 0.5776,
+      "f1": 0.5691,
+      "accuracy": "",
+      "support": 1398
+    }
+  },
+  "results_phrases": null,
+  "results_subset_recall": 0.7326440177252584
+}
