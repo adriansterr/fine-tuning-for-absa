@@ -43,11 +43,23 @@ def preprocess_xml_to_tsv(xml_path, out_path):
 
 # https://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools
 
+# Spanish
 xml_path_test = r'D:\Uni\Masterarbeit Code\jakob_finetuning\data\rest-16-spanish\test.xml'
 out_path_test = r'D:\Uni\Masterarbeit Code\jakob_finetuning\data\rest-16-spanish\test.tsv'
 
 xml_path_train = r'D:\Uni\Masterarbeit Code\jakob_finetuning\data\rest-16-spanish\train.xml'
 out_path_train = r'D:\Uni\Masterarbeit Code\jakob_finetuning\data\rest-16-spanish\train.tsv'
+
+preprocess_xml_to_tsv(xml_path_test, out_path_test)
+preprocess_xml_to_tsv(xml_path_train, out_path_train)
+
+
+# French
+out_path_test = r'D:\Uni\Masterarbeit Code\jakob_finetuning\data\rest-16-french\test.tsv'
+xml_path_test = r'D:\Uni\Masterarbeit Code\jakob_finetuning\data\rest-16-french\test.xml'
+
+xml_path_train = r'D:\Uni\Masterarbeit Code\jakob_finetuning\data\rest-16-french\train.xml'
+out_path_train = r'D:\Uni\Masterarbeit Code\jakob_finetuning\data\rest-16-french\train.tsv'
 
 preprocess_xml_to_tsv(xml_path_test, out_path_test)
 preprocess_xml_to_tsv(xml_path_train, out_path_train)
