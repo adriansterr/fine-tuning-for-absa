@@ -13,32 +13,32 @@ os.environ["TORCHDYNAMO_DISABLE"] = "1"
 
 import unsloth
 import torch
-import json
 import pandas as pd
 from unsloth import FastLanguageModel, is_bfloat16_supported
 from trl import SFTTrainer
 from datasets import Dataset
 from transformers import TrainingArguments, set_seed
 
-utils = os.path.abspath('./src/utils/') # Relative path to utils scripts
+utils = os.path.abspath('./src/utils/')
 print(utils)
 sys.path.append(utils)
 
 from preprocessing import createPrompts, loadDataset
-from llama_eval import evaluate_model
 from config import Config
 
 def main():
     config = Config()
+    config.dataset = 'rest-16-translated-french'
+    config.lang = 'fr'
     set_seed(config.seed)    
     
     print("loading model...")
     max_seq_length = 2048
     base_model, tokenizer = FastLanguageModel.from_pretrained(
-      model_name="unsloth/Meta-Llama-3.1-8B-Instruct",
-      max_seq_length=max_seq_length,
-      dtype=torch.float16,  # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
-      device_map="auto" 
+        model_name="unsloth/Meta-Llama-3.1-8B-Instruct",
+        max_seq_length=max_seq_length,
+        dtype=None,  # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
+        device_map="auto"
     )
 
     model = FastLanguageModel.get_peft_model(
@@ -88,7 +88,7 @@ def main():
             optim="adamw_8bit",
             weight_decay=0.01,
             warmup_steps=20,
-            output_dir="content/drive/MyDrive/colab_data/output/llama/meta_llama_full",
+            output_dir="./output/llama/meta_llama_translated_dataset_french",
             eval_strategy="no",
             save_strategy="epoch",
             seed=0
@@ -99,12 +99,12 @@ def main():
     trainer.train()
 
     print("Start Saving Adapter...")
-    model.save_pretrained("content/drive/MyDrive/colab_data/lora_adapter/meta_llama_full", save_adapter=True, save_config=True)
+    model.save_pretrained("./lora_adapter/meta_llama_translated_dataset_french", save_adapter=True, save_config=True)
 
     print("Start Saving Model...")
     merged_model = model.merge_and_unload()
-    merged_model.save_pretrained("content/drive/MyDrive/colab_data/finetuned_models/meta_llama_full", max_shard_size="4GB")
-    tokenizer.save_pretrained("content/drive/MyDrive/colab_data/finetuned_models/meta_llama_full")    
+    merged_model.save_pretrained("./finetuned_models/meta_llama_translated_dataset_french", max_shard_size="10GB")
+    tokenizer.save_pretrained("./finetuned_models/meta_llama_translated_dataset_french")
     print("Finished")
 
 

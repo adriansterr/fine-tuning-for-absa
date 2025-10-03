@@ -82,8 +82,8 @@ def create_few_shot_prompt(selected_shots, test_text, test_labels, config, promp
 
 def main():
     config = Config()
-    config.dataset = 'GERestaurant'
-    config.lang = 'ger'
+    config.dataset = 'rest-16-spanish'
+    config.lang = 'spa'
     set_seed(config.seed)
     
     print("Loading base model...")
@@ -107,8 +107,7 @@ def main():
     with open(os.path.join(base_dir, f'prompts_{config.dataset.replace("-","")}.json'), encoding='utf-8') as f:
         prompt_templates = json.load(f)
     
-    label_column = 'labels_phrases' if 'labels_phrases' in df_train.columns else 'labels'
-    training_examples = [(row['text'], row[label_column]) for _, row in df_train.iterrows()]
+    training_examples = [(row['text'], row['labels']) for _, row in df_train.iterrows()]
     
     print(f"Loaded {len(training_examples)} training examples")
     
@@ -126,7 +125,7 @@ def main():
     
     for _, row in df_test.iterrows():
         test_text = row['text']
-        test_labels = row[label_column] 
+        test_labels = row['labels'] 
         
         _, ground_truth = createPromptText(
             lang=config.lang,

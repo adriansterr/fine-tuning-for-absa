@@ -6,7 +6,7 @@ import os
 from itertools import product
 from ast import literal_eval
 
-DATASETS = ['GERestaurant', 'rest-16', 'rest-16-translated-german', 'rest-16-translated-spanish', 'rest-16-translated-french']
+DATASETS = ['GERestaurant', 'rest-16', 'rest-16-spanish', 'rest-16-french', 'rest-16-translated-german', 'rest-16-translated-spanish', 'rest-16-translated-french']
 
 # Für GERestaurant werden die 12 Kategorien verwendet, deswegen gleicher Label Space wie bei rest-16
 LABEL_SPACE = ['AMBIENCE#GENERAL:POSITIVE', 'AMBIENCE#GENERAL:NEUTRAL', 'AMBIENCE#GENERAL:NEGATIVE', 'DRINKS#PRICES:POSITIVE', 'DRINKS#PRICES:NEUTRAL', 'DRINKS#PRICES:NEGATIVE', 'DRINKS#QUALITY:POSITIVE', 'DRINKS#QUALITY:NEUTRAL', 'DRINKS#QUALITY:NEGATIVE', 'DRINKS#STYLE_OPTIONS:POSITIVE', 'DRINKS#STYLE_OPTIONS:NEUTRAL', 'DRINKS#STYLE_OPTIONS:NEGATIVE', 'FOOD#PRICES:POSITIVE', 'FOOD#PRICES:NEUTRAL', 'FOOD#PRICES:NEGATIVE', 'FOOD#QUALITY:POSITIVE', 'FOOD#QUALITY:NEUTRAL', 'FOOD#QUALITY:NEGATIVE', 'FOOD#STYLE_OPTIONS:POSITIVE', 'FOOD#STYLE_OPTIONS:NEUTRAL', 'FOOD#STYLE_OPTIONS:NEGATIVE', 'LOCATION#GENERAL:POSITIVE', 'LOCATION#GENERAL:NEUTRAL', 'LOCATION#GENERAL:NEGATIVE', 'RESTAURANT#GENERAL:POSITIVE', 'RESTAURANT#GENERAL:NEUTRAL', 'RESTAURANT#GENERAL:NEGATIVE', 'RESTAURANT#MISCELLANEOUS:POSITIVE', 'RESTAURANT#MISCELLANEOUS:NEUTRAL', 'RESTAURANT#MISCELLANEOUS:NEGATIVE', 'RESTAURANT#PRICES:POSITIVE', 'RESTAURANT#PRICES:NEUTRAL', 'RESTAURANT#PRICES:NEGATIVE', 'SERVICE#GENERAL:POSITIVE', 'SERVICE#GENERAL:NEUTRAL', 'SERVICE#GENERAL:NEGATIVE']
@@ -62,7 +62,7 @@ def loadDataset(data_path, dataset_name, low_resource_setting, task, split = 0, 
         
     return df_train, df_eval, LABEL_SPACE
 
-def createPromptText(lang, prompt_templates, prompt_style, example_text, example_labels, dataset_name = 'rest-16', absa_task = 'acd', train = False):
+def createPromptText(lang, prompt_templates, prompt_style, example_text, example_labels, dataset_name, absa_task, train = False):
 
     # Set templates based on prompt config
     if dataset_name not in DATASETS:
@@ -155,21 +155,22 @@ def createPrompts(df_train, df_test, args, eos_token = ''):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     
     if args.dataset in DATASETS:
-        with open(os.path.join(base_dir, f'prompts_{args.dataset.replace("-","")}.json'), encoding='utf-8') as json_prompts:
-             prompt_templates = json.load(json_prompts)
+        
+        prompt_file_dataset = args.dataset.replace("translated-", "").replace("-", "")
+        with open(os.path.join(base_dir, f'prompts_{prompt_file_dataset}.json'), encoding='utf-8') as json_prompts:
+            prompt_templates = json.load(json_prompts)
+        
     else:
         raise NotImplementedError('Prompt-Template not found: File does not exist.')
 
-    label_column = 'labels_phrases' if 'labels_phrases' in df_train.columns else 'labels' if 'labels' in df_train.columns else lambda x: raise_err(NotImplementedError('Dataset does not have column with label targets.'))
-
     for index, row in df_train.iterrows():       
 
-        prompt, _ = createPromptText(lang = args.lang, prompt_templates = prompt_templates, prompt_style = args.prompt_style, example_text = row['text'], example_labels = row[label_column], dataset_name = args.dataset, absa_task = args.task, train = True) 
+        prompt, _ = createPromptText(lang = args.lang, prompt_templates = prompt_templates, prompt_style = args.prompt_style, example_text = row['text'], example_labels = row['labels'], dataset_name = args.dataset, absa_task = args.task, train = True) 
 
         prompts_train.append(prompt + eos_token)
 
     for index, row in df_test.iterrows():
-        prompt, targets = createPromptText(lang = args.lang, prompt_templates = prompt_templates, prompt_style = args.prompt_style, example_text = row['text'], example_labels = row[label_column], dataset_name = args.dataset, absa_task = args.task)
+        prompt, targets = createPromptText(lang = args.lang, prompt_templates = prompt_templates, prompt_style = args.prompt_style, example_text = row['text'], example_labels = row['labels'], dataset_name = args.dataset, absa_task = args.task)
         
         prompts_test.append(prompt + eos_token)
         ground_truth_labels.append(targets)
