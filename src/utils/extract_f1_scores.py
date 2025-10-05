@@ -4,7 +4,7 @@ import csv
 import glob
 
 def extract_f1_scores():
-    base_path = r"D:\Uni\Masterarbeit Code\jakob_finetuning\results\merges\meta_llama_full_precision_sauerkraut"
+    base_path = "D:/Uni/Masterarbeit Code/jakob_finetuning/results/merges/meta_llama_full_precision_sauerkraut"
     
     metrics_files = glob.glob(os.path.join(base_path, "**", "metrics.json"), recursive=True)
     

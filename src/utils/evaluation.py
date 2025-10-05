@@ -4,11 +4,6 @@ import torch
 from transformers import StoppingCriteria
 
 REGEX_ASPECTS_ACD = r'\[([^\]]+)\]'
-REGEX_ASPECTS_ACSD = r"\(([^,]+),[^,]+,\s*\"[^\"]*\"\)"
-REGEX_LABELS_ACSD = r"\([^,]+,\s*([^,]+)\s*,\s*\"[^\"]*\"\s*\)"
-REGEX_PHRASES_ACSD = r"\([^,]+,\s*[^,]+\s*,\s*\"([^\"]*)\"\s*\)"
-REGEX_LABELS_ACSA = r'\(([^,]+),\s*([^)]+)\)'
-REGEX_PAIRS_ACSA_ACSD = r'\([^()]+?\)'
 POLARITIES = ['POSITIVE', 'NEUTRAL', 'NEGATIVE']
 ASPECTS = [
     "AMBIENCE#GENERAL", "DRINKS#PRICES", "DRINKS#QUALITY", "DRINKS#STYLE_OPTIONS",
@@ -38,19 +33,6 @@ def safe_recursive_pattern(depth, max_depth):
     if depth >= max_depth:
         return rf'(?:{quoted_content}|[^()])*'
     return rf'\((?:{quoted_content}|[^()]|{safe_recursive_pattern(depth + 1, max_depth)})*\)'
-
-def extract_valid_e2e_tuples(text):
-    # Define the pattern for a well-formed tuple: ("Phrase", Label)
-    pattern = r'\(\s*"([^"]*)"\s*,\s*(POSITIVE|NEGATIVE|NEUTRAL)\s*\)'
-    
-    # Compile the regex to extract valid tuples
-    compiled_pattern = re.compile(pattern)
-    
-    # Extract all matches from the string
-    valid_tuples = compiled_pattern.findall(text)
-    
-    # Return the tuples in the format [('Phrase', 'Label'), ...]
-    return valid_tuples
 
 def extractAspects(output, task, cot = False, evaluation = False):
     def strip_cot_output(output, keywords):
@@ -98,26 +80,6 @@ def extractAspects(output, task, cot = False, evaluation = False):
             if aspect and polarity:
                 results.append([aspect.upper(), polarity.upper()])
         return results
-
-
-    elif task in ['e2e', 'e2e-e', 'tasd']:
-        if task in ['e2e', 'e2e-e']:
-            
-            return extract_valid_e2e_tuples(output)
-        
-        else:  # task == 'tasd'
-            max_depth = 5
-            pattern_targets = re.compile(safe_recursive_pattern(0, max_depth))
-            pairs = pattern_targets.findall(output)
-            
-            pattern_asp = re.compile(REGEX_ASPECTS_ACSD)
-            pattern_pol = re.compile(REGEX_LABELS_ACSD)
-            pattern_phrase = re.compile(REGEX_PHRASES_ACSD)
-            
-            return [
-                [pattern_asp.search(pair)[1], pattern_pol.search(pair)[1], pattern_phrase.search(pair)[1]]
-                for pair in pairs if pattern_asp.search(pair) and pattern_pol.search(pair) and pattern_phrase.search(pair)
-            ]
     
 def convertLabels(labels, task, label_space):
     false_predictions = []
@@ -290,128 +252,3 @@ def createResults(pred_labels, gold_labels, label_space, task):
         result_subset_recall = subset_recall(pred_labels, gold_labels)
 
         return result_asp, result_asp_pol, result_pairs, result_pol, None, result_subset_recall
-
-    elif task == 'e2e' or task == 'e2e-e':
-        micro_pairs = calculateMetrics(pred_labels, gold_labels)
-
-        metrics_pol = []
-        
-        for i in range(len(POLARITIES)):
-            pred_labels_subset = [[label for label in pred if (isinstance(label, str) and label.split(':')[1] == POLARITIES[i])] for pred in pred_labels]
-            gold_labels_subset = [[label for label in gold if (isinstance(label, str) and label.split(':')[1] == POLARITIES[i])] for gold in gold_labels]
-            metrics_pol.append({'polarity': POLARITIES[i], 'metrics': calculateMetrics(pred_labels_subset, gold_labels_subset)})
-
-        macro_pol = {'precision': round(sum([metrics['metrics']['precision'] for metrics in metrics_pol]) / (len(POLARITIES)), 4), 
-                 'recall': round(sum([metrics['metrics']['recall'] for metrics in metrics_pol]) / (len(POLARITIES)), 4), 
-                 'f1': round(sum([metrics['metrics']['f1'] for metrics in metrics_pol]) / (len(POLARITIES)), 4), 
-                 'accuracy': "",
-                 'support': micro_pairs['support']}
-
-        result_pol = {metr['polarity']:metr['metrics'] for metr in metrics_pol}
-        result_pol['Micro-AVG'] = micro_pairs
-        result_pol['Macro-AVG'] = macro_pol
-
-        return None, None, None, result_pol, None
-    
-    elif task == 'tasd':
-        # Calculate Micro Metrics
-    
-        # label_space = list(set([label for labels in gold_labels for label in labels]))
-        # label_space.sort()
-        label_space_grouped = [[label for label in label_space if label.split(':')[0] ==  aspect] for aspect in sorted(list(set([lab.split(':')[0] for lab in label_space])))]
-        
-        # Metrics by Aspects disregarding Polarities
-        metrics_asp = []
-        for i in range(len(label_space_grouped)):
-            pred_labels_subset = [[label.split(':')[0] for label in pred if label.split(':')[0] == label_space_grouped[i][0].split(':')[0]] for pred in pred_labels]
-            gold_labels_subset = [[label.split(':')[0] for label in gold if label.split(':')[0] == label_space_grouped[i][0].split(':')[0]] for gold in gold_labels]
-            metrics_asp.append({'aspect': label_space_grouped[i][0].split(':')[0], 'metrics': calculateMetrics(pred_labels_subset, gold_labels_subset)})
-    
-        micro_asp = calculateMetrics([[label.split(':')[0] for label in pred] for pred in pred_labels], [[label.split(':')[0] for label in gold] for gold in gold_labels])
-        
-        macro_asp = {'precision': round(sum([metrics['metrics']['precision'] for metrics in metrics_asp]) / (len(label_space_grouped) / 3), 4), 
-                 'recall': round(sum([metrics['metrics']['recall'] for metrics in metrics_asp]) / (len(label_space_grouped) / 3), 4), 
-                 'f1': round(sum([metrics['metrics']['f1'] for metrics in metrics_asp]) / (len(label_space_grouped) / 3), 4), 
-                 'accuracy': "",
-                 'support': micro_asp['support']}
-    
-        # Metrics by Aspects but Polarities have to match
-        metrics_asp_pol = []
-        for i in range(len(label_space_grouped)):
-            pred_labels_subset = [[':'.join(label.split(':')[:2]) for label in pred if ':'.join(label.split(':')[:2]) in label_space_grouped[i]] for pred in pred_labels]
-            gold_labels_subset = [[':'.join(label.split(':')[:2]) for label in gold if ':'.join(label.split(':')[:2]) in label_space_grouped[i]] for gold in gold_labels]
-            metrics_asp_pol.append({'aspect': label_space_grouped[i][0].split(':')[0], 'metrics': calculateMetrics(pred_labels_subset, gold_labels_subset)})
-
-        micro_asp_pol = calculateMetrics([[':'.join(label.split(':')[:2]) for label in pred] for pred in pred_labels], 
-                                       [[':'.join(label.split(':')[:2]) for label in gold] for gold in gold_labels])
-        
-        macro_asp_pol = {'precision': round(sum([metrics['metrics']['precision'] for metrics in metrics_asp_pol]) / (len(label_space_grouped)), 4), 
-                 'recall': round(sum([metrics['metrics']['recall'] for metrics in metrics_asp_pol]) / (len(label_space_grouped)), 4), 
-                 'f1': round(sum([metrics['metrics']['f1'] for metrics in metrics_asp_pol]) / (len(label_space_grouped)), 4), 
-                 'accuracy': "",
-                 'support': micro_asp_pol['support']}
-    
-        # Metrics by Aspect-Polarity-Pairs (Classifier Class-Labels)
-        metrics_pairs = []
-        for i in range(len(label_space)):
-            pred_labels_subset = [[':'.join(label.split(':')[:2]) for label in pred if ':'.join(label.split(':')[:2]) == label_space[i]] for pred in pred_labels]
-            gold_labels_subset = [[':'.join(label.split(':')[:2]) for label in gold if ':'.join(label.split(':')[:2]) == label_space[i]] for gold in gold_labels]
-            metrics_pairs.append({'aspect': label_space[i], 'metrics': calculateMetrics(pred_labels_subset, gold_labels_subset)})
-        
-        macro_pairs = {'precision': round(sum([metrics['metrics']['precision'] for metrics in metrics_pairs]) / (len(label_space)), 4), 
-                 'recall': round(sum([metrics['metrics']['recall'] for metrics in metrics_pairs]) / (len(label_space)), 4), 
-                 'f1': round(sum([metrics['metrics']['f1'] for metrics in metrics_pairs]) / (len(label_space)), 4), 
-                 'accuracy': "",
-                 'support': micro_asp_pol['support']}
-
-        # Metrcis by Aspects but Polarties and Phrases have to match
-        metrics_phrases = []
-        for i in range(len(label_space_grouped)):
-            pred_labels_subset = [[label for label in pred if ':'.join(label.split(':')[:2]) in label_space_grouped[i]] for pred in pred_labels]
-            gold_labels_subset = [[label for label in gold if ':'.join(label.split(':')[:2]) in label_space_grouped[i]] for gold in gold_labels]
-            metrics_phrases.append({'aspect': label_space_grouped[i][0].split(':')[0], 'metrics': calculateMetrics(pred_labels_subset, gold_labels_subset)})
-
-        micro_phrases = calculateMetrics([[label for label in pred] for pred in pred_labels], 
-                                         [[label for label in gold] for gold in gold_labels])
-        
-        macro_phrases = {'precision': round(sum([metrics['metrics']['precision'] for metrics in metrics_phrases]) / (len(label_space_grouped)), 4), 
-                 'recall': round(sum([metrics['metrics']['recall'] for metrics in metrics_phrases]) / (len(label_space_grouped)), 4), 
-                 'f1': round(sum([metrics['metrics']['f1'] for metrics in metrics_phrases]) / (len(label_space_grouped)), 4), 
-                 'accuracy': "",
-                 'support': micro_phrases['support']}
-
-        # Metrics by Polarities
-        metrics_pol = []
-        
-        for i in range(len(POLARITIES)):
-            pred_labels_subset = [[label for label in pred if (isinstance(label, str) and label.split(':')[1] == POLARITIES[i])] for pred in pred_labels]
-            gold_labels_subset = [[label for label in gold if (isinstance(label, str) and label.split(':')[1] == POLARITIES[i])] for gold in gold_labels]
-            metrics_pol.append({'polarity': POLARITIES[i], 'metrics': calculateMetrics(pred_labels_subset, gold_labels_subset)})
-
-        macro_pol = {'precision': round(sum([metrics['metrics']['precision'] for metrics in metrics_pol]) / (len(POLARITIES)), 4), 
-                 'recall': round(sum([metrics['metrics']['recall'] for metrics in metrics_pol]) / (len(POLARITIES)), 4), 
-                 'f1': round(sum([metrics['metrics']['f1'] for metrics in metrics_pol]) / (len(POLARITIES)), 4), 
-                 'accuracy': "",
-                 'support': micro_asp_pol['support']}
-        
-        result_asp = {metr['aspect']:metr['metrics'] for metr in metrics_asp}
-        result_asp['Micro-AVG'] = micro_asp
-        result_asp['Macro-AVG'] = macro_asp
-    
-        result_asp_pol = {metr['aspect']:metr['metrics'] for metr in metrics_asp_pol}
-        result_asp_pol['Micro-AVG'] = micro_asp_pol
-        result_asp_pol['Macro-AVG'] = macro_asp_pol
-    
-        result_pairs = {metr['aspect']:metr['metrics'] for metr in metrics_pairs}
-        result_pairs['Micro-AVG'] = micro_asp_pol
-        result_pairs['Macro-AVG'] = macro_pairs
-
-        result_asp_pol_phrases = {metr['aspect']:metr['metrics'] for metr in metrics_phrases}
-        result_asp_pol_phrases['Micro-AVG'] = micro_phrases
-        result_asp_pol_phrases['Macro-AVG'] = macro_phrases
-
-        result_pol = {metr['polarity']:metr['metrics'] for metr in metrics_pol}
-        result_pol['Micro-AVG'] = micro_asp_pol
-        result_pol['Macro-AVG'] = macro_pol
-        
-        return result_asp, result_asp_pol, result_pairs, result_pol, result_asp_pol_phrases

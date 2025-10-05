@@ -56,16 +56,16 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
     
     
 if __name__ == "__main__":    
-    base_model_dir = "D:/Uni/Masterarbeit Code/test/mergekit/merges/trained/llama/meta_llama_full_precision_sauerkraut/evaluate"
+    base_model_dir = "D:/Uni/Masterarbeit Code/test/mergekit/merges/trained/llama/meta_llama_full_spanish/evaluate"
     model_dirs = [f for f in glob.glob(f"{base_model_dir}/*") if os.path.isdir(f)]
 
     for model_name in model_dirs:
         print(f"Checking model: {model_name}")
 
-        # Try-catch block, so one bad model doesn't break the entire evaluation
+        # Try-catch block, so one bad model doesn't break the entire evaluation loop
         try:
             print(f"Evaluating model: {model_name}")
-            results_path = os.path.join("results/merges/meta_llama_full_precision_sauerkraut/finished_evaluation", os.path.basename(model_name))
+            results_path = os.path.join("results/merges/meta_llama_full_spanish/", os.path.basename(model_name))
             os.makedirs(results_path, exist_ok=True)
 
             model, tokenizer = FastLanguageModel.from_pretrained(
@@ -76,8 +76,8 @@ if __name__ == "__main__":
             FastLanguageModel.for_inference(model)
 
             config = Config()
-            config.dataset = 'GERestaurant'
-            config.lang = 'ger'
+            config.dataset = 'rest-16-spanish'
+            config.lang = 'spa'
 
             df_train, df_test, label_space = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
             prompts_train, prompts_test, ground_truth_labels = createPrompts(df_train, df_test, config, eos_token=tokenizer.eos_token)

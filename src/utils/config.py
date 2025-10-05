@@ -7,7 +7,7 @@ class Config(object):
         self.task = 'acsa'
         self.wandb = False
         self.run_tag = ''
-        self.output_dir = 'output/llama/non_quantized_prompts'
+        self.output_dir = 'output/llama/'
         self.data_path = 'data/'
         
         # Dataset Params
