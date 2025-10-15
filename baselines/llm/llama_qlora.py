@@ -2,7 +2,7 @@
 
 # pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
 
-# wenn UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 54278: character maps to <undefined>:
+# Before running llama_qlora.py, set the following environment variables in your terminal:
 # set PYTHONUTF8=1
 # set HF_HUB_ENABLE_HF_TRANSFER=0
 
@@ -56,16 +56,12 @@ def main():
     df_train, df_test, label_space = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
     prompts_train, prompts_test, ground_truth_labels = createPrompts(df_train, df_test, config, eos_token = tokenizer.eos_token)
 
-    print(label_space, "\n")
-    print("Ground Truth: ", ground_truth_labels[0], "\n")
-
     prompts_train = pd.DataFrame(prompts_train, columns = ['text'])
     prompts_test = pd.DataFrame(prompts_test, columns = ['text'])
     print("Prompt: ", prompts_train['text'][0], "\n")
 
     ds_train = Dataset.from_pandas(prompts_train)
     ds_test = Dataset.from_pandas(prompts_test)
-    print(ds_train, "\n")
 
     trainer = SFTTrainer(
         model=model,

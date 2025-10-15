@@ -146,7 +146,6 @@ def main():
             config,
             prompt_templates
         )
-        # print("Few-shot prompt:\n", few_shot_prompt)
         
         prompts_test.append(few_shot_prompt + tokenizer.eos_token)
         
@@ -162,10 +161,9 @@ def main():
             )
         
         output_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
-        # print("Model output:", output_text, "\n--------ENDE OUTPUT---------")
         
         # Extract only first answer
-        # Why? Fine-tuned models learned to stop after generating the answer, Base models see the pattern and continue generating more examples, Same predictions.append(output_text) works differently in each context
+        # Why? Fine-tuned models learned to stop after generating the answer, base models see the pattern and continue generating more examples, same predictions.append(output_text) works differently in each context
         # Find where test input appears
         test_input_marker = f"### Input:\n{test_text}\n\n### Output:"
 
@@ -185,8 +183,6 @@ def main():
             print(f"Warning: Could not find test input marker for: {test_text}")
             predictions.append("[]")
 
-        # print("\nFirst answer only: ", first_answer)
-        # print("\nGround truth: ", ground_truth)
         print(f"Processed {len(predictions)}/{len(df_test)} samples")
     
     # Same evaluation as in llama_eval.py

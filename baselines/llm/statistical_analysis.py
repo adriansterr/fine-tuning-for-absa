@@ -65,8 +65,7 @@ def run_statistical_tests(predictions_df):
     }
 
 if __name__ == "__main__":
-    # results_path = "results/merges/meta_llama_full_spanish/pt_gl_linear_75_25"
-    # results_path = "results/merges/meta_llama_full_french/linear_75_25"
+    # Change:
     results_path = "results/merges/meta_llama_full_precision_sauerkraut/dare/dare_ties_1_0846"
     predictions_df = load_predictions(results_path)
     

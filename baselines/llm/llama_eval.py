@@ -28,7 +28,7 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
     processed_ground_truths = [extractAspects(gt, config.task, config.prompt_style) for gt in ground_truth_labels]
 
     gold_labels, _ = convertLabels(processed_ground_truths, config.task, label_space)
-    pred_labels, false_predictions = convertLabels(processed_predictions, config.task, label_space)
+    pred_labels, _ = convertLabels(processed_predictions, config.task, label_space)
 
     results_asp, results_asp_pol, results_pairs, results_pol, results_phrases, results_subset_recall = createResults(pred_labels, gold_labels, label_space, config.task)
 
