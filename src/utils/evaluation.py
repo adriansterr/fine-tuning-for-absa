@@ -34,26 +34,10 @@ def safe_recursive_pattern(depth, max_depth):
         return rf'(?:{quoted_content}|[^()])*'
     return rf'\((?:{quoted_content}|[^()]|{safe_recursive_pattern(depth + 1, max_depth)})*\)'
 
-def extractAspects(output, task, cot = False, evaluation = False):
-    def strip_cot_output(output, keywords):
-        for keyword in keywords:
-            if keyword in output:
-                return output.split(keyword)[-1]
-        return output
-
+def extractAspects(output, task):
     # Validate Output
     if output.count('(') != output.count(')'):
         return []
-
-    if cot and evaluation:
-        keywords = [
-            'folgenden Aspekt-Sentiment-Paar:', 'folgenden Aspekt-Sentiment-Paaren:',
-            'the following aspect-sentiment-pair:', 'the following aspect-sentiment-pairs:',
-            'folgenden Aspekt-Sentiment-Phrasen-Tripeln:', 'folgenden Aspekt-Sentiment-Phrasen-Tripel:',
-            'the following aspect-sentiment-phrase-triple:', 'the following aspect-sentiment-phrase-triples:',
-            'the following phrase-polarity-tuple:','the following phrase-polarity-tuples:'
-        ]     
-        output = strip_cot_output(output, keywords)
         
     if task == 'acd':
         pattern_asp = re.compile(REGEX_ASPECTS_ACD)

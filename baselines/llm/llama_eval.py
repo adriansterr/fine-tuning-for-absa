@@ -24,8 +24,8 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
         output_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
         predictions.append(output_text)
 
-    processed_predictions = [extractAspects(p, config.task, config.prompt_style) for p in predictions]
-    processed_ground_truths = [extractAspects(gt, config.task, config.prompt_style) for gt in ground_truth_labels]
+    processed_predictions = [extractAspects(p, config.task) for p in predictions]
+    processed_ground_truths = [extractAspects(gt, config.task) for gt in ground_truth_labels]
 
     gold_labels, _ = convertLabels(processed_ground_truths, config.task, label_space)
     pred_labels, _ = convertLabels(processed_predictions, config.task, label_space)
