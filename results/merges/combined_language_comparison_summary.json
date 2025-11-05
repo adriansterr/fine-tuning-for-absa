@@ -1,0 +1,38 @@
+{
+  "French": {
+    "selected_merge": "linear_linear_75_25",
+    "selection_method": "statistical_significance",
+    "best_by_f1": {
+      "merge": "linear_linear_75_25",
+      "f1_score": 0.7234
+    },
+    "significantly_best": "linear_linear_75_25",
+    "total_configs": 6,
+    "significant_comparisons": 14,
+    "total_comparisons": 15
+  },
+  "German": {
+    "selected_merge": "acree_fusion",
+    "selection_method": "statistical_significance",
+    "best_by_f1": {
+      "merge": "dare_dare_ties_1_087",
+      "f1_score": 0.7711
+    },
+    "significantly_best": "acree_fusion",
+    "total_configs": 104,
+    "significant_comparisons": 776,
+    "total_comparisons": 5356
+  },
+  "Spanish": {
+    "selected_merge": "pt_gl_linear_75_25",
+    "selection_method": "statistical_significance",
+    "best_by_f1": {
+      "merge": "pt_gl_linear_75_25",
+      "f1_score": 0.6636
+    },
+    "significantly_best": "pt_gl_linear_75_25",
+    "total_configs": 18,
+    "significant_comparisons": 105,
+    "total_comparisons": 153
+  }
+}

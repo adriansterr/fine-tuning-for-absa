@@ -1,0 +1,29 @@
+{
+  "French": {
+    "selected_merge": "linear_linear_75_25",
+    "merge_f1": 0.7234,
+    "best_baseline_f1": 0.7145,
+    "improvement_over_best_baseline": 0.008900000000000019,
+    "total_baselines": 3,
+    "significantly_better_uncorrected": 1,
+    "significantly_better_corrected": 1
+  },
+  "German": {
+    "selected_merge": "acree_fusion",
+    "merge_f1": 0.7704,
+    "best_baseline_f1": 0.7664,
+    "improvement_over_best_baseline": 0.0040000000000000036,
+    "total_baselines": 3,
+    "significantly_better_uncorrected": 2,
+    "significantly_better_corrected": 2
+  },
+  "Spanish": {
+    "selected_merge": "pt_gl_linear_75_25",
+    "merge_f1": 0.6636,
+    "best_baseline_f1": 0.7445,
+    "improvement_over_best_baseline": -0.08090000000000008,
+    "total_baselines": 3,
+    "significantly_better_uncorrected": 0,
+    "significantly_better_corrected": 0
+  }
+}
