@@ -1,0 +1,148 @@
+{
+  "baseline_comparisons": [
+    {
+      "baseline": "Baseline 1: English fine-tune with Spanish prompts",
+      "comparison": "Merge vs Baseline 1: English fine-tune with Spanish prompts",
+      "merge_accuracy": 0.44165435745937964,
+      "baseline_accuracy": 0.6395864106351551,
+      "merge_f1": 0.6636,
+      "baseline_f1": 0.7445,
+      "improvement_accuracy": -0.19793205317577545,
+      "improvement_f1": -0.08090000000000008,
+      "mcnemar_test": {
+        "statistic": 32.0,
+        "p_value": 5.14050212845931e-23,
+        "effect_size": 0.2174105700794576,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -10.225410239089223,
+        "p_value": 6.428695115379551e-23,
+        "effect_size_cohens_d": -0.39299444025382174,
+        "interpretation": "Significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.6631319,
+          "std": 0.014130507152611334,
+          "ci_lower": 0.635595,
+          "ci_upper": 0.6896074999999999,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.7443548000000001,
+          "std": 0.012891262814790487,
+          "ci_lower": 0.719395,
+          "ci_upper": 0.7685025,
+          "confidence": 0.95
+        }
+      }
+    },
+    {
+      "baseline": "Baseline 2: Spanish translated dataset",
+      "comparison": "Merge vs Baseline 2: Spanish translated dataset",
+      "merge_accuracy": 0.44165435745937964,
+      "baseline_accuracy": 0.6070901033973413,
+      "merge_f1": 0.6636,
+      "baseline_f1": 0.6789,
+      "improvement_accuracy": -0.16543574593796162,
+      "improvement_f1": -0.01529999999999998,
+      "mcnemar_test": {
+        "statistic": 46.0,
+        "p_value": 1.416941529522356e-15,
+        "effect_size": 0.26066611637211295,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -8.217861157992491,
+        "p_value": 1.0567139804908179e-15,
+        "effect_size_cohens_d": -0.31583806129587033,
+        "interpretation": "Significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.664615,
+          "std": 0.014593414782017264,
+          "ci_lower": 0.6373775,
+          "ci_upper": 0.691805,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.6784869,
+          "std": 0.016461296983834535,
+          "ci_lower": 0.646175,
+          "ci_upper": 0.7110099999999999,
+          "confidence": 0.95
+        }
+      }
+    },
+    {
+      "baseline": "Baseline 3: Few-shot (20-shot)",
+      "comparison": "Merge vs Baseline 3: Few-shot (20-shot)",
+      "merge_accuracy": 0.44165435745937964,
+      "baseline_accuracy": 0.5110782865583456,
+      "merge_f1": 0.6636,
+      "baseline_f1": 0.6158,
+      "improvement_accuracy": -0.069423929098966,
+      "improvement_f1": 0.047799999999999954,
+      "mcnemar_test": {
+        "statistic": 83.0,
+        "p_value": 0.0015611343304454107,
+        "effect_size": 0.3501424061421654,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -3.2429426445571146,
+        "p_value": 0.001241187675676702,
+        "effect_size_cohens_d": -0.12463641062546627,
+        "interpretation": "Significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.6629672000000001,
+          "std": 0.01464968204979207,
+          "ci_lower": 0.6332949999999999,
+          "ci_upper": 0.6903075,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.6155543,
+          "std": 0.015716205060700882,
+          "ci_lower": 0.5859975,
+          "ci_upper": 0.6460075,
+          "confidence": 0.95
+        }
+      }
+    }
+  ],
+  "bonferroni_holm_correction": [
+    {
+      "comparison": "Merge vs Baseline 1: English fine-tune with Spanish prompts",
+      "p_value": 5.14050212845931e-23,
+      "adjusted_alpha": 0.016666666666666666,
+      "is_significant": true,
+      "rank": 1
+    },
+    {
+      "comparison": "Merge vs Baseline 2: Spanish translated dataset",
+      "p_value": 1.416941529522356e-15,
+      "adjusted_alpha": 0.025,
+      "is_significant": true,
+      "rank": 2
+    },
+    {
+      "comparison": "Merge vs Baseline 3: Few-shot (20-shot)",
+      "p_value": 0.0015611343304454107,
+      "adjusted_alpha": 0.05,
+      "is_significant": true,
+      "rank": 3
+    }
+  ],
+  "summary": {
+    "total_baselines": 3,
+    "significantly_better_than_baselines_uncorrected": 0,
+    "significantly_better_than_baselines_corrected": 0,
+    "merge_f1": 0.6636,
+    "best_baseline_f1": 0.7445
+  }
+}
