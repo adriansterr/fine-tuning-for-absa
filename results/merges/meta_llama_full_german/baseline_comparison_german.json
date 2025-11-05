@@ -1,0 +1,148 @@
+{
+  "baseline_comparisons": [
+    {
+      "baseline": "Baseline 1: English fine-tune with German prompts",
+      "comparison": "Merge vs Baseline 1: English fine-tune with German prompts",
+      "merge_accuracy": 0.6800870511425462,
+      "baseline_accuracy": 0.6605005440696409,
+      "merge_f1": 0.7704,
+      "baseline_f1": 0.7664,
+      "improvement_accuracy": 0.019586507072905324,
+      "improvement_f1": 0.0040000000000000036,
+      "mcnemar_test": {
+        "statistic": 29.0,
+        "p_value": 0.050452410247217666,
+        "effect_size": 0.1776401958257594,
+        "interpretation": "No significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 2.068421121981597,
+        "p_value": 0.038879982734449405,
+        "effect_size_cohens_d": 0.06823091703194563,
+        "interpretation": "Significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.7709838,
+          "std": 0.011249572327870957,
+          "ci_lower": 0.7502,
+          "ci_upper": 0.7924025,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.7668247,
+          "std": 0.011352295799088395,
+          "ci_lower": 0.7446925,
+          "ci_upper": 0.7891025,
+          "confidence": 0.95
+        }
+      }
+    },
+    {
+      "baseline": "Baseline 2: German translated dataset",
+      "comparison": "Merge vs Baseline 2: German translated dataset",
+      "merge_accuracy": 0.6800870511425462,
+      "baseline_accuracy": 0.6441784548422198,
+      "merge_f1": 0.7704,
+      "baseline_f1": 0.7486,
+      "improvement_accuracy": 0.03590859630032639,
+      "improvement_f1": 0.02179999999999993,
+      "mcnemar_test": {
+        "statistic": 38.0,
+        "p_value": 0.002033169531309131,
+        "effect_size": 0.2033452549470157,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 3.1764198277343914,
+        "p_value": 0.0015408298055168148,
+        "effect_size_cohens_d": 0.10478042185004366,
+        "interpretation": "Significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.7699514,
+          "std": 0.011439192193507369,
+          "ci_lower": 0.7472925,
+          "ci_upper": 0.7917025,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.7485876,
+          "std": 0.011089788376700434,
+          "ci_lower": 0.727185,
+          "ci_upper": 0.770605,
+          "confidence": 0.95
+        }
+      }
+    },
+    {
+      "baseline": "Baseline 3: Few-shot (20-shot)",
+      "comparison": "Merge vs Baseline 3: Few-shot (20-shot)",
+      "merge_accuracy": 0.6800870511425462,
+      "baseline_accuracy": 0.5549510337323177,
+      "merge_f1": 0.7704,
+      "baseline_f1": 0.6355,
+      "improvement_accuracy": 0.1251360174102285,
+      "improvement_f1": 0.13490000000000002,
+      "mcnemar_test": {
+        "statistic": 54.0,
+        "p_value": 5.485356069087812e-15,
+        "effect_size": 0.24240363284966668,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 7.957827705013098,
+        "p_value": 5.142753592318249e-15,
+        "effect_size_cohens_d": 0.2625045142524404,
+        "interpretation": "Significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.7710364999999999,
+          "std": 0.010344984183168189,
+          "ci_lower": 0.7503949999999999,
+          "ci_upper": 0.791205,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.6356980000000001,
+          "std": 0.013756390369570066,
+          "ci_lower": 0.609,
+          "ci_upper": 0.6614025,
+          "confidence": 0.95
+        }
+      }
+    }
+  ],
+  "bonferroni_holm_correction": [
+    {
+      "comparison": "Merge vs Baseline 3: Few-shot (20-shot)",
+      "p_value": 5.485356069087812e-15,
+      "adjusted_alpha": 0.016666666666666666,
+      "is_significant": true,
+      "rank": 1
+    },
+    {
+      "comparison": "Merge vs Baseline 2: German translated dataset",
+      "p_value": 0.002033169531309131,
+      "adjusted_alpha": 0.025,
+      "is_significant": true,
+      "rank": 2
+    },
+    {
+      "comparison": "Merge vs Baseline 1: English fine-tune with German prompts",
+      "p_value": 0.050452410247217666,
+      "adjusted_alpha": 0.05,
+      "is_significant": false,
+      "rank": 3
+    }
+  ],
+  "summary": {
+    "total_baselines": 3,
+    "significantly_better_than_baselines_uncorrected": 2,
+    "significantly_better_than_baselines_corrected": 2,
+    "merge_f1": 0.7704,
+    "best_baseline_f1": 0.7664
+  }
+}
