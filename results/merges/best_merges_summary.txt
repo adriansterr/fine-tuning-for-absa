@@ -1,0 +1,91 @@
+
+================================================================================
+German
+================================================================================
+
+BEST MERGE: acree_fusion
+  F1 Score: 0.7704
+  Significant Wins (after correction): 9
+  Significant Losses (after correction): 0
+  Total Comparisons: 103
+
+STATISTICALLY DOMINANT (after Bonferroni-Holm correction)
+  This merge significantly outperforms 9 other merge(s)
+
+Top 5 Merges:-------------------------------------------------------------------
+Merge                                    F1       Wins   Losses  Status
+--------------------------------------------------------------------------------
+acree_fusion                             0.7704   9      0       Dominant
+slerp_slerp_t_04                         0.7665   9      0       Dominant
+dare_dare_ties_1_087                     0.7711   8      0       Dominant
+della_della_linear_1_08_08_08_01_01      0.7711   8      0       Dominant
+dare_dare_ties_1_0846                    0.7708   8      0       Dominant
+
+Correction Impact:--------------------------------------------------------------
+  Total pairwise comparisons: 5356
+  Significant (p < 0.05, uncorrected): 1362 (25.4%)
+  Significant (after Bonferroni-Holm): 776 (14.5%)
+
+================================================================================
+French
+================================================================================
+
+BEST MERGE: linear_linear_75_25
+  F1 Score: 0.7234
+  Significant Wins (after correction): 5
+  Significant Losses (after correction): 0
+  Total Comparisons: 5
+
+STATISTICALLY DOMINANT (after Bonferroni-Holm correction)
+  This merge significantly outperforms 5 other merge(s)
+
+Top 5 Merges:-------------------------------------------------------------------
+Merge                                    F1       Wins   Losses  Status
+--------------------------------------------------------------------------------
+linear_linear_75_25                      0.7234   5      0       Dominant
+linear_linear_50_50                      0.6339   4      1       Mixed
+slerp_slerp_t_05                         0.5724   3      2       Mixed
+dare_linear_dare_linear_1_085            0.3402   1      3       Mixed
+dare_ties_dare_ties_1_0846               0.3143   1      3       Mixed
+
+Correction Impact:--------------------------------------------------------------
+  Total pairwise comparisons: 15
+  Significant (p < 0.05, uncorrected): 14 (93.3%)
+  Significant (after Bonferroni-Holm): 14 (93.3%)
+
+================================================================================
+Spanish
+================================================================================
+
+BEST MERGE: pt_gl_linear_75_25
+  F1 Score: 0.6636
+  Significant Wins (after correction): 16
+  Significant Losses (after correction): 0
+  Total Comparisons: 17
+
+STATISTICALLY DOMINANT (after Bonferroni-Holm correction)
+  This merge significantly outperforms 16 other merge(s)
+
+Top 5 Merges:-------------------------------------------------------------------
+Merge                                    F1       Wins   Losses  Status
+--------------------------------------------------------------------------------
+pt_gl_linear_75_25                       0.6636   16     0       Dominant
+pt_gl_linear_90_10                       0.6444   16     0       Dominant
+pt_gl_linear_85_15                       0.4864   10     2       Mixed
+pt_gl_linear_55_45                       0.2509   10     2       Mixed
+pt_gl_task_arithmetic_1_075              0.2369   10     2       Mixed
+
+Correction Impact:--------------------------------------------------------------
+  Total pairwise comparisons: 153
+  Significant (p < 0.05, uncorrected): 125 (81.7%)
+  Significant (after Bonferroni-Holm): 105 (68.6%)
+
+================================================================================
+SUMMARY - BEST MERGE PER LANGUAGE
+================================================================================
+
+German   acree_fusion                                  F1=0.7704, wins=9, losses=0
+French   linear_linear_75_25                           F1=0.7234, wins=5, losses=0
+Spanish  pt_gl_linear_75_25                            F1=0.6636, wins=16, losses=0
+
+================================================================================
