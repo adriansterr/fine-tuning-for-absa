@@ -1,0 +1,447 @@
+{
+  "pairwise_comparisons": [
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs dare_ties_dare_ties_1_0846",
+      "merge_a": "dare_linear_dare_linear_1_085",
+      "merge_b": "dare_ties_dare_ties_1_0846",
+      "accuracy_a": 0.19039451114922812,
+      "accuracy_b": 0.18181818181818182,
+      "f1_a": 0.3402,
+      "f1_b": 0.3143,
+      "mcnemar_test": {
+        "statistic": 26.0,
+        "p_value": 0.5966417603730826,
+        "effect_size": 0.21117981087556836,
+        "interpretation": "No significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 0.6619469948626623,
+        "p_value": 0.5082671959340649,
+        "effect_size_cohens_d": 0.027415043384733294,
+        "interpretation": "No significant difference"
+      }
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs linear_linear_25_75",
+      "merge_a": "dare_linear_dare_linear_1_085",
+      "merge_b": "linear_linear_25_75",
+      "accuracy_a": 0.19039451114922812,
+      "accuracy_b": 0.07375643224699828,
+      "f1_a": 0.3402,
+      "f1_b": 0.1832,
+      "mcnemar_test": {
+        "statistic": 17.0,
+        "p_value": 4.698103109444034e-12,
+        "effect_size": 0.17076158738298688,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 7.005090700501791,
+        "p_value": 6.843383587267594e-12,
+        "effect_size_cohens_d": 0.2901212135695138,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs linear_linear_50_50",
+      "merge_a": "dare_linear_dare_linear_1_085",
+      "merge_b": "linear_linear_50_50",
+      "accuracy_a": 0.19039451114922812,
+      "accuracy_b": 0.5060034305317325,
+      "f1_a": 0.3402,
+      "f1_b": 0.6339,
+      "mcnemar_test": {
+        "statistic": 9.0,
+        "p_value": 4.201213205368683e-46,
+        "effect_size": 0.12424730498438734,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -15.324010990441783,
+        "p_value": 8.936244206553057e-45,
+        "effect_size_cohens_d": -0.6346556890378411,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs linear_linear_75_25",
+      "merge_a": "dare_linear_dare_linear_1_085",
+      "merge_b": "linear_linear_75_25",
+      "accuracy_a": 0.19039451114922812,
+      "accuracy_b": 0.5986277873070326,
+      "f1_a": 0.3402,
+      "f1_b": 0.7234,
+      "mcnemar_test": {
+        "statistic": 7.0,
+        "p_value": 3.348274778978452e-63,
+        "effect_size": 0.10957582335289494,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -19.11005412693777,
+        "p_value": 1.4924760524545386e-63,
+        "effect_size_cohens_d": -0.7914575744592623,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs slerp_slerp_t_05",
+      "merge_a": "dare_linear_dare_linear_1_085",
+      "merge_b": "slerp_slerp_t_05",
+      "accuracy_a": 0.19039451114922812,
+      "accuracy_b": 0.47684391080617494,
+      "f1_a": 0.3402,
+      "f1_b": 0.5724,
+      "mcnemar_test": {
+        "statistic": 10.0,
+        "p_value": 1.2181472636440981e-40,
+        "effect_size": 0.1309681589627518,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -14.144313462063804,
+        "p_value": 2.969350575330575e-39,
+        "effect_size_cohens_d": -0.5857976095052723,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "dare_ties_dare_ties_1_0846 vs linear_linear_25_75",
+      "merge_a": "dare_ties_dare_ties_1_0846",
+      "merge_b": "linear_linear_25_75",
+      "accuracy_a": 0.18181818181818182,
+      "accuracy_b": 0.07375643224699828,
+      "f1_a": 0.3143,
+      "f1_b": 0.1832,
+      "mcnemar_test": {
+        "statistic": 16.0,
+        "p_value": 3.4675436577962654e-11,
+        "effect_size": 0.16566307331251645,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 6.702748101675676,
+        "p_value": 4.841486365996779e-11,
+        "effect_size_cohens_d": 0.277599462540807,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "dare_ties_dare_ties_1_0846 vs linear_linear_50_50",
+      "merge_a": "dare_ties_dare_ties_1_0846",
+      "merge_b": "linear_linear_50_50",
+      "accuracy_a": 0.18181818181818182,
+      "accuracy_b": 0.5060034305317325,
+      "f1_a": 0.3143,
+      "f1_b": 0.6339,
+      "mcnemar_test": {
+        "statistic": 7.0,
+        "p_value": 4.094445997918995e-49,
+        "effect_size": 0.10957582335289494,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -15.862063205519203,
+        "p_value": 2.348765100357637e-47,
+        "effect_size_cohens_d": -0.6569395349259243,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "dare_ties_dare_ties_1_0846 vs linear_linear_75_25",
+      "merge_a": "dare_ties_dare_ties_1_0846",
+      "merge_b": "linear_linear_75_25",
+      "accuracy_a": 0.18181818181818182,
+      "accuracy_b": 0.5986277873070326,
+      "f1_a": 0.3143,
+      "f1_b": 0.7234,
+      "mcnemar_test": {
+        "statistic": 7.0,
+        "p_value": 1.2018891587710471e-64,
+        "effect_size": 0.10957582335289494,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -19.456642212231593,
+        "p_value": 2.501431147584263e-65,
+        "effect_size_cohens_d": -0.8058117863050813,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "dare_ties_dare_ties_1_0846 vs slerp_slerp_t_05",
+      "merge_a": "dare_ties_dare_ties_1_0846",
+      "merge_b": "slerp_slerp_t_05",
+      "accuracy_a": 0.18181818181818182,
+      "accuracy_b": 0.47684391080617494,
+      "f1_a": 0.3143,
+      "f1_b": 0.5724,
+      "mcnemar_test": {
+        "statistic": 7.0,
+        "p_value": 2.891472777823749e-44,
+        "effect_size": 0.10957582335289494,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -14.776721051131531,
+        "p_value": 3.445743916670057e-42,
+        "effect_size_cohens_d": -0.6119892557030521,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "linear_linear_25_75 vs linear_linear_50_50",
+      "merge_a": "linear_linear_25_75",
+      "merge_b": "linear_linear_50_50",
+      "accuracy_a": 0.07375643224699828,
+      "accuracy_b": 0.5060034305317325,
+      "f1_a": 0.1832,
+      "f1_b": 0.6339,
+      "mcnemar_test": {
+        "statistic": 4.0,
+        "p_value": 2.0400048186009825e-70,
+        "effect_size": 0.08283153665625823,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -20.4848713920087,
+        "p_value": 1.241509224677122e-70,
+        "effect_size_cohens_d": -0.8483966878029521,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "linear_linear_25_75 vs linear_linear_75_25",
+      "merge_a": "linear_linear_25_75",
+      "merge_b": "linear_linear_75_25",
+      "accuracy_a": 0.07375643224699828,
+      "accuracy_b": 0.5986277873070326,
+      "f1_a": 0.1832,
+      "f1_b": 0.7234,
+      "mcnemar_test": {
+        "statistic": 0.0,
+        "p_value": 1.5340917079055395e-92,
+        "effect_size": 0.0,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -25.356092126789537,
+        "p_value": 4.079982913191041e-96,
+        "effect_size_cohens_d": -1.050142037229814,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "linear_linear_25_75 vs slerp_slerp_t_05",
+      "merge_a": "linear_linear_25_75",
+      "merge_b": "slerp_slerp_t_05",
+      "accuracy_a": 0.07375643224699828,
+      "accuracy_b": 0.47684391080617494,
+      "f1_a": 0.1832,
+      "f1_b": 0.5724,
+      "mcnemar_test": {
+        "statistic": 4.0,
+        "p_value": 2.0391429296977133e-65,
+        "effect_size": 0.08283153665625823,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -19.282437273597363,
+        "p_value": 1.9569189816307824e-64,
+        "effect_size_cohens_d": -0.7985969549249899,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "linear_linear_50_50 vs linear_linear_75_25",
+      "merge_a": "linear_linear_50_50",
+      "merge_b": "linear_linear_75_25",
+      "accuracy_a": 0.5060034305317325,
+      "accuracy_b": 0.5986277873070326,
+      "f1_a": 0.6339,
+      "f1_b": 0.7234,
+      "mcnemar_test": {
+        "statistic": 19.0,
+        "p_value": 1.2340387331102889e-08,
+        "effect_size": 0.18052714881140727,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": -5.784497393433351,
+        "p_value": 1.1881938997960405e-08,
+        "effect_size_cohens_d": -0.23956940394110238,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "linear_linear_50_50 vs slerp_slerp_t_05",
+      "merge_a": "linear_linear_50_50",
+      "merge_b": "slerp_slerp_t_05",
+      "accuracy_a": 0.5060034305317325,
+      "accuracy_b": 0.47684391080617494,
+      "f1_a": 0.6339,
+      "f1_b": 0.5724,
+      "mcnemar_test": {
+        "statistic": 6.0,
+        "p_value": 0.002315700054168701,
+        "effect_size": 0.10144749970923668,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 3.1814202157212557,
+        "p_value": 0.0015436031578498208,
+        "effect_size_cohens_d": 0.13176096260873807,
+        "interpretation": "Significant difference"
+      }
+    },
+    {
+      "comparison": "linear_linear_75_25 vs slerp_slerp_t_05",
+      "merge_a": "linear_linear_75_25",
+      "merge_b": "slerp_slerp_t_05",
+      "accuracy_a": 0.5986277873070326,
+      "accuracy_b": 0.47684391080617494,
+      "f1_a": 0.7234,
+      "f1_b": 0.5724,
+      "mcnemar_test": {
+        "statistic": 14.0,
+        "p_value": 1.427991634717386e-13,
+        "effect_size": 0.15496361549386253,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 7.463000084650785,
+        "p_value": 3.09859215260797e-13,
+        "effect_size_cohens_d": 0.30908588253870484,
+        "interpretation": "Significant difference"
+      }
+    }
+  ],
+  "holm_bonferroni_correction": [
+    {
+      "comparison": "linear_linear_25_75 vs linear_linear_75_25",
+      "p_value": 1.5340917079055395e-92,
+      "adjusted_alpha": 0.0033333333333333335,
+      "is_significant": true,
+      "rank": 1
+    },
+    {
+      "comparison": "linear_linear_25_75 vs linear_linear_50_50",
+      "p_value": 2.0400048186009825e-70,
+      "adjusted_alpha": 0.0035714285714285718,
+      "is_significant": true,
+      "rank": 2
+    },
+    {
+      "comparison": "linear_linear_25_75 vs slerp_slerp_t_05",
+      "p_value": 2.0391429296977133e-65,
+      "adjusted_alpha": 0.0038461538461538464,
+      "is_significant": true,
+      "rank": 3
+    },
+    {
+      "comparison": "dare_ties_dare_ties_1_0846 vs linear_linear_75_25",
+      "p_value": 1.2018891587710471e-64,
+      "adjusted_alpha": 0.004166666666666667,
+      "is_significant": true,
+      "rank": 4
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs linear_linear_75_25",
+      "p_value": 3.348274778978452e-63,
+      "adjusted_alpha": 0.004545454545454546,
+      "is_significant": true,
+      "rank": 5
+    },
+    {
+      "comparison": "dare_ties_dare_ties_1_0846 vs linear_linear_50_50",
+      "p_value": 4.094445997918995e-49,
+      "adjusted_alpha": 0.005,
+      "is_significant": true,
+      "rank": 6
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs linear_linear_50_50",
+      "p_value": 4.201213205368683e-46,
+      "adjusted_alpha": 0.005555555555555556,
+      "is_significant": true,
+      "rank": 7
+    },
+    {
+      "comparison": "dare_ties_dare_ties_1_0846 vs slerp_slerp_t_05",
+      "p_value": 2.891472777823749e-44,
+      "adjusted_alpha": 0.00625,
+      "is_significant": true,
+      "rank": 8
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs slerp_slerp_t_05",
+      "p_value": 1.2181472636440981e-40,
+      "adjusted_alpha": 0.0071428571428571435,
+      "is_significant": true,
+      "rank": 9
+    },
+    {
+      "comparison": "linear_linear_75_25 vs slerp_slerp_t_05",
+      "p_value": 1.427991634717386e-13,
+      "adjusted_alpha": 0.008333333333333333,
+      "is_significant": true,
+      "rank": 10
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs linear_linear_25_75",
+      "p_value": 4.698103109444034e-12,
+      "adjusted_alpha": 0.01,
+      "is_significant": true,
+      "rank": 11
+    },
+    {
+      "comparison": "dare_ties_dare_ties_1_0846 vs linear_linear_25_75",
+      "p_value": 3.4675436577962654e-11,
+      "adjusted_alpha": 0.0125,
+      "is_significant": true,
+      "rank": 12
+    },
+    {
+      "comparison": "linear_linear_50_50 vs linear_linear_75_25",
+      "p_value": 1.2340387331102889e-08,
+      "adjusted_alpha": 0.016666666666666666,
+      "is_significant": true,
+      "rank": 13
+    },
+    {
+      "comparison": "linear_linear_50_50 vs slerp_slerp_t_05",
+      "p_value": 0.002315700054168701,
+      "adjusted_alpha": 0.025,
+      "is_significant": true,
+      "rank": 14
+    },
+    {
+      "comparison": "dare_linear_dare_linear_1_085 vs dare_ties_dare_ties_1_0846",
+      "p_value": 0.5966417603730826,
+      "adjusted_alpha": 0.05,
+      "is_significant": false,
+      "rank": 15
+    }
+  ],
+  "summary": {
+    "total_comparisons": 15,
+    "significant_comparisons_uncorrected": 14,
+    "significant_comparisons_corrected": 14,
+    "significantly_best_merge": "linear_linear_75_25",
+    "best_by_f1": {
+      "merge": "linear_linear_75_25",
+      "f1_score": 0.7234
+    },
+    "selected_merge": "linear_linear_75_25",
+    "selection_method": "statistical_significance",
+    "all_f1_scores": {
+      "dare_linear_dare_linear_1_085": 0.3402,
+      "dare_ties_dare_ties_1_0846": 0.3143,
+      "linear_linear_25_75": 0.1832,
+      "linear_linear_50_50": 0.6339,
+      "linear_linear_75_25": 0.7234,
+      "slerp_slerp_t_05": 0.5724
+    }
+  },
+  "recommendation": "Significantly best merge: linear_linear_75_25"
+}

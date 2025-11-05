@@ -1,0 +1,148 @@
+{
+  "baseline_comparisons": [
+    {
+      "baseline": "Baseline 1: English fine-tune with French prompts",
+      "comparison": "Merge vs Baseline 1: English fine-tune with French prompts",
+      "merge_accuracy": 0.5986277873070326,
+      "baseline_accuracy": 0.5951972555746141,
+      "merge_f1": 0.7234,
+      "baseline_f1": 0.7145,
+      "improvement_accuracy": 0.0034305317324184736,
+      "improvement_f1": 0.008900000000000019,
+      "mcnemar_test": {
+        "statistic": 24.0,
+        "p_value": 0.887724827340783,
+        "effect_size": 0.20289499941847336,
+        "interpretation": "No significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 0.28261942450328315,
+        "p_value": 0.7775690705708879,
+        "effect_size_cohens_d": 0.01170490061025715,
+        "interpretation": "No significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.7237858000000001,
+          "std": 0.013845977696067548,
+          "ci_lower": 0.6957975,
+          "ci_upper": 0.7503025,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.7148270999999999,
+          "std": 0.013899980416892681,
+          "ci_lower": 0.6876975,
+          "ci_upper": 0.7421099999999999,
+          "confidence": 0.95
+        }
+      }
+    },
+    {
+      "baseline": "Baseline 2: French translated dataset",
+      "comparison": "Merge vs Baseline 2: French translated dataset",
+      "merge_accuracy": 0.5986277873070326,
+      "baseline_accuracy": 0.5643224699828473,
+      "merge_f1": 0.7234,
+      "baseline_f1": 0.6921,
+      "improvement_accuracy": 0.03430531732418529,
+      "improvement_f1": 0.031299999999999994,
+      "mcnemar_test": {
+        "statistic": 40.0,
+        "p_value": 0.056887933640980784,
+        "effect_size": 0.2619363179255036,
+        "interpretation": "No significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 2.0051746528921206,
+        "p_value": 0.04540691709674735,
+        "effect_size_cohens_d": 0.08304584888161679,
+        "interpretation": "Significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.7231092000000001,
+          "std": 0.01423363113755587,
+          "ci_lower": 0.6961925,
+          "ci_upper": 0.7504075,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.6923243,
+          "std": 0.014609286755690709,
+          "ci_lower": 0.6647949999999999,
+          "ci_upper": 0.7218025,
+          "confidence": 0.95
+        }
+      }
+    },
+    {
+      "baseline": "Baseline 3: Few-shot (20-shot)",
+      "comparison": "Merge vs Baseline 3: Few-shot (20-shot)",
+      "merge_accuracy": 0.5986277873070326,
+      "baseline_accuracy": 0.3653516295025729,
+      "merge_f1": 0.7234,
+      "baseline_f1": 0.5225,
+      "improvement_accuracy": 0.2332761578044597,
+      "improvement_f1": 0.20090000000000008,
+      "mcnemar_test": {
+        "statistic": 27.0,
+        "p_value": 6.7556859155166345e-25,
+        "effect_size": 0.21520264493646468,
+        "interpretation": "Significant difference"
+      },
+      "paired_t_test": {
+        "statistic": 10.800919444621831,
+        "p_value": 6.539924641052637e-25,
+        "effect_size_cohens_d": 0.44732837744924275,
+        "interpretation": "Significant difference"
+      },
+      "bootstrap_analysis": {
+        "merge_ci": {
+          "mean": 0.7224791,
+          "std": 0.014033325093861397,
+          "ci_lower": 0.6962975,
+          "ci_upper": 0.75,
+          "confidence": 0.95
+        },
+        "baseline_ci": {
+          "mean": 0.5216495999999999,
+          "std": 0.017060250286557933,
+          "ci_lower": 0.4898925,
+          "ci_upper": 0.5553,
+          "confidence": 0.95
+        }
+      }
+    }
+  ],
+  "bonferroni_holm_correction": [
+    {
+      "comparison": "Merge vs Baseline 3: Few-shot (20-shot)",
+      "p_value": 6.7556859155166345e-25,
+      "adjusted_alpha": 0.016666666666666666,
+      "is_significant": true,
+      "rank": 1
+    },
+    {
+      "comparison": "Merge vs Baseline 2: French translated dataset",
+      "p_value": 0.056887933640980784,
+      "adjusted_alpha": 0.025,
+      "is_significant": false,
+      "rank": 2
+    },
+    {
+      "comparison": "Merge vs Baseline 1: English fine-tune with French prompts",
+      "p_value": 0.887724827340783,
+      "adjusted_alpha": 0.05,
+      "is_significant": false,
+      "rank": 3
+    }
+  ],
+  "summary": {
+    "total_baselines": 3,
+    "significantly_better_than_baselines_uncorrected": 1,
+    "significantly_better_than_baselines_corrected": 1,
+    "merge_f1": 0.7234,
+    "best_baseline_f1": 0.7145
+  }
+}
