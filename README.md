@@ -53,6 +53,7 @@ root/
 │   ├── rest-16-french/                     # SemEval-2016 French dataset
 │   ├── rest-16-spanish/                    # SemEval-2016 Spanish dataset
 │   └── rest-16-translated-*/               # Machine-translated datasets
+├── merging_configurations/                 # YAML-configuration files from the merging process
 ├── results/                                # Experimental results and analysis
 │   ├── llama/                              # Baseline model results
 │   └── merges/                             # Model merge results by language
