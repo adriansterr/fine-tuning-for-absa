@@ -1,0 +1,13 @@
+merge_method: linear
+parameters:
+  weight: 0.8  # Default weight for finetuned model
+
+# Override specific layers to get more German knowledge
+slices:
+  - sources:
+      - model: "D:/Uni/Masterarbeit Code/jakob_finetuning/finetuned_models/meta_llama_full_colab_remerge_2"
+        layer_range: [0, 16]  # Early layers: more finetuned
+      - model: "D:/Huggingface/hub/models--VAGOsolutions--Llama-3.1-SauerkrautLM-8b-Instruct/snapshots/221e5f92f9dc5fedaf4556b1be6b20642638643c"
+        layer_range: [16, 32]  # Later layers: more German
+    parameters:
+      weight: [0.9, 0.1]  # Still favor finetuned

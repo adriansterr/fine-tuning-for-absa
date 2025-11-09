@@ -1,0 +1,11 @@
+models:
+  - model: "D:/Uni/Masterarbeit Code/jakob_finetuning/finetuned_models/meta_llama_full_colab_remerge_2"
+  - model: "D:/Huggingface/hub/models--VAGOsolutions--Llama-3.1-SauerkrautLM-8b-Instruct/snapshots/221e5f92f9dc5fedaf4556b1be6b20642638643c"
+
+base_model: "unsloth/Meta-Llama-3.1-8B-Instruct"
+
+merge_method: sce
+dtype: bfloat16
+
+parameters:
+  select_topk: 0.75

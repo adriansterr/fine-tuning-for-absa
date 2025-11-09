@@ -1,0 +1,10 @@
+models:
+  - model: "D:/Uni/Masterarbeit Code/jakob_finetuning/finetuned_models/meta_llama_full_colab_remerge_2"
+    parameters:
+      weight: 0.80  
+  - model: "Nos-PT/Llama-Carvalho-PT-GL"
+    parameters:
+      weight: 0.20
+
+merge_method: linear
+dtype: bfloat16

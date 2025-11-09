@@ -3,7 +3,7 @@
 German
 ================================================================================
 
-BEST MERGE: acree_fusion
+BEST MERGE: arcee_fusion
   F1 Score: 0.7704
   Significant Wins (after correction): 9
   Significant Losses (after correction): 0
@@ -15,7 +15,7 @@ STATISTICALLY DOMINANT (after Bonferroni-Holm correction)
 Top 5 Merges:-------------------------------------------------------------------
 Merge                                    F1       Wins   Losses  Status
 --------------------------------------------------------------------------------
-acree_fusion                             0.7704   9      0       Dominant
+arcee_fusion                             0.7704   9      0       Dominant
 slerp_slerp_t_04                         0.7665   9      0       Dominant
 dare_dare_ties_1_087                     0.7711   8      0       Dominant
 della_della_linear_1_08_08_08_01_01      0.7711   8      0       Dominant
@@ -84,7 +84,7 @@ Correction Impact:--------------------------------------------------------------
 SUMMARY - BEST MERGE PER LANGUAGE
 ================================================================================
 
-German   acree_fusion                                  F1=0.7704, wins=9, losses=0
+German   arcee_fusion                                  F1=0.7704, wins=9, losses=0
 French   linear_linear_75_25                           F1=0.7234, wins=5, losses=0
 Spanish  pt_gl_linear_75_25                            F1=0.6636, wins=16, losses=0
 
