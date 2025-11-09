@@ -165,7 +165,7 @@ def main():
         print(f"Error checking usage: {e}")
         return
     
-    base_dir = "D:/Uni/Masterarbeit Code/jakob_finetuning/data"
+    base_dir = "/data"
     input_dir = os.path.join(base_dir, "rest-16")
     output_dir = os.path.join(base_dir, "rest-16-translated-french")
 

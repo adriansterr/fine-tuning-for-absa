@@ -56,7 +56,7 @@ def evaluate_model(model, tokenizer, config, prompts_test, ground_truth_labels, 
     
     
 if __name__ == "__main__":    
-    base_model_dir = "D:/Uni/Masterarbeit Code/test/mergekit/merges/trained/llama/meta_llama_full_spanish/evaluate"
+    base_model_dir = "mergekit/merges/trained/llama/meta_llama_full_spanish/evaluate"
     model_dirs = [f for f in glob.glob(f"{base_model_dir}/*") if os.path.isdir(f)]
 
     for model_name in model_dirs:
