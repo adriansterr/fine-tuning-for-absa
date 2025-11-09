@@ -1,4 +1,4 @@
-# Cross-Lingual Model Merging for Aspect-Based Sentiment Analysis in Low-Resource Settings
+# Beyond Fine-Tuning: Improving Low-Resource Aspect-based Sentiment Analysis through LLM Parameter Fusion
 
 ## Overview
 
