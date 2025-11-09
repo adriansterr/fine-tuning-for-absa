@@ -1,16 +1,17 @@
 from unsloth import FastLanguageModel
-from transformers import AutoModelForCausalLM, AutoTokenizer, TextStreamer
-import os, sys, torch, json
+from transformers import TextStreamer
+import os, sys, json
+
+# Script for fast testing
 
 utils = os.path.abspath('./src/utils/') # Relative path to utils scripts
 sys.path.append(utils)
 
 from preprocessing import createPromptText
 
-
 model_name = "finetuned_models/meta_llama_full_colab_remerge_2/"
 
-# FastLanguageModel von unsloth
+# FastLanguageModel from unsloth
 model, tokenizer = FastLanguageModel.from_pretrained(
     model_name,
     max_seq_length=2048,
@@ -18,7 +19,6 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 )
 FastLanguageModel.for_inference(model)
 
-# base_dir = os.path.dirname(os.path.abspath(__file__))
 with open("src/utils/prompts_GERestaurant.json", encoding='utf-8') as json_prompts:
     prompt_templates = json.load(json_prompts)
 

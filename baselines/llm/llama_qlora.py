@@ -37,7 +37,7 @@ def main():
     base_model, tokenizer = FastLanguageModel.from_pretrained(
         model_name="unsloth/Meta-Llama-3.1-8B-Instruct",
         max_seq_length=max_seq_length,
-        dtype=None,  # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
+        dtype=None,
         device_map="auto"
     )
 
@@ -53,8 +53,8 @@ def main():
         use_gradient_checkpointing="unsloth"
     )
 
-    df_train, df_test, label_space = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
-    prompts_train, prompts_test, ground_truth_labels = createPrompts(df_train, df_test, config, eos_token = tokenizer.eos_token)
+    df_train, df_test, _ = loadDataset(config.data_path, config.dataset, config.low_resource_setting, config.task, config.split, config.original_split)
+    prompts_train, prompts_test, _ = createPrompts(df_train, df_test, config, eos_token = tokenizer.eos_token)
 
     prompts_train = pd.DataFrame(prompts_train, columns = ['text'])
     prompts_test = pd.DataFrame(prompts_test, columns = ['text'])

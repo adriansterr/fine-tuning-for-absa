@@ -24,18 +24,6 @@ class StoppingCriteriaSub(StoppingCriteria):
                 return True
         return False
 
-def sortCheckpoints(folders):
-    model_config = folders[0].split('checkpoint-')[0]
-    sorted_epochs = sorted(int(f.split('-')[-1]) for f in folders)
-
-    return [f"{model_config}checkpoint-{epoch}" for epoch in sorted_epochs]
-
-def safe_recursive_pattern(depth, max_depth):
-    quoted_content = r'"(?:[^"\\]|\\.)*"'  # Matches anything inside quotes.
-    if depth >= max_depth:
-        return rf'(?:{quoted_content}|[^()])*'
-    return rf'\((?:{quoted_content}|[^()]|{safe_recursive_pattern(depth + 1, max_depth)})*\)'
-
 def extractAspects(output, task):
     # Validate Output
     if output.count('(') != output.count(')'):
