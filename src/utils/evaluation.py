@@ -11,6 +11,8 @@ ASPECTS = [
     "SERVICE#GENERAL", "RESTAURANT#GENERAL", "RESTAURANT#PRICES", "RESTAURANT#MISCELLANEOUS"
 ]
 
+# Adapted from https://github.com/JakobFehle/Fine-Tuning-LLMs-for-ABSA/blob/main/src/utils/evaluation.py
+
 class StoppingCriteriaSub(StoppingCriteria):
     def __init__(self, stops = [], encounters=1):
         super().__init__()
@@ -86,9 +88,6 @@ def convertLabels(labels, task, label_space):
     return conv_l, false_predictions
 
 def subset_recall(pred_labels, gold_labels):
-    """
-    Returns the proportion of samples where all gold labels are present in the prediction.
-    """
     correct = 0
     for pred, gold in zip(pred_labels, gold_labels):
         # All gold labels must be in pred (ignore extra predictions)
@@ -100,7 +99,7 @@ def calculateMetrics(predictions, ground_truths):
     tp, fp, fn = 0, 0, 0
     
     for pred, gold in zip(predictions, ground_truths):
-        pred_copy, gold_copy = pred[:], gold[:]  # Work with copies to avoid modifying original lists
+        _, gold_copy = pred[:], gold[:]  # Work with copies to avoid modifying original lists
         
         # Calculate True Positives
         for label in pred:

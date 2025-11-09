@@ -7,13 +7,15 @@ from ast import literal_eval
 
 DATASETS = ['GERestaurant', 'rest-16', 'rest-16-spanish', 'rest-16-french', 'rest-16-translated-german', 'rest-16-translated-spanish', 'rest-16-translated-french']
 
-# Für GERestaurant werden die 12 Kategorien verwendet, deswegen gleicher Label Space wie bei rest-16
+# GERestaurant also uses 12 categories, therefore the same label space as rest-16
 LABEL_SPACE = ['AMBIENCE#GENERAL:POSITIVE', 'AMBIENCE#GENERAL:NEUTRAL', 'AMBIENCE#GENERAL:NEGATIVE', 'DRINKS#PRICES:POSITIVE', 'DRINKS#PRICES:NEUTRAL', 'DRINKS#PRICES:NEGATIVE', 'DRINKS#QUALITY:POSITIVE', 'DRINKS#QUALITY:NEUTRAL', 'DRINKS#QUALITY:NEGATIVE', 'DRINKS#STYLE_OPTIONS:POSITIVE', 'DRINKS#STYLE_OPTIONS:NEUTRAL', 'DRINKS#STYLE_OPTIONS:NEGATIVE', 'FOOD#PRICES:POSITIVE', 'FOOD#PRICES:NEUTRAL', 'FOOD#PRICES:NEGATIVE', 'FOOD#QUALITY:POSITIVE', 'FOOD#QUALITY:NEUTRAL', 'FOOD#QUALITY:NEGATIVE', 'FOOD#STYLE_OPTIONS:POSITIVE', 'FOOD#STYLE_OPTIONS:NEUTRAL', 'FOOD#STYLE_OPTIONS:NEGATIVE', 'LOCATION#GENERAL:POSITIVE', 'LOCATION#GENERAL:NEUTRAL', 'LOCATION#GENERAL:NEGATIVE', 'RESTAURANT#GENERAL:POSITIVE', 'RESTAURANT#GENERAL:NEUTRAL', 'RESTAURANT#GENERAL:NEGATIVE', 'RESTAURANT#MISCELLANEOUS:POSITIVE', 'RESTAURANT#MISCELLANEOUS:NEUTRAL', 'RESTAURANT#MISCELLANEOUS:NEGATIVE', 'RESTAURANT#PRICES:POSITIVE', 'RESTAURANT#PRICES:NEUTRAL', 'RESTAURANT#PRICES:NEGATIVE', 'SERVICE#GENERAL:POSITIVE', 'SERVICE#GENERAL:NEUTRAL', 'SERVICE#GENERAL:NEGATIVE']
 
 REGEX_ASPECTS_ACSD = r"\(([^,]+),[^,]+,\s*\"[^\"]*\"\)"
 REGEX_LABELS_ACSD = r"\([^,]+,\s*([^,]+)\s*,\s*\"[^\"]*\"\s*\)"
 REGEX_ASPECTS = r"\(([^,]+),[^)]+\)"
 REGEX_LABELS = r"\([^,]+,\s*([^)]+)\)"
+
+# Adapted from https://github.com/JakobFehle/Fine-Tuning-LLMs-for-ABSA/blob/main/src/utils/preprocessing.py
 
 def loadDataset(data_path, dataset_name, low_resource_setting, task, split = 0,  original_split = False):
     if dataset_name not in DATASETS:

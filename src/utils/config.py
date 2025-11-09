@@ -1,5 +1,7 @@
 from argparse import ArgumentParser
 
+# Adapted from https://github.com/JakobFehle/Fine-Tuning-LLMs-for-ABSA/blob/main/src/utils/config.py
+
 class Config(object):
     def __init__(self):
 

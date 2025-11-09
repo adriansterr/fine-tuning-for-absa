@@ -4,10 +4,8 @@ import os
 import re
 import ast
 
-"""
-Translate the whole rest-16 dataset (train and test) to any language using DeepL API.
-https://github.com/DeepLcom/deepl-python/tree/main
-"""
+# Translate the whole rest-16 dataset (train and test) to any language using DeepL API.
+# https://github.com/DeepLcom/deepl-python/tree/main
 class DeepLTranslator:
     def __init__(self, api_key, source_lang, target_lang):
         self.client = deepl.DeepLClient(api_key)
